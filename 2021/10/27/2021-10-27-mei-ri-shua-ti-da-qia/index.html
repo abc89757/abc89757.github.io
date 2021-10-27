@@ -500,7 +500,7 @@ public:
 <h4 id="19-删除链表的倒数第-N-个结点"><a href="#19-删除链表的倒数第-N-个结点" class="headerlink" title="19. 删除链表的倒数第 N 个结点"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/">19. 删除链表的倒数第 N 个结点</a></h4><p>给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。</p>
 <p>进阶：你能尝试使用一趟扫描实现吗？</p>
 <p>示例 1：</p>
-<p><img src="C:\Users\Aoxue\AppData\Roaming\Typora\typora-user-images\image-20211027090622223.png" alt="image-20211027090622223"></p>
+<p><img src="https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg" alt="image-20211027090622223"></p>
 <p>输入：head = [1,2,3,4,5], n = 2<br>输出：[1,2,3,5]</p>
 <p>继续快慢指针,准备三个指针p,q,o，p-&gt;next指向head，o指向p，q指向head。q做快指针先走，走n格之后q和p一起走，当q为NULL时，p-&gt;next就是我们要的倒数第n个节点了，我们直接用p-&gt;next=p-&gt;next-&gt;next跳过他就好，最后返回o-&gt;next（o-&gt;next指向的是修改好的链表）。</p>
 <pre class="line-numbers language-none"><code class="language-none">&#x2F;**
