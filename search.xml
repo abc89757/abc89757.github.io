@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>2021-10-30每日刷题打卡</title>
+      <link href="/2021/10/30/2021-10-30-mei-ri-shua-ti-da-qia/"/>
+      <url>/2021/10/30/2021-10-30-mei-ri-shua-ti-da-qia/</url>
+      
+        <content type="html"><![CDATA[<h1 id="2021-10-30每日刷题打卡"><a href="#2021-10-30每日刷题打卡" class="headerlink" title="2021-10-30每日刷题打卡"></a>2021-10-30每日刷题打卡</h1><h2 id="力扣——每日一题"><a href="#力扣——每日一题" class="headerlink" title="力扣——每日一题"></a>力扣——每日一题</h2><h4 id="260-只出现一次的数字-III"><a href="#260-只出现一次的数字-III" class="headerlink" title="260. 只出现一次的数字 III"></a><a href="https://leetcode-cn.com/problems/single-number-iii/">260. 只出现一次的数字 III</a></h4><p>给定一个整数数组 nums，其中恰好有两个元素只出现一次，其余所有元素均出现两次。 找出只出现一次的那两个元素。你可以按 任意顺序 返回答案。</p><p>进阶：你的算法应该具有线性时间复杂度。你能否仅使用常数空间复杂度来实现？</p><p>示例 1：</p><p>输入：nums = [1,2,1,3,2,5]<br>输出：[3,5]<br>解释：[5, 3] 也是有效的答案。</p><p>用哈希计数，准备一个unordered_map容器mymap，遍历nums，用mymap计算每个数字出现的次数。最后从mymap里找到出现次数为1的两个数，返回即可。</p><pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class Solution &#123;public:    vector&lt;int&gt; singleNumber(vector&lt;int&gt;&amp; nums) &#123;        unordered_map&lt;int,int&gt;mymap;        int n&#x3D;nums.size();        for(int i&#x3D;0;i&lt;n;i++)        &#123;            mymap[nums[i]]++;        &#125;        vector&lt;int&gt;v;        for(auto i:mymap)        &#123;            if(i.second&#x3D;&#x3D;1)            &#123;                v.push_back(i.first);            &#125;        &#125;        return v;    &#125;&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>进阶——常数空间：就准备一个vector容器v来存结果的两个数，对nums排序，遍历nums，每次判断当前数是否和下一个数相同，如果不相同就把数插入v中，如果相同就持续遍历，直到不相同为止。</p><pre class="line-numbers language-none"><code class="language-none">class Solution &#123;public:    vector&lt;int&gt; singleNumber(vector&lt;int&gt;&amp; nums) &#123;        sort(nums.begin(),nums.end());        vector&lt;int&gt;v;        int n&#x3D;nums.size();        for(int i&#x3D;0;i&lt;n;i++)        &#123;            if(i+1&gt;&#x3D;n&amp;&amp;v.size()&lt;&#x3D;1)            &#123;                v.push_back(nums[i]);            &#125;            else            &#123;                if(nums[i]!&#x3D;nums[i+1])                &#123;                    v.push_back(nums[i]);                       if(v.size()&#x3D;&#x3D;2)                    &#123;                        break;                    &#125;                                                                &#125;                else                &#123;                    int num&#x3D;nums[i];                    while(nums[i]&#x3D;&#x3D;num)                    &#123;                        i++;                    &#125;                    i--;                &#125;            &#125;        &#125;        return v;    &#125;&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><a href="https://www.acwing.com/problem/content/789/">787. 归并排序 - AcWing题库</a></p><p>给定你一个长度为 n 的整数数列。</p><p>请你使用归并排序对这个数列按照从小到大进行排序。</p><p>并将排好序的数列按顺序输出。</p><h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>输入共两行，第一行包含整数 n。</p><p>第二行包含 n 个整数（所有整数均在 1∼10^9 范围内），表示整个数列。</p><h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出共一行，包含 n 个整数，表示排好序的数列。</p><h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤n≤100000</p><h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre class="line-numbers language-none"><code class="language-none">53 1 2 4 5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre class="line-numbers language-none"><code class="language-none">1 2 3 4 5<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>归并排序也是分治的思想，把一串数组对半分，直到分成一个个数，在把数两个两个的组合成有序对数。比如我们把6 2 4 5 3 1这个数组进行排序，最终分成6和2和4和5和3和1这六个数组，然后两两组合成2 6、4 5、3 1，（组合的方式是，拿一个数组tmp来存，把两个目标数组里的数进行比较，每次挑小的那个放入tmp中即可），再组合成2 4 5 6、3 1，再组合就成了1 2 3 4 5 6，这就是归并排序，即分治后归并。</p><pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;using namespace std;const int N&#x3D;1e6+5;int n;int nums[N],tmp[N];void merge_sort(int nums[],int l,int r)&#123;    if(l&gt;&#x3D;r)return;    int mid&#x3D;(l+r)&#x2F;2;    merge_sort(nums,l,mid);    merge_sort(nums,mid+1,r);    int k&#x3D;0,i&#x3D;l,j&#x3D;mid+1;    while(i&lt;&#x3D;mid&amp;&amp;j&lt;&#x3D;r)    &#123;        if(nums[i]&lt;&#x3D;nums[j])tmp[k++]&#x3D;nums[i++];        else tmp[k++]&#x3D;nums[j++];    &#125;    while(i&lt;&#x3D;mid)tmp[k++]&#x3D;nums[i++];    while(j&lt;&#x3D;r)tmp[k++]&#x3D;nums[j++];        for(i&#x3D;l,j&#x3D;0;i&lt;&#x3D;r;i++,j++)        nums[i]&#x3D;tmp[j];&#125;int main()&#123;    scanf(&quot;%d&quot;,&amp;n);    for(int i&#x3D;0;i&lt;n;i++)scanf(&quot;%d&quot;,&amp;nums[i]);    merge_sort(nums,0,n-1);    for(int i&#x3D;0;i&lt;n;i++)printf(&quot;%d &quot;,nums[i]);    return 0;&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 每日打卡 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 每日打卡 </tag>
+            
+            <tag> y总算法课 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2021-10-29每日刷题打卡</title>
       <link href="/2021/10/29/2021-10-29-mei-ri-shua-ti-da-qia/"/>
       <url>/2021/10/29/2021-10-29-mei-ri-shua-ti-da-qia/</url>
