@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="2021-10-30每日刷题打卡, Hexo">
-    <meta name="description" content="2021-10-30每日刷题打卡">
+    <meta name="keywords" content="2021-11-04每日刷题打卡, Hexo">
+    <meta name="description" content="2021-11-04每日刷题打卡">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>2021-10-30每日刷题打卡 | Hexo</title>
+    <title>2021-11-04每日刷题打卡 | Hexo</title>
     <link rel="icon" type="image/png" href="/medias/comment_bg.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/09.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">2021-10-30每日刷题打卡</h1>
+                    <h1 class="description center-align post-title">2021-11-04每日刷题打卡</h1>
                 </div>
             </div>
         </div>
@@ -340,10 +340,6 @@
                                 <span class="chip bg-color">每日打卡</span>
                             </a>
                         
-                            <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                                <span class="chip bg-color">y总算法课</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -365,7 +361,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-10-30
+                    2021-11-04
                 </div>
                 
 
@@ -374,7 +370,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    937
+                    2.1k
                 </div>
                 
 
@@ -399,126 +395,279 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="2021-10-30每日刷题打卡"><a href="#2021-10-30每日刷题打卡" class="headerlink" title="2021-10-30每日刷题打卡"></a>2021-10-30每日刷题打卡</h1><h2 id="力扣——每日一题"><a href="#力扣——每日一题" class="headerlink" title="力扣——每日一题"></a>力扣——每日一题</h2><h4 id="260-只出现一次的数字-III"><a href="#260-只出现一次的数字-III" class="headerlink" title="260. 只出现一次的数字 III"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/single-number-iii/">260. 只出现一次的数字 III</a></h4><p>给定一个整数数组 nums，其中恰好有两个元素只出现一次，其余所有元素均出现两次。 找出只出现一次的那两个元素。你可以按 任意顺序 返回答案。</p>
-<p>进阶：你的算法应该具有线性时间复杂度。你能否仅使用常数空间复杂度来实现？</p>
-<p>示例 1：</p>
-<p>输入：nums = [1,2,1,3,2,5]<br>输出：[3,5]<br>解释：[5, 3] 也是有效的答案。</p>
-<p>用哈希计数，准备一个unordered_map容器mymap，遍历nums，用mymap计算每个数字出现的次数。最后从mymap里找到出现次数为1的两个数，返回即可。</p>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class Solution &#123;
+                <h1 id="2021-11-04每日刷题打卡"><a href="#2021-11-04每日刷题打卡" class="headerlink" title="2021-11-04每日刷题打卡"></a>2021-11-04每日刷题打卡</h1><h2 id="力扣——二叉树"><a href="#力扣——二叉树" class="headerlink" title="力扣——二叉树"></a>力扣——二叉树</h2><h4 id="102-二叉树的层序遍历和剑指-Offer-32-II-从上到下打印二叉树-II"><a href="#102-二叉树的层序遍历和剑指-Offer-32-II-从上到下打印二叉树-II" class="headerlink" title="102. 二叉树的层序遍历和剑指 Offer 32 - II. 从上到下打印二叉树 II"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-level-order-traversal/">102. 二叉树的层序遍历</a>和<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/">剑指 Offer 32 - II. 从上到下打印二叉树 II</a></h4><p>给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。</p>
+<p>示例：<br>二叉树：[3,9,20,null,null,15,7],</p>
+<pre><code>3
+</code></pre>
+<p>   / <br>  9  20<br>    /  <br>   15   7<br>返回其层序遍历结果：</p>
+<p>[<br>  [3],<br>  [9,20],<br>  [15,7]<br>]</p>
+<p>层序遍历很好理解就是一层层遍历。</p>
+<p>第一种方法——递归：先准备一个全局的vector&lt;vector&lt; int &gt;&gt;容器v用以存结构，函数里先判断root是否为空，如果为空就直接把空的v返回，如果不为空，就把root传入dfs里，同时要传一个层数u，我们为了符合数组的存储方式层数我们从0开始。进入dfs，先判断root是否为空，如果为空就直接结束程序，如果不为空则判断一下当前v的size是否小于u+1，如果小于我们就创建一个vector容器插入v中，然后我们通过v[u].push_back()来插入当前root的val值，再把root的left和right分别送入下一次的dfs递归中，此时我们传的层数为u+1。当所有递归结束后返回v即可。</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for a binary tree node.
+ * struct TreeNode &#123;
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+class Solution &#123;
 public:
-    vector&lt;int&gt; singleNumber(vector&lt;int&gt;&amp; nums) &#123;
-        unordered_map&lt;int,int&gt;mymap;
-        int n&#x3D;nums.size();
-        for(int i&#x3D;0;i&lt;n;i++)
-        &#123;
-            mymap[nums[i]]++;
-        &#125;
-        vector&lt;int&gt;v;
-        for(auto i:mymap)
-        &#123;
-            if(i.second&#x3D;&#x3D;1)
-            &#123;
-                v.push_back(i.first);
-            &#125;
-        &#125;
+    vector&lt;vector&lt;int&gt;&gt;v;
+    vector&lt;vector&lt;int&gt;&gt; levelOrder(TreeNode* root) &#123;   
+        if(!root)return v;
+        vector&lt;int&gt;v1;
+        v.assign(1, v1);
+        dfs(root,0);
         return v;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<p>进阶——常数空间：就准备一个vector容器v来存结果的两个数，对nums排序，遍历nums，每次判断当前数是否和下一个数相同，如果不相同就把数插入v中，如果相同就持续遍历，直到不相同为止。</p>
-<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
-public:
-    vector&lt;int&gt; singleNumber(vector&lt;int&gt;&amp; nums) &#123;
-        sort(nums.begin(),nums.end());
-        vector&lt;int&gt;v;
-        int n&#x3D;nums.size();
-        for(int i&#x3D;0;i&lt;n;i++)
-        &#123;
-            if(i+1&gt;&#x3D;n&amp;&amp;v.size()&lt;&#x3D;1)
-            &#123;
-                v.push_back(nums[i]);
-            &#125;
-            else
-            &#123;
-                if(nums[i]!&#x3D;nums[i+1])
-                &#123;
-                    v.push_back(nums[i]);   
-                    if(v.size()&#x3D;&#x3D;2)
-                    &#123;
-                        break;
-                    &#125;                                                
-                &#125;
-                else
-                &#123;
-                    int num&#x3D;nums[i];
-                    while(nums[i]&#x3D;&#x3D;num)
-                    &#123;
-                        i++;
-                    &#125;
-                    i--;
-                &#125;
-            &#125;
-        &#125;
-        return v;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/789/">787. 归并排序 - AcWing题库</a></p>
-<p>给定你一个长度为 n 的整数数列。</p>
-<p>请你使用归并排序对这个数列按照从小到大进行排序。</p>
-<p>并将排好序的数列按顺序输出。</p>
-<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>输入共两行，第一行包含整数 n。</p>
-<p>第二行包含 n 个整数（所有整数均在 1∼10^9 范围内），表示整个数列。</p>
-<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出共一行，包含 n 个整数，表示排好序的数列。</p>
-<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤n≤100000</p>
-<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre class="line-numbers language-none"><code class="language-none">5
-3 1 2 4 5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre class="line-numbers language-none"><code class="language-none">1 2 3 4 5<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
-<p>归并排序也是分治的思想，把一串数组对半分，直到分成一个个数，在把数两个两个的组合成有序对数。比如我们把6 2 4 5 3 1这个数组进行排序，最终分成6和2和4和5和3和1这六个数组，然后两两组合成2 6、4 5、3 1，（组合的方式是，拿一个数组tmp来存，把两个目标数组里的数进行比较，每次挑小的那个放入tmp中即可），再组合成2 4 5 6、3 1，再组合就成了1 2 3 4 5 6，这就是归并排序，即分治后归并。</p>
-<pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;
-using namespace std;
-
-const int N&#x3D;1e6+5;
-int n;
-int nums[N],tmp[N];
-
-void merge_sort(int nums[],int l,int r)
-&#123;
-    if(l&gt;&#x3D;r)return;
-    int mid&#x3D;(l+r)&#x2F;2;
-    merge_sort(nums,l,mid);
-    merge_sort(nums,mid+1,r);
-    int k&#x3D;0,i&#x3D;l,j&#x3D;mid+1;
-    while(i&lt;&#x3D;mid&amp;&amp;j&lt;&#x3D;r)
+    void dfs(TreeNode* root, int u)
     &#123;
-        if(nums[i]&lt;&#x3D;nums[j])tmp[k++]&#x3D;nums[i++];
-        else tmp[k++]&#x3D;nums[j++];
+        if (!root)return;
+        else
+        &#123;
+            if(v.size()&lt;u+1)
+            &#123;
+                vector&lt;int&gt;v1;
+                v.push_back(v1);
+            &#125;
+            v[u].push_back(root-&gt;val);
+            dfs(root-&gt;left, u + 1);
+            dfs(root-&gt;right, u + 1);
+        &#125;
     &#125;
-    while(i&lt;&#x3D;mid)tmp[k++]&#x3D;nums[i++];
-    while(j&lt;&#x3D;r)tmp[k++]&#x3D;nums[j++];
-    
-    for(i&#x3D;l,j&#x3D;0;i&lt;&#x3D;r;i++,j++)
-        nums[i]&#x3D;tmp[j];
-&#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-int main()
-&#123;
-    scanf(&quot;%d&quot;,&amp;n);
-    for(int i&#x3D;0;i&lt;n;i++)scanf(&quot;%d&quot;,&amp;nums[i]);
-    merge_sort(nums,0,n-1);
-    for(int i&#x3D;0;i&lt;n;i++)printf(&quot;%d &quot;,nums[i]);
-    return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>第二种方法——迭代：因为迭代是在一个函数里进行的，所以可以把全局函数vector&lt;vector&lt; int&gt;&gt;v设置在函数开头，当然也可以继续全局函数。先判断root是否为空，如果为空就返回空的v给它，如果不为空，那我们先准备一个queue容器que来存节点，先把root存入que中，然后开始while遍历，只要que不为空就一直遍历，每次遍历先拿一个数len存que的size，len就是当前层的节点数，这也决定了下面for循环的次数，再准备一个vector容器v1来存这一层节点的val值，然后开始for循环，循环len次，先把当前队列的头结点的val值存入v1中，然后把队列头结点的左子节点和右子节点存入que中，再把队头元素出队，for结束后把v1插入v中。一切遍历结束后返回v即可。</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for a binary tree node.
+ * struct TreeNode &#123;
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+class Solution &#123;
+public:
+    vector&lt;vector&lt;int&gt;&gt; levelOrder(TreeNode* root) &#123;   
+        vector&lt;vector&lt;int&gt;&gt;v;
+        if(!root)return v;
+        queue&lt;TreeNode*&gt;que;
+        que.push(root);
+        while(que.size())
+        &#123;
+            int len&#x3D;que.size();
+            vector&lt;int&gt;v1;
+            for(int i&#x3D;0;i&lt;len;i++)
+            &#123;
+                v1.push_back(que.front()-&gt;val);
+                if(que.front()-&gt;left)que.push(que.front()-&gt;left);
+                if(que.front()-&gt;right)que.push(que.front()-&gt;right);
+                que.pop();
+            &#125;
+            v.push_back(v1);
+        &#125;
+        return v;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="637-二叉树的层平均值"><a href="#637-二叉树的层平均值" class="headerlink" title="637. 二叉树的层平均值"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/">637. 二叉树的层平均值</a></h4><p>给定一个非空二叉树, 返回一个由每层节点平均值组成的数组。</p>
+<p>示例 1：</p>
+<p>输入：<br>    3<br>   / <br>  9  20<br>    /  <br>   15   7<br>输出：[3, 14.5, 11]<br>解释：<br>第 0 层的平均值是 3 ,  第1层是 14.5 , 第2层是 11 。因此返回 [3, 14.5, 11] 。</p>
+<p>通过上面层序遍历的方法先得到各层的节点数，然后就正常的求平均值就是。</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for a binary tree node.
+ * struct TreeNode &#123;
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+class Solution &#123;
+public:
+    vector&lt;vector&lt;int&gt;&gt;v;
+    vector&lt;double&gt; averageOfLevels(TreeNode* root) &#123;
+        vector&lt;double&gt;nums;
+        if(!root)return nums;
+        dfs(root,0);
+        double sum&#x3D;0;
+        int n&#x3D;v.size();
+        for(int i&#x3D;0;i&lt;n;i++)
+        &#123;
+            for(int j&#x3D;0;j&lt;v[i].size();j++)
+            &#123;
+                sum+&#x3D;v[i][j];
+            &#125;
+            nums.push_back(sum&#x2F;v[i].size());
+            sum&#x3D;0;
+        &#125;
+        return nums;
+    &#125;
+    void dfs(TreeNode* root,int u)
+    &#123;
+        if(!root)return;
+        else
+        &#123;
+            if(v.size()&lt;u+1)
+            &#123;
+                vector&lt;int&gt;v1;
+                v.push_back(v1);
+            &#125;
+            v[u].push_back(root-&gt;val);
+            dfs(root-&gt;left,u+1);
+            dfs(root-&gt;right,u+1);
+        &#125;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h4 id="103-二叉树的锯齿形层序遍历"><a href="#103-二叉树的锯齿形层序遍历" class="headerlink" title="103. 二叉树的锯齿形层序遍历"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/">103. 二叉树的锯齿形层序遍历</a></h4><p>给定一个二叉树，返回其节点值的锯齿形层序遍历。（即先从左往右，再从右往左进行下一层遍历，以此类推，层与层之间交替进行）。</p>
+<p>例如：<br>给定二叉树 [3,9,20,null,null,15,7],</p>
+<p>​    3</p>
+<p>   / <br>  9  20<br>    /  <br>   15   7<br>返回锯齿形层序遍历如下：</p>
+<p>[<br>  [3],<br>  [20,9],<br>  [15,7]<br>]</p>
+<p>用上面求层序遍历的方法求完各层节点数，然后把奇数层的节点全都改成逆序就行（偷鸡法）</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for a binary tree node.
+ * struct TreeNode &#123;
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+class Solution &#123;
+public:
+    vector&lt;vector&lt;int&gt;&gt;v;
+    vector&lt;vector&lt;int&gt;&gt; zigzagLevelOrder(TreeNode* root) &#123;
+        if(!root)return v;
+        dfs(root,0);
+        int n&#x3D;v.size();
+        for(int i&#x3D;1;i&lt;n;i+&#x3D;2)
+        &#123;
+            int m&#x3D;v[i].size();
+            int k&#x3D;m-1;
+            for(int j&#x3D;0;j&lt;m&#x2F;2;j++)
+            &#123;
+                swap(v[i][j],v[i][k]);
+                k--;
+            &#125;
+        &#125;
+        return v;
+    &#125;
+    void dfs(TreeNode* root, int u)
+    &#123;
+        if (!root)return;
+        if (v.size() &lt; u + 1)
+        &#123;
+            vector&lt;int&gt;v1;
+            v.push_back(v1);
+        &#125;
+        v[u].push_back(root-&gt;val);
+        dfs(root-&gt;left, u + 1);
+        dfs(root-&gt;right, u + 1);
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h4 id="剑指-Offer-II-045-二叉树最底层最左边的值和513-找树左下角的值"><a href="#剑指-Offer-II-045-二叉树最底层最左边的值和513-找树左下角的值" class="headerlink" title="剑指 Offer II 045. 二叉树最底层最左边的值和513. 找树左下角的值"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/LwUNpT/">剑指 Offer II 045. 二叉树最底层最左边的值</a>和<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/find-bottom-left-tree-value/">513. 找树左下角的值</a></h4><p>给定一个二叉树的 根节点 root，请找出该二叉树的 最底层 最左边 节点的值。</p>
+<p>假设二叉树中至少有一个节点。</p>
+<p>示例 1:</p>
+<p><img src="https://assets.leetcode.com/uploads/2020/12/14/tree1.jpg" alt="tree1.jpg (302×182) (leetcode.com)"></p>
+<p>输入: root = [2,1,3]<br>输出: 1</p>
+<p>用上面求层序遍历的方法求完各层节点数，然后返回最后一层的的第一个数就行。</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for a binary tree node.
+ * struct TreeNode &#123;
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+class Solution &#123;
+public:
+    vector&lt;vector&lt;int&gt;&gt;v;
+    int findBottomLeftValue(TreeNode* root) &#123;
+        if(!root)return NULL;
+        dfs(root,0);
+        int n&#x3D;v.size()-1;
+        return v[n][0];
+    &#125;
+    void dfs(TreeNode*root,int u)
+    &#123;
+        if(!root)return;
+        if(v.size()&lt;u+1)
+        &#123;
+            vector&lt;int&gt;v1;
+            v.push_back(v1);
+        &#125;
+        v[u].push_back(root-&gt;val);
+        dfs(root-&gt;left,u+1);
+        dfs(root-&gt;right,u+1);
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>简单一点的方法：用一个queue容器que来存节点，准备一个数num_left来存每层最左边的数。先把root存入que中，然后开始while循环，只要que里还有元素就继续循环，先把当前队列的头元素的val值赋给num_left，因为队头元素就是每层的最左边的节点，再准备一个值len存当前队列的节点数，这代表这一层的节点数，也是下面for循环的结束条件。然后进入for循环，每次把当前队头元素的左子节点和右子节点传入队列，然后弹出队头元素（这时前面的len作用就体现出来了，循环len次，每次弹出队头元素，这样循环完后上一层的节点就全都消失，取之而代的是下一层的节点，队头元素就是最左边的节点）。当while结束后返回num_left。</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for a binary tree node.
+ * struct TreeNode &#123;
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+class Solution &#123;
+public:
+    int findBottomLeftValue(TreeNode* root) &#123;
+        if(!root)return NULL;
+        queue&lt;TreeNode*&gt;que;
+        int num_left;
+        que.push(root);
+        while(que.size())
+        &#123;
+            int len&#x3D;que.size();
+            num_left&#x3D;que.front()-&gt;val;
+            for(int i&#x3D;0;i&lt;len;i++)
+            &#123;
+                if(que.front()-&gt;left)que.push(que.front()-&gt;left);
+                if(que.front()-&gt;right)que.push(que.front()-&gt;right);
+                que.pop();
+            &#125;
+        &#125;
+        return num_left;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
 
 
                 
@@ -546,7 +695,7 @@ int main()
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/10/30/2021-10-30-mei-ri-shua-ti-da-qia/">http://example.com/2021/10/30/2021-10-30-mei-ri-shua-ti-da-qia/</a>
+                    <a href="http://example.com/2021/11/04/2021-11-04-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/04/2021-11-04-mei-ri-shua-ti-da-qia/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -586,10 +735,6 @@ int main()
                             
                                 <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                                     <span class="chip bg-color">每日打卡</span>
-                                </a>
-                            
-                                <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                                    <span class="chip bg-color">y总算法课</span>
                                 </a>
                             
                         </div>
@@ -1027,28 +1172,29 @@ int main()
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2021/10/31/zhou-zong-jie-2021-10-25-10-31/">
+                <a href="/2021/11/04/2021-11-04-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/10.jpg" class="responsive-img" alt="周总结：2021-10-25——10-31">
+                        <img src="/images/14.jpg" class="responsive-img" alt="2021-11-04每日刷题打卡">
                         
-                        <span class="card-title">周总结：2021-10-25——10-31</span>
+                        <span class="card-title">2021-11-04每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            周总结：2021-10-25——10-31
+                            2021-11-04每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1061,6 +1207,7 @@ int main()
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1079,23 +1226,23 @@ int main()
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/10/29/2021-10-29-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/03/2021-11-03-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/08.jpg" class="responsive-img" alt="2021-10-29每日刷题打卡">
+                        <img src="/images/13.jpg" class="responsive-img" alt="2021-11-03每日刷题打卡">
                         
-                        <span class="card-title">2021-10-29每日刷题打卡</span>
+                        <span class="card-title">2021-11-03每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-10-29每日刷题打卡
+                            2021-11-03每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-03
                             </span>
                         <span class="publish-author">
                             
