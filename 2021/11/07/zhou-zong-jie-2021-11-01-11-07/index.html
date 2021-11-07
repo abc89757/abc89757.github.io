@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="2021-11-05每日刷题打卡, Hexo">
-    <meta name="description" content="2021-11-05每日刷题打卡">
+    <meta name="keywords" content="周总结：2021-11-01——11-07, Hexo">
+    <meta name="description" content="周总结：2021-11-01——11-07">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>2021-11-05每日刷题打卡 | Hexo</title>
+    <title>周总结：2021-11-01——11-07 | Hexo</title>
     <link rel="icon" type="image/png" href="/medias/comment_bg.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">2021-11-05每日刷题打卡</h1>
+                    <h1 class="description center-align post-title">周总结：2021-11-01——11-07</h1>
                 </div>
             </div>
         </div>
@@ -361,7 +361,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-11-05
+                    2021-11-07
                 </div>
                 
 
@@ -370,7 +370,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    2k
+                    2.2k
                 </div>
                 
 
@@ -395,10 +395,94 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="2021-11-05每日刷题打卡"><a href="#2021-11-05每日刷题打卡" class="headerlink" title="2021-11-05每日刷题打卡"></a>2021-11-05每日刷题打卡</h1><h2 id="力扣-——二叉树"><a href="#力扣-——二叉树" class="headerlink" title="力扣 ——二叉树"></a>力扣 ——二叉树</h2><h4 id="剑指-Offer-II-044-二叉树每层的最大值和515-在每个树行中找最大值"><a href="#剑指-Offer-II-044-二叉树每层的最大值和515-在每个树行中找最大值" class="headerlink" title="剑指 Offer II 044. 二叉树每层的最大值和515. 在每个树行中找最大值"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/hPov7L/">剑指 Offer II 044. 二叉树每层的最大值</a>和<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/">515. 在每个树行中找最大值</a></h4><p>给定一棵二叉树的根节点 root ，请找出该二叉树中每一层的最大值。</p>
-<p>示例1：</p>
-<p>输入: root = [1,3,2,5,3,null,9]<br>输出: [1,3,9]<br>解释:<br>          1<br>         / <br>        3   2<br>       / \   \<br>      5   3   9 </p>
-<p>层序遍历二叉树，每次遍历新的一层时准备一个max来存最大值，然后依次比较，遍历完后把max存入vector容器中，然后继续遍历下一层。</p>
+                <h1 id="周总结：2021-11-01——11-07"><a href="#周总结：2021-11-01——11-07" class="headerlink" title="周总结：2021-11-01——11-07"></a>周总结：2021-11-01——11-07</h1><h3 id="这里是这一周来刷题时印象比较深的几道题，挑出来做个总结"><a href="#这里是这一周来刷题时印象比较深的几道题，挑出来做个总结" class="headerlink" title="这里是这一周来刷题时印象比较深的几道题，挑出来做个总结"></a>这里是这一周来刷题时印象比较深的几道题，挑出来做个总结</h3><h4 id="449-序列化和反序列化二叉搜索树"><a href="#449-序列化和反序列化二叉搜索树" class="headerlink" title="449. 序列化和反序列化二叉搜索树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/serialize-and-deserialize-bst/">449. 序列化和反序列化二叉搜索树</a></h4><p>序列化是将数据结构或对象转换为一系列位的过程，以便它可以存储在文件或内存缓冲区中，或通过网络连接链路传输，以便稍后在同一个或另一个计算机环境中重建。</p>
+<p>设计一个算法来序列化和反序列化 二叉搜索树 。 对序列化/反序列化算法的工作方式没有限制。 您只需确保二叉搜索树可以序列化为字符串，并且可以将该字符串反序列化为最初的二叉搜索树。</p>
+<p>编码的字符串应尽可能紧凑。</p>
+<p>示例 1：</p>
+<p>输入：root = [2,1,3]<br>输出：[2,1,3]</p>
+<p>前序转字符串的方式就是递归，每次先判断当前节点是否为空，如果为空就往字符串上加一个标志性的字符来说明这是空结点，我这里用的是N（NULL），如果不为空，就把当前节点的val值转为字符串加在字符串上，然后再把该节点的左右子节点送去递归，注意每个节点的val值之间要用特殊的字符隔开，我用的是“，”。等递归完后所有的字符串都合在一起了，直接return即可。</p>
+<p>字符串转换成二叉树的方式也是递归（递归真是个好东西），我们用自己写的dfs函数来完成递归，一共三个参数，字符串data，节点root和索引下标i（i和节点要以引用方式传递）。一开始i先为0在之后的递归里逐渐增加，每次先判断data[i]是否为“N”，如果是说明这里的节点应该为空，把当前节点指向空后直接结束程序，注意要把i+=2（跳过”，“）。如果不为N，那就先遍历字符串，当遇到”，“时结束遍历，再把遍历过的字符串转换成数字，这就是节点的val值，把值赋给root，然后送root的左右子节点去递归。当递归结束后我们得到的root就是最开始的二叉树了。</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for a binary tree node.
+ * struct TreeNode &#123;
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+class Codec &#123;
+public:
+
+    &#x2F;&#x2F; Encodes a tree to a single string.
+    string serialize(TreeNode* root) &#123;
+        if(!root)return &quot;N&quot;;
+        return to_string(root-&gt;val)+&quot;,&quot;+serialize(root-&gt;left)+&quot;,&quot;+serialize(root-&gt;right);
+    &#125;
+
+    &#x2F;&#x2F; Decodes your encoded data to tree.
+    TreeNode* deserialize(string data) &#123;
+        TreeNode *root;
+        int i&#x3D;0;
+        dfs(data,i,root);
+        return root;
+    &#125;
+
+    void dfs(string data,int&amp; i,TreeNode*&amp; root)
+    &#123;
+        if(data[i]&#x3D;&#x3D;&#39;N&#39;)
+        &#123;
+            i+&#x3D;2;
+            root&#x3D;NULL;
+            return;
+        &#125;
+
+        string str;
+        for(int j&#x3D;i;j&lt;data.size();j++)
+        &#123;
+            if(data[j]&#x3D;&#x3D;&#39;,&#39;)
+            &#123;
+                j++;
+                i&#x3D;j;
+                break;
+            &#125;
+            str+&#x3D;data[j];
+        &#125;
+        root &#x3D;new TreeNode(get_num(str));
+        dfs(data,i,root-&gt;left);
+        dfs(data,i,root-&gt;right);
+    &#125;
+
+    int get_num(string str)
+    &#123;
+        int num&#x3D;0;
+        for(int i&#x3D;0;i&lt;str.size();i++)
+        &#123;
+            num&#x3D;num*10+(str[i]-&#39;0&#39;);
+        &#125;
+        return num;
+    &#125;
+&#125;;
+
+&#x2F;&#x2F; Your Codec object will be instantiated and called as such:
+&#x2F;&#x2F; Codec* ser &#x3D; new Codec();
+&#x2F;&#x2F; Codec* deser &#x3D; new Codec();
+&#x2F;&#x2F; string tree &#x3D; ser-&gt;serialize(root);
+&#x2F;&#x2F; TreeNode* ans &#x3D; deser-&gt;deserialize(tree);
+&#x2F;&#x2F; return ans;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h4 id="993-二叉树的堂兄弟节点"><a href="#993-二叉树的堂兄弟节点" class="headerlink" title="993. 二叉树的堂兄弟节点"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/cousins-in-binary-tree/">993. 二叉树的堂兄弟节点</a></h4><p>在二叉树中，根节点位于深度 0 处，每个深度为 k 的节点的子节点位于深度 k+1 处。</p>
+<p>如果二叉树的两个节点深度相同，但 父节点不同 ，则它们是一对堂兄弟节点。</p>
+<p>我们给出了具有唯一值的二叉树的根节点 root ，以及树中两个不同节点的值 x 和 y 。</p>
+<p>只有与值 x 和 y 对应的节点是堂兄弟节点时，才返回 true 。否则，返回 false。</p>
+<p>示例 1：</p>
+<p><img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/02/16/q1248-01.png" alt="q1248-01.png (304×270) (leetcode-cn.com)"></p>
+<p>输入：root = [1,2,3,4], x = 4, y = 3<br>输出：false</p>
+<p>堂兄弟的定义是：深度一样，父节点不一样。所以我们准备两个全局map容器father和mymap（不全局也可以，但dfs传参要多加这两个容器）来分别存放父节点和深度，我们用dfs函数来遍历树，dfs有五个参数，一个是当当前节点，一个是当前节点的子节点（左节点或右节点），一个是深度u（初始为0），还有两个是x和y。dfs一开始先判断当前节点是否为空，如果是就直接结束程序，如果不是就判断节点的val值等不等于x或y，如果等于就用mymap函数存下这个节点的深度u，再用father存下节点的父节点。然后我们把当前节点的左节点和右节点接着送去递归。当一切结束后，我们判断两个节点x和y的深度是否相等，如果相等判断他俩的父节点是否为同一个，如果为同一个即不是堂兄弟，如果不是则是堂兄弟。</p>
 <pre class="line-numbers language-none"><code class="language-none">&#x2F;**
  * Definition for a binary tree node.
  * struct TreeNode &#123;
@@ -412,23 +496,78 @@
  *&#x2F;
 class Solution &#123;
 public:
-    vector&lt;int&gt; largestValues(TreeNode* root) &#123;
-        vector&lt;int&gt;v;
+    unordered_map&lt;int,int&gt;mymap;
+    unordered_map&lt;int,int&gt;father;
+    bool isCousins(TreeNode* root, int x, int y) &#123;
+        TreeNode* t;
+        t&#x3D;new TreeNode(200);
+        dfs(root,x,y,0,t);
+        if(mymap[x]&#x3D;&#x3D;mymap[y]&amp;&amp;father[x]!&#x3D;father[y])
+        &#123;
+            return true;
+        &#125;
+        return false;
+    &#125;
+    void dfs(TreeNode* p,int x,int y,int u,TreeNode* q)
+    &#123;
+        if(mymap.size()&#x3D;&#x3D;2)return;
+        if(!p)return;
+        if(p-&gt;val&#x3D;&#x3D;x)
+        &#123;
+            mymap[x]&#x3D;u;
+            father[x]&#x3D;q-&gt;val;
+        &#125;
+        else if(p-&gt;val&#x3D;&#x3D;y)
+        &#123;
+            mymap[y]&#x3D;u;
+            father[y]&#x3D;q-&gt;val;
+        &#125;
+
+        dfs(p-&gt;left,x,y,u+1,p);
+        dfs(p-&gt;right,x,y,u+1,p);
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h4 id="102-二叉树的层序遍历"><a href="#102-二叉树的层序遍历" class="headerlink" title="102. 二叉树的层序遍历"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-level-order-traversal/">102. 二叉树的层序遍历</a></h4><p>给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。</p>
+<p>示例：<br>二叉树：[3,9,20,null,null,15,7],</p>
+<pre><code>3
+</code></pre>
+<p>   / <br>  9  20<br>    /  <br>   15   7</p>
+<p>因为迭代是在一个函数里进行的，所以可以把全局函数vector&lt;vector&lt; int&gt;&gt;v设置在函数开头，当然也可以继续全局函数。先判断root是否为空，如果为空就返回空的v给它，如果不为空，那我们先准备一个queue容器que来存节点，先把root存入que中，然后开始while遍历，只要que不为空就一直遍历，每次遍历先拿一个数len存que的size，len就是当前层的节点数，这也决定了下面for循环的次数，再准备一个vector容器v1来存这一层节点的val值，然后开始for循环，循环len次，先把当前队列的头结点的val值存入v1中，然后把队列头结点的左子节点和右子节点存入que中，再把队头元素出队，for结束后把v1插入v中。一切遍历结束后返回v即可。</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for a binary tree node.
+ * struct TreeNode &#123;
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+class Solution &#123;
+public:
+    vector&lt;vector&lt;int&gt;&gt; levelOrder(TreeNode* root) &#123;   
+        vector&lt;vector&lt;int&gt;&gt;v;
         if(!root)return v;
         queue&lt;TreeNode*&gt;que;
         que.push(root);
         while(que.size())
         &#123;
             int len&#x3D;que.size();
-            int max&#x3D;que.front()-&gt;val;
+            vector&lt;int&gt;v1;
             for(int i&#x3D;0;i&lt;len;i++)
             &#123;
-                if(max&lt;que.front()-&gt;val)max&#x3D;que.front()-&gt;val;
+                v1.push_back(que.front()-&gt;val);
                 if(que.front()-&gt;left)que.push(que.front()-&gt;left);
                 if(que.front()-&gt;right)que.push(que.front()-&gt;right);
                 que.pop();
             &#125;
-            v.push_back(max);
+            v.push_back(v1);
         &#125;
         return v;
     &#125;
@@ -441,8 +580,7 @@ public:
 <h4 id="617-合并二叉树"><a href="#617-合并二叉树" class="headerlink" title="617. 合并二叉树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/merge-two-binary-trees/">617. 合并二叉树</a></h4><p>给定两个二叉树，想象当你将它们中的一个覆盖到另一个上时，两个二叉树的一些节点便会重叠。</p>
 <p>你需要将他们合并为一个新的二叉树。合并的规则是如果两个节点重叠，那么将他们的值相加作为节点合并后的新值，否则不为 NULL 的节点将直接作为新二叉树的节点。</p>
 <p>示例 1:</p>
-<p>输入:<br>    Tree 1                     Tree 2<br>          1                         2<br>         / \                       / \<br>        3   2                     1   3<br>       /                           \   \<br>      5                             4   7<br>输出:<br>合并后的树:<br>         3<br>        / <br>       4   5<br>      / \   \<br>     5   4   7<br>注意: 合并必须从两个树的根节点开始。</p>
-<p>先判断一下，如果root1为空而root2不为空那就返回root2即可，反之返回root1，如果两个都空那么返回哪个都行，如果两个都不为空那我们就开始合并的操作。直接把两个树传入dfs里，我们以root1为主树，dfs的实现是，先判断root2是否为空，如果为空就直接结束程序，如果root2不为空而root1为空，那就直接让root1=root2，以此获得root2的当前结点和之后所有节点（记住dfs的参数传递要以引用的方式才行），如果两个都不为空，那就把root2的val值加到root1上，然后再分别把root1和root2的左子节点和右子节点传入dfs里。当递归结束后root1就是合并后的二叉树了。</p>
+<p>输入:<br>    Tree 1                     Tree 2<br>          1                         2<br>         / \                       / \<br>        3   2                     1   3<br>       /                           \   \<br>      5                             4   7<br>输出:<br>合并后的树:<br>         3<br>        / <br>       4   5<br>      / \   \<br>     5   4   7</p>
 <pre class="line-numbers language-none"><code class="language-none">&#x2F;**
  * Definition for a binary tree node.
  * struct TreeNode &#123;
@@ -479,171 +617,6 @@ public:
 &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
-
-
-
-<h4 id="105-从前序与中序遍历序列构造二叉树"><a href="#105-从前序与中序遍历序列构造二叉树" class="headerlink" title="105. 从前序与中序遍历序列构造二叉树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/">105. 从前序与中序遍历序列构造二叉树</a></h4><p>给定一棵树的前序遍历 preorder 与中序遍历  inorder。请构造二叉树并返回其根节点。</p>
-<p>示例 1:</p>
-<p><img src="https://assets.leetcode.com/uploads/2021/02/19/tree.jpg" alt="tree.jpg (277×302) (leetcode.com)"></p>
-<p>Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]<br>Output: [3,9,20,null,null,15,7]</p>
-<p>这题感觉太复杂了想着一开始先写个大概出来等有错了一步步改，结果一写完发现通过测试例了，整个人疑惑了一下然后点了下提交就这么直接过了也太爽了！还有什么比这更爽的事情吗？</p>
-<p>前序遍历的结构组成是：（根节点）（左子树）（右子树）           中序遍历的结构组成是：（左子树）（根节点）（右子树）</p>
-<p>那么我们就可以发现了，前序遍历的开头必是根节点，然后我们拿根节点在中序遍历里找，左边就是左子树的序列，右边就是右子树的序列，然后我们再回到前序遍历里找左子树，找到的第一个就是左子树的根节点，然后再拿这个根节点回到中序遍历里找…………以此循环往复，中途每次找到根节点就把它和父节点连起来最后得到的就是整个树的样子了。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    TreeNode* buildTree(vector&lt;int&gt;&amp; preorder, vector&lt;int&gt;&amp; inorder) &#123;
-        return dfs(preorder,inorder);
-    &#125;
-    TreeNode* dfs(vector&lt;int&gt;p,vector&lt;int&gt;q)
-    &#123;
-        if(!p.size())return NULL;
-        TreeNode *root;
-        root&#x3D;new TreeNode(p[0]);
-        int n&#x3D;q.size();
-        vector&lt;int&gt;v1;
-        vector&lt;int&gt;v2;
-        vector&lt;int&gt;v3;
-        vector&lt;int&gt;v4;
-        int j;
-        for(int i&#x3D;0;i&lt;n;i++)
-        &#123;
-            if(q[i]&#x3D;&#x3D;p[0])
-            &#123;
-                j&#x3D;i;
-                break;
-            &#125;
-            v1.push_back(p[i+1]);
-            v2.push_back(q[i]);
-        &#125;
-        for(int i&#x3D;j+1;i&lt;n;i++)
-        &#123;
-            v3.push_back(p[i]);
-            v4.push_back(q[i]);
-        &#125;
-        root-&gt;left&#x3D;dfs(v1,v2);
-        root-&gt;right&#x3D;dfs(v3,v4);
-        return root;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="106-从中序与后序遍历序列构造二叉树"><a href="#106-从中序与后序遍历序列构造二叉树" class="headerlink" title="106. 从中序与后序遍历序列构造二叉树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/">106. 从中序与后序遍历序列构造二叉树</a></h4><p>根据一棵树的中序遍历与后序遍历构造二叉树。</p>
-<p>注意:<br>你可以假设树中没有重复的元素。</p>
-<p>例如，给出</p>
-<p>中序遍历 inorder = [9,3,15,20,7]<br>后序遍历 postorder = [9,15,7,20,3]<br>返回如下的二叉树：</p>
-<pre><code>3
-</code></pre>
-<p>   / <br>  9  20<br>    /  <br>   15   7</p>
-<p>这题和前面的<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/">105. 从前序与中序遍历序列构造二叉树</a>基本一样，只不过前序遍历的根节点是数组的第一位，我们后续遍历的根节点是数组的最后一位，只要注意节点的取值，其它的就一模一样了。（如果写了前面不会写这题说明你没明白彻底建议多回去看几遍前面的题）</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    TreeNode* buildTree(vector&lt;int&gt;&amp; inorder, vector&lt;int&gt;&amp; postorder) &#123;
-        return dfs(inorder,postorder);
-    &#125;
-    TreeNode* dfs(vector&lt;int&gt;p,vector&lt;int&gt;q)
-    &#123;
-        if(!q.size())return NULL;
-        vector&lt;int&gt;v1;
-        vector&lt;int&gt;v2;
-        vector&lt;int&gt;v3;
-        vector&lt;int&gt;v4;
-        TreeNode *root;
-        int n&#x3D;q.size(),j;
-        root &#x3D;new TreeNode(q[n-1]);
-        for(int i&#x3D;0;i&lt;n;i++)
-        &#123;
-            if(p[i]&#x3D;&#x3D;q[n-1])
-            &#123;
-                j&#x3D;i;
-                break;
-            &#125;
-            v1.push_back(p[i]);
-            v2.push_back(q[i]);
-        &#125;
-        for(int i&#x3D;j+1;i&lt;n;i++)
-        &#123;
-            v3.push_back(p[i]);
-            v4.push_back(q[i-1]);
-        &#125;
-        root-&gt;left&#x3D;dfs(v1,v2);
-        root-&gt;right&#x3D;dfs(v3,v4);
-        return root;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="199-二叉树的右视图"><a href="#199-二叉树的右视图" class="headerlink" title="199. 二叉树的右视图"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-right-side-view/">199. 二叉树的右视图</a></h4><p>给定一个二叉树的 根节点 root，想象自己站在它的右侧，按照从顶部到底部的顺序，返回从右侧所能看到的节点值。</p>
-<p>示例 1:</p>
-<p><img src="https://assets.leetcode.com/uploads/2021/02/14/tree.jpg" alt="tree.jpg (401×301) (leetcode.com)"></p>
-<p>输入: [1,2,3,null,5,null,4]<br>输出: [1,3,4]</p>
-<p>这题目前能想到简单点的方法就是层序遍历，层序遍历完后把每层的最后一个数存入vector中，最后返回那个vector。（注意一开始要判断root是否为空，如果为空就返回一个空的vector容器给它）</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    vector&lt;vector&lt;int&gt;&gt;v1;
-    vector&lt;int&gt;v;
-    vector&lt;int&gt; rightSideView(TreeNode* root) &#123;
-        if(!root)return v;
-        dfs(root,0);
-        for(int i&#x3D;0;i&lt;v1.size();i++)
-        &#123;
-            v.push_back(v1[i][v1[i].size()-1]);
-        &#125;
-        return v;
-    &#125;
-    void dfs(TreeNode*root,int u)
-    &#123;
-        if(!root)return;
-        if(v1.size()&lt;u+1)
-        &#123;
-            vector&lt;int&gt;v2;
-            v1.push_back(v2);
-        &#125;
-        v1[u].push_back(root-&gt;val);
-        dfs(root-&gt;left,u+1);
-        dfs(root-&gt;right,u+1);
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
                 
             </div>
             <hr/>
@@ -669,7 +642,7 @@ public:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/11/05/2021-11-05-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/05/2021-11-05-mei-ri-shua-ti-da-qia/</a>
+                    <a href="http://example.com/2021/11/07/zhou-zong-jie-2021-11-01-11-07/">http://example.com/2021/11/07/zhou-zong-jie-2021-11-01-11-07/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1146,28 +1119,29 @@ public:
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2021/11/06/2021-11-06-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/07/zhou-zong-jie-2021-11-01-11-07/">
                     <div class="card-image">
                         
-                        <img src="/images/16.jpg" class="responsive-img" alt="2021-11-06每日刷题打卡">
+                        <img src="/images/17.jpg" class="responsive-img" alt="周总结：2021-11-01——11-07">
                         
-                        <span class="card-title">2021-11-06每日刷题打卡</span>
+                        <span class="card-title">周总结：2021-11-01——11-07</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-06每日刷题打卡
+                            周总结：2021-11-01——11-07
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1180,6 +1154,7 @@ public:
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1198,23 +1173,23 @@ public:
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/11/04/2021-11-04-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/06/2021-11-06-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/14.jpg" class="responsive-img" alt="2021-11-04每日刷题打卡">
+                        <img src="/images/16.jpg" class="responsive-img" alt="2021-11-06每日刷题打卡">
                         
-                        <span class="card-title">2021-11-04每日刷题打卡</span>
+                        <span class="card-title">2021-11-06每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-04每日刷题打卡
+                            2021-11-06每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-06
                             </span>
                         <span class="publish-author">
                             
