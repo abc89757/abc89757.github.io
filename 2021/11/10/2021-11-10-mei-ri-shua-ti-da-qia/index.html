@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="2021-11-03每日刷题打卡, Hexo">
-    <meta name="description" content="2021-11-03每日刷题打卡">
+    <meta name="keywords" content="2021-11-10每日刷题打卡, Hexo">
+    <meta name="description" content="2021-11-10每日刷题打卡">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>2021-11-03每日刷题打卡 | Hexo</title>
+    <title>2021-11-10每日刷题打卡 | Hexo</title>
     <link rel="icon" type="image/png" href="/medias/comment_bg.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">2021-11-03每日刷题打卡</h1>
+                    <h1 class="description center-align post-title">2021-11-10每日刷题打卡</h1>
                 </div>
             </div>
         </div>
@@ -361,7 +361,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-11-03
+                    2021-11-10
                 </div>
                 
 
@@ -370,7 +370,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    2.9k
+                    2.5k
                 </div>
                 
 
@@ -395,62 +395,42 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="2021-11-03每日刷题打卡"><a href="#2021-11-03每日刷题打卡" class="headerlink" title="2021-11-03每日刷题打卡"></a>2021-11-03每日刷题打卡</h1><h2 id="力扣——二叉树"><a href="#力扣——二叉树" class="headerlink" title="力扣——二叉树"></a>力扣——二叉树</h2><p>昨天的前中后序遍历我们用的是递归的方法写的，今天我们改用迭代的方法。</p>
-<h4 id="144-二叉树的前序遍历"><a href="#144-二叉树的前序遍历" class="headerlink" title="144. 二叉树的前序遍历"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-preorder-traversal/">144. 二叉树的前序遍历</a></h4><p>给你二叉树的根节点 <code>root</code> ，返回它节点值的 <strong>前序</strong> 遍历。</p>
-<p><strong>示例 1：</strong></p>
-<p><img src="https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg" alt="img"></p>
-<pre class="line-numbers language-none"><code class="language-none">输入：root &#x3D; [1,null,2,3]
-输出：[1,2,3]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-
-
-<p>迭代我们需要准备一个stack容器sta来存放节点以保证能回溯，一个vector容器v来存储结果。先判断给的树root是否为空，如果为空就直接把v返回给他结束程序，如果root不为空我们就开始遍历，用while来遍历root，只要root不为NULL或sta.size()不为0就一直循环下去，while里再套入一个while，只要root不为空就一直在这个while里，每次遍历把当前节点存入sta中，把节点的val存入v中，然后root=root-&gt;left一直遍历下去。当内部的while结束时说明当前节点为空了，也就说明它的父节点没有左节点，我们把存在sta中的父节点取出赋给root，同时顶端元素出栈，把现在节点的val值存入v中，然后让当前节点往right的方向走，然后回到最开始的地方进行下一次迭代。最后迭代结束后v里就是我们要的前序遍历，返回v即可。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
+                <h1 id="2021-11-10每日刷题打卡"><a href="#2021-11-10每日刷题打卡" class="headerlink" title="2021-11-10每日刷题打卡"></a>2021-11-10每日刷题打卡</h1><h2 id="力扣——每日一题"><a href="#力扣——每日一题" class="headerlink" title="力扣——每日一题"></a>力扣——每日一题</h2><h4 id="495-提莫攻击"><a href="#495-提莫攻击" class="headerlink" title="495. 提莫攻击"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/teemo-attacking/">495. 提莫攻击</a></h4><p>在《英雄联盟》的世界中，有一个叫 “提莫” 的英雄。他的攻击可以让敌方英雄艾希（编者注：寒冰射手）进入中毒状态。</p>
+<p>当提莫攻击艾希，艾希的中毒状态正好持续 duration 秒。</p>
+<p>正式地讲，提莫在 t 发起发起攻击意味着艾希在时间区间 [t, t + duration - 1]（含 t 和 t + duration - 1）处于中毒状态。如果提莫在中毒影响结束 前 再次攻击，中毒状态计时器将会 重置 ，在新的攻击之后，中毒影响将会在 duration 秒后结束。</p>
+<p>给你一个 非递减 的整数数组 timeSeries ，其中 timeSeries[i] 表示提莫在 timeSeries[i] 秒时对艾希发起攻击，以及一个表示中毒持续时间的整数 duration 。</p>
+<p>返回艾希处于中毒状态的 总 秒数。</p>
+<p>示例 1：</p>
+<p>输入：timeSeries = [1,4], duration = 2<br>输出：4<br>解释：提莫攻击对艾希的影响如下：</p>
+<ul>
+<li>第 1 秒，提莫攻击艾希并使其立即中毒。中毒状态会维持 2 秒，即第 1 秒和第 2 秒。</li>
+<li>第 4 秒，提莫再次攻击艾希，艾希中毒状态又持续 2 秒，即第 4 秒和第 5 秒。<br>艾希在第 1、2、4、5 秒处于中毒状态，所以总中毒秒数是 4 。</li>
+</ul>
+<p>这题也太草了，看到这题时忍不住笑了。这题解释一下就是说如果艾希中毒状态结束后被攻击，那就是两次攻击中毒时间分开计算，即2*duration，如果是中毒结束前被再次攻击，那就要一起算了，即timeSeries[i]-timeSeries[i-1]+duration，此时我们也知道这道题的解法了，准备一个数ans来计算中毒总时长，计算timeSeries数组里相邻两个元素的差值，如果差值大于等于duration，那第一次攻击的有效中毒时间就是duration，加到ans上，如果是小于duration，那就说明第一次攻击的有效中毒时间就是timeSeries[i]-timeSeries[i-1]，加到ans上。注意，到了末尾时我们的循环就结束了，但最后一次攻击也是有中毒时间的，而且因为没有下一次攻击，所以最后一次攻击的中毒时间必是duration，所以我们要把ans加上duration才是正确答案（也可以一开始初始化ans时不初始为0而初始为duration），然后再返回ans。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
 public:
-    vector&lt;int&gt; preorderTraversal(TreeNode* root) &#123;
-        vector&lt;int&gt;v;
-        if(!root)return v;
-        stack&lt;TreeNode*&gt;sta;
-        while(sta.size()||root)
-        &#123;
-            while(root)
-            &#123;
-                v.push_back(root-&gt;val);
-                sta.push(root);
-                root&#x3D;root-&gt;left;
-            &#125;
-            root&#x3D;sta.top();
-            sta.pop();
-            root&#x3D;root-&gt;right;
-        &#125;
-        return v;
+    int findPoisonedDuration(vector&lt;int&gt;&amp; timeSeries, int duration) &#123;
+        int n&#x3D;timeSeries.size(),ans&#x3D;duration;
+        for(int i&#x3D;0;i&lt;n-1;i++)
+            if(timeSeries[i+1]-timeSeries[i]&gt;&#x3D;duration)
+                ans+&#x3D;duration;
+            else
+                ans+&#x3D;timeSeries[i+1]-timeSeries[i];
+        return ans;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<h4 id="94-二叉树的中序遍历"><a href="#94-二叉树的中序遍历" class="headerlink" title="94. 二叉树的中序遍历"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-inorder-traversal/">94. 二叉树的中序遍历</a></h4><p>给定一个二叉树的根节点 <code>root</code> ，返回它的 <strong>中序</strong> 遍历。</p>
-<p><strong>示例 1：</strong></p>
-<p><img src="https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg" alt="img"></p>
-<pre class="line-numbers language-none"><code class="language-none">输入：root &#x3D; [1,null,2,3]
-输出：[1,3,2]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-
-
-<p>中序遍历和前序遍历的大体步骤一样，但是while循环里的操作顺序略有不同，在while的嵌套while中，我们不往v中存节点的val值，只把节点存入sta中，然后一直往left遍历，当嵌套while结束时说明当前节点的父节点没有左节点，我们把sta的顶端元素（即父节点）赋给root，同时把顶端元素弹出，然后把当前节点的val存入v中，再把节点向right方向走，回到开头处继续迭代。最后返回v。</p>
+<h2 id="力扣——二叉搜索树"><a href="#力扣——二叉搜索树" class="headerlink" title="力扣——二叉搜索树"></a>力扣——二叉搜索树</h2><h4 id="173-二叉搜索树迭代器和剑指-Offer-II-055-二叉搜索树迭代器"><a href="#173-二叉搜索树迭代器和剑指-Offer-II-055-二叉搜索树迭代器" class="headerlink" title="173. 二叉搜索树迭代器和剑指 Offer II 055. 二叉搜索树迭代器"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-search-tree-iterator/">173. 二叉搜索树迭代器</a>和<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/kTOapQ/">剑指 Offer II 055. 二叉搜索树迭代器</a></h4><p>实现一个二叉搜索树迭代器类BSTIterator ，表示一个按中序遍历二叉搜索树（BST）的迭代器：<br>BSTIterator(TreeNode root) 初始化 BSTIterator 类的一个对象。BST 的根节点 root 会作为构造函数的一部分给出。指针应初始化为一个不存在于 BST 中的数字，且该数字小于 BST 中的任何元素。<br>boolean hasNext() 如果向指针右侧遍历存在数字，则返回 true ；否则返回 false 。<br>int next()将指针向右移动，然后返回指针处的数字。<br>注意，指针初始化为一个不存在于 BST 中的数字，所以对 next() 的首次调用将返回 BST 中的最小元素。</p>
+<p>你可以假设 next() 调用总是有效的，也就是说，当调用 next() 时，BST 的中序遍历中至少存在一个下一个数字。</p>
+<p>示例：</p>
+<p><img src="https://assets.leetcode.com/uploads/2018/12/25/bst-tree.png" alt="bst-tree.png (189×178) (leetcode.com)"></p>
+<p>输入<br>[“BSTIterator”, “next”, “next”, “hasNext”, “next”, “hasNext”, “next”, “hasNext”, “next”, “hasNext”]<br>[[[7, 3, 15, null, null, 9, 20]], [], [], [], [], [], [], [], [], []]<br>输出<br>[null, 3, 7, true, 9, true, 15, true, 20, false]</p>
+<p>解释<br>BSTIterator bSTIterator = new BSTIterator([7, 3, 15, null, null, 9, 20]);<br>bSTIterator.next();    // 返回 3<br>bSTIterator.next();    // 返回 7<br>bSTIterator.hasNext(); // 返回 True<br>bSTIterator.next();    // 返回 9<br>bSTIterator.hasNext(); // 返回 True<br>bSTIterator.next();    // 返回 15<br>bSTIterator.hasNext(); // 返回 True<br>bSTIterator.next();    // 返回 20<br>bSTIterator.hasNext(); // 返回 False</p>
+<p>这是一道实现题，要我们实现三个函数的功能，要实现这个功能，我们的迭代器要做成一条单一的链，而不是树的情况（不然next和hasNext的遍历比较麻烦），首先我们要先准备一个成员变量的树节点p作为最开始的头指针，这个节点的值因为题目要求说比所给树的所有节点都小，那我们就找这个树最小的节点-1即可，先中序遍历一遍root，用所得到的中序序列来初始化p，每次从中序序列里取一个值初始化p的right节点，以此往复。最后就得到了一条只有right的树，且这个树的节点值递增的，也就是之前所给树的中序序列。一开始p是头结点，它的下一个才是根节点，然后next就把p往right走并返回节点值即可。hasNext即判断p-&gt;right是否为空，如果为空就返回false，不为空就返回true。</p>
 <pre class="line-numbers language-none"><code class="language-none">&#x2F;**
  * Definition for a binary tree node.
  * struct TreeNode &#123;
@@ -462,11 +442,12 @@ public:
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
  * &#125;;
  *&#x2F;
-class Solution &#123;
+class BSTIterator &#123;
+private:
+    TreeNode* p;
 public:
-    vector&lt;int&gt; inorderTraversal(TreeNode* root) &#123;
+    BSTIterator(TreeNode* root) &#123;
         vector&lt;int&gt;v;
-        if(!root)return v;
         stack&lt;TreeNode*&gt;sta;
         while(sta.size()||root)
         &#123;
@@ -480,183 +461,122 @@ public:
             v.push_back(root-&gt;val);
             root&#x3D;root-&gt;right;
         &#125;
-        return v;
+        this-&gt;p&#x3D;new TreeNode(v[0]-1);
+        dfs(p-&gt;right,v,0);
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-
-
-
-<h4 id="145-二叉树的后序遍历"><a href="#145-二叉树的后序遍历" class="headerlink" title="145. 二叉树的后序遍历"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-postorder-traversal/">145. 二叉树的后序遍历</a></h4><p>给定一个二叉树，返回它的 后序 遍历。</p>
-<p>示例:</p>
-<p>输入: [1,null,2,3]<br>   1<br>    <br>     2<br>    /<br>   3 </p>
-<p>输出: [3,2,1]</p>
-<p>和前面的中序遍历也是大同小异，但我们这里事先准备的不止v和sta，还要准备一个树节点p，初始指向NULL,然后开始遍历，嵌套的while和中序遍历一样，只存节点在sta里，然后节点一直往left走，嵌套的while结束说明当前节点的父节点没有左子树，我们从sta中取出并弹出顶端元素给root，然后判断一下，现在root的right是否等于NULL或等于p，如果满足一点，那么我们把当前节点的val存入v中，并把当前节点赋给p，然后令当前节点变为NULL；如果不满足任意一点，那么我们就把当前节点在存回sta中，并让节点向right方向走。然后回到开头继续迭代，最后返回v。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    vector&lt;int&gt; postorderTraversal(TreeNode* root) &#123;
-        vector&lt;int&gt;v;
-        if(!root)return v;
-        stack&lt;TreeNode*&gt;sta;
-        TreeNode*p&#x3D;NULL;
-        while(sta.size()||root)
-        &#123;
-            while(root)
-            &#123;
-                sta.push(root);
-                root&#x3D;root-&gt;left;
-            &#125;
-            root&#x3D;sta.top();
-            sta.pop();
-            if(!root-&gt;right||root-&gt;right&#x3D;&#x3D;p)
-            &#123;
-                v.push_back(root-&gt;val);
-                p&#x3D;root;
-                root&#x3D;NULL;
-            &#125;
-            else
-            &#123;
-                sta.push(root);
-                root&#x3D;root-&gt;right;
-            &#125;
-        &#125;
-        return v;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="993-二叉树的堂兄弟节点"><a href="#993-二叉树的堂兄弟节点" class="headerlink" title="993. 二叉树的堂兄弟节点"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/cousins-in-binary-tree/">993. 二叉树的堂兄弟节点</a></h4><p>在二叉树中，根节点位于深度 0 处，每个深度为 k 的节点的子节点位于深度 k+1 处。</p>
-<p>如果二叉树的两个节点深度相同，但 父节点不同 ，则它们是一对堂兄弟节点。</p>
-<p>我们给出了具有唯一值的二叉树的根节点 root ，以及树中两个不同节点的值 x 和 y 。</p>
-<p>只有与值 x 和 y 对应的节点是堂兄弟节点时，才返回 true 。否则，返回 false。</p>
-<p>示例 1：</p>
-<p><img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/02/16/q1248-01.png" alt="q1248-01.png (304×270) (leetcode-cn.com)"></p>
-<p>输入：root = [1,2,3,4], x = 4, y = 3<br>输出：false</p>
-<p>堂兄弟的定义是：深度一样，父节点不一样。所以我们准备两个全局map容器father和mymap（不全局也可以，但dfs传参要多加这两个容器）来分别存放父节点和深度，我们用dfs函数来遍历树，dfs有五个参数，一个是当当前节点，一个是当前节点的子节点（左节点或右节点），一个是深度u（初始为0），还有两个是x和y。dfs一开始先判断当前节点是否为空，如果是就直接结束程序，如果不是就判断节点的val值等不等于x或y，如果等于就用mymap函数存下这个节点的深度u，再用father存下节点的父节点。然后我们把当前节点的左节点和右节点接着送去递归。当一切结束后，我们判断两个节点x和y的深度是否相等，如果相等判断他俩的父节点是否为同一个，如果为同一个即不是堂兄弟，如果不是则是堂兄弟。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    unordered_map&lt;int,int&gt;mymap;
-    unordered_map&lt;int,int&gt;father;
-    bool isCousins(TreeNode* root, int x, int y) &#123;
-        TreeNode* t;
-        t&#x3D;new TreeNode(200);
-        dfs(root,x,y,0,t);
-        if(mymap[x]&#x3D;&#x3D;mymap[y]&amp;&amp;father[x]!&#x3D;father[y])
-        &#123;
-            return true;
-        &#125;
-        return false;
-    &#125;
-    void dfs(TreeNode* p,int x,int y,int u,TreeNode* q)
+    void dfs(TreeNode *&amp;p,vector&lt;int&gt;v,int i)
     &#123;
-        if(mymap.size()&#x3D;&#x3D;2)return;
-        if(!p)return;
-        if(p-&gt;val&#x3D;&#x3D;x)
-        &#123;
-            mymap[x]&#x3D;u;
-            father[x]&#x3D;q-&gt;val;
-        &#125;
-        else if(p-&gt;val&#x3D;&#x3D;y)
-        &#123;
-            mymap[y]&#x3D;u;
-            father[y]&#x3D;q-&gt;val;
-        &#125;
-
-        dfs(p-&gt;left,x,y,u+1,p);
-        dfs(p-&gt;right,x,y,u+1,p);
+        if(i&gt;&#x3D;v.size())return;
+        p&#x3D;new TreeNode(v[i++]);
+        dfs(p-&gt;right,v,i);
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    
+    int next() &#123;
+        this-&gt;p&#x3D;this-&gt;p-&gt;right;
+        return this-&gt;p-&gt;val;
+    &#125;
+    
+    bool hasNext() &#123;
+        return (p-&gt;right)&#x3D;&#x3D;NULL?false:true;
+    &#125;
+&#125;;
+
+&#x2F;**
+ * Your BSTIterator object will be instantiated and called as such:
+ * BSTIterator* obj &#x3D; new BSTIterator(root);
+ * int param_1 &#x3D; obj-&gt;next();
+ * bool param_2 &#x3D; obj-&gt;hasNext();
+ *&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<h4 id="114-二叉树展开为链表"><a href="#114-二叉树展开为链表" class="headerlink" title="114. 二叉树展开为链表"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/">114. 二叉树展开为链表</a></h4><p>给你二叉树的根结点 root ，请你将它展开为一个单链表：</p>
-<p>展开后的单链表应该同样使用 TreeNode ，其中 right 子指针指向链表中下一个结点，而左子指针始终为 null 。<br>展开后的单链表应该与二叉树 先序遍历 顺序相同。</p>
+<h4 id="剑指-Offer-II-053-二叉搜索树中的中序后继"><a href="#剑指-Offer-II-053-二叉搜索树中的中序后继" class="headerlink" title="剑指 Offer II 053. 二叉搜索树中的中序后继"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/P5rCT8/">剑指 Offer II 053. 二叉搜索树中的中序后继</a></h4><p>给定一棵二叉搜索树和其中的一个节点 p ，找到该节点在树中的中序后继。如果节点没有中序后继，请返回 null 。</p>
+<p>节点 p 的后继是值比 p.val 大的节点中键值最小的节点，即按中序遍历的顺序节点 p 的下一个节点。</p>
 <p>示例 1：</p>
-<p><img src="https://assets.leetcode.com/uploads/2021/01/14/flaten.jpg" alt="flaten.jpg (1021×461) (leetcode.com)"></p>
-<p>输入：root = [1,2,5,3,4,null,6]<br>输出：[1,null,2,null,3,null,4,null,5,null,6]</p>
-<p>准备一个全局vector容器v来存放节点，注意是存节点而不是val值，不喜欢全局变量的话dfs的参数要把v也传过去比较麻烦我就直接全局设定了。之前我们写过递归求前序遍历的方法拿到这里来也是通用的，当我们把前序排序的结果存在v里后，我们把根节点的left和right都指向NULL，然后用for遍历，i=1(因为根节点已经是v[0]了)，每次把根节点的right指向v[i]，然后把root往right上走一格，注意要把left都指向NULL。最后遍历完要把最后一个节点的right指向NULL。</p>
+<p><img src="https://assets.leetcode.com/uploads/2019/01/23/285_example_1.PNG" alt="285_example_1.PNG (122×117) (leetcode.com)"></p>
+<p>输入：root = [2,1,3], p = 1<br>输出：2<br>解释：这里 1 的中序后继是 2。请注意 p 和返回值都应是 TreeNode 类型。</p>
+<p>中序遍历一遍二叉树，把他的中序序列存在vector容器v中，然后遍历v，找到所给p节点的val值，然后返回它的下一个数据，如果v中没有下一个数据就返回NULL。</p>
 <pre class="line-numbers language-none"><code class="language-none">&#x2F;**
  * Definition for a binary tree node.
  * struct TreeNode &#123;
  *     int val;
  *     TreeNode *left;
  *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;
  * &#125;;
  *&#x2F;
 class Solution &#123;
 public:
     vector&lt;TreeNode*&gt;v;
-    void dfs(TreeNode* root)
-    &#123;
-        if (!root)return;
-        else
-        &#123;
-            v.push_back(root);
-            dfs(root-&gt;left);
-            dfs(root-&gt;right);
-        &#125;
-    &#125;
-    void flatten(TreeNode* root) &#123;
-        if (!root)return;
+    TreeNode* inorderSuccessor(TreeNode* root, TreeNode* p) &#123;
         dfs(root);
-        root-&gt;left &#x3D; NULL;
-        root-&gt;right &#x3D; NULL;
-        int n &#x3D; v.size();
-        for (int i &#x3D; 1; i &lt; n; i++)
-        &#123;
-            root-&gt;right &#x3D; v[i];
-            root &#x3D; root-&gt;right;
-            root-&gt;left&#x3D;NULL;
-        &#125;
-        root-&gt;right &#x3D; NULL;
+        int n&#x3D;v.size();
+        for(int i&#x3D;0;i&lt;n;i++)
+            if(v[i]-&gt;val&#x3D;&#x3D;p-&gt;val)
+                return (i+1)&gt;&#x3D;n?NULL:v[i+1];
+        return &#123;&#125;;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    void dfs(TreeNode*root)
+    &#123;
+        if(!root)return;
+        dfs(root-&gt;left);
+        v.push_back(root);
+        dfs(root-&gt;right);
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>或者我们可以在中序遍历的时候就创建好节点，这样一来不用遍历两便中序遍历，二来不需要多余的vector容器来存中序序列。</p>
+<p>首先准备一个节点q，一开始指向NULL，拿一个bool类型flag=false来判断什么时候该拿root的val值初始化q，我们用迭代的方法中序遍历，每次比较root的值之前先判断一下flag是否为true，如果为true就拿当前值来初始化q，然后返回q结束程序。如果不为true就比较root和所给节点p的值，然后当遍历到节点值和所给节点p的值相同时，我们把flag改为true，这样我们的下一个中序序列的值就可以那来初始化q了。如果root没有下一个值了，那q仍然是NULL，会被直接返回。</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for a binary tree node.
+ * struct TreeNode &#123;
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+class Solution &#123;
+public:
+    TreeNode* inorderSuccessor(TreeNode* root, TreeNode* p) &#123;
+        TreeNode*q;
+        q&#x3D;NULL;
+        bool flag&#x3D;false;
+        stack&lt;TreeNode*&gt;sta;
+        while(root||sta.size())
+        &#123;
+            while(root)
+            &#123;
+                sta.push(root);
+                root&#x3D;root-&gt;left;
+            &#125;
+            root&#x3D;sta.top();
+            sta.pop();
+            if(flag&amp;&amp;root-&gt;val!&#x3D;num)
+            &#123;
+                q&#x3D;new TreeNode(root-&gt;val);
+                return q;
+            &#125;
+            if(root-&gt;val&#x3D;&#x3D;p-&gt;val)
+                flag&#x3D;true;
+            root&#x3D;root-&gt;right;
+        &#125;
+        return q;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<h4 id="872-叶子相似的树"><a href="#872-叶子相似的树" class="headerlink" title="872. 叶子相似的树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/leaf-similar-trees/">872. 叶子相似的树</a></h4><p>请考虑一棵二叉树上所有的叶子，这些叶子的值按从左到右的顺序排列形成一个 叶值序列 。</p>
-<p><img src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/16/tree.png" alt="tree.png (735×617) (s3-lc-upload.s3.amazonaws.com)"></p>
-<p>举个例子，如上图所示，给定一棵叶值序列为 (6, 7, 4, 9, 8) 的树。</p>
-<p>如果有两棵二叉树的叶值序列是相同，那么我们就认为它们是 叶相似 的。</p>
-<p>如果给定的两个根结点分别为 root1 和 root2 的树是叶相似的，则返回 true；否则返回 false 。</p>
-<p>示例 1：</p>
-<p><img src="https://assets.leetcode.com/uploads/2020/09/03/leaf-similar-1.jpg" alt="leaf-similar-1.jpg (1122×444) (leetcode.com)"></p>
-<p>输入：root1 = [3,5,1,6,2,9,8,null,null,7,4], root2 = [3,5,1,6,7,4,2,null,null,null,null,null,null,9,8]<br>输出：true</p>
-<p>这回没法用全局vector容器了，因为这次有两个v，如果用全局系统不知道把值插入哪个地方，所以这次老老实实传v做参数吧。</p>
-<p>准备两个vector容器v1和v2，分别存root1和root2的叶子节点，我们实现一个dfs函数（这里我们采用的是前序遍历的方法），传入树节点root和vector容器做参数，每次先判断当前节点是否为空，如果为空就结束程序，如果不为空就判断当前节点有没有子节点（left和right）如果没有就说明这个是一个叶节点，我们把这个节点的val值存入v中，并结束程序。如果这个节点不是叶子节点，那我们就把当前节点的left和right分别送去递归。当递归完后v1和v2就存好了两个数的叶子节点，先判断两个v所存元素个数是否相等，如果不相等就直接返回false，如果相等再一个个比较元素，如果有不一样的就返回false。如果都一样就返回true。</p>
+<h4 id="501-二叉搜索树中的众数"><a href="#501-二叉搜索树中的众数" class="headerlink" title="501. 二叉搜索树中的众数"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/find-mode-in-binary-search-tree/">501. 二叉搜索树中的众数</a></h4><p>给定一个有相同值的二叉搜索树（BST），找出 BST 中的所有众数（出现频率最高的元素）。</p>
+<p>假定 BST 有如下定义：</p>
+<p>结点左子树中所含结点的值小于等于当前结点的值<br>结点右子树中所含结点的值大于等于当前结点的值<br>左子树和右子树都是二叉搜索树<br>例如：<br>给定 BST [1,null,2,2],</p>
+<p>   1<br>    <br>     2<br>    /<br>   2</p>
+<p>先中序遍历一遍root，把中序序列结果存入v中，然后遍历一遍v，找到出现频率最高的数，然后再遍历一遍v，把出现频率最高的数全都存入另一个vector容器中，最后返回这个容器。</p>
 <pre class="line-numbers language-none"><code class="language-none">&#x2F;**
  * Definition for a binary tree node.
  * struct TreeNode &#123;
@@ -670,35 +590,45 @@ public:
  *&#x2F;
 class Solution &#123;
 public:
-    bool leafSimilar(TreeNode* root1, TreeNode* root2) &#123;
-        vector&lt;int&gt;v1;
-        vector&lt;int&gt;v2;
-        dfs(root1,v1);
-        dfs(root2,v2);
-        int n&#x3D;v1.size(),m&#x3D;v2.size();
-        if(n!&#x3D;m)return false;
-        for(int i&#x3D;0;i&lt;n;i++)
+    vector&lt;int&gt;mymap;
+    vector&lt;int&gt; findMode(TreeNode* root) &#123;
+        vector&lt;int&gt;v;
+        dfs(root);
+        int max&#x3D;0,num&#x3D;mymap[0],score&#x3D;0;;
+        for(auto i:mymap)
+            if(i&#x3D;&#x3D;num)
+                score++;
+            else
+            &#123;
+                max&#x3D;max&gt;score?max:score;
+                num&#x3D;i;
+                score&#x3D;1;
+            &#125;
+        max &#x3D; max &gt; score ? max : score;
+        score&#x3D;0;
+        num&#x3D;mymap[0];
+        for(auto i:mymap)
         &#123;
-            if(v1[i]!&#x3D;v2[i])return false;
+            if(i&#x3D;&#x3D;num)
+                score++;
+            else
+            &#123;
+                score&#x3D;1;
+                num&#x3D;i;
+            &#125;
+            if(score&#x3D;&#x3D;max)
+                    v.push_back(num);
         &#125;
-        return true;
+        return v;
     &#125;
-    void dfs(TreeNode* root,vector&lt;int&gt;&amp;v)
+    void dfs(TreeNode*root)
     &#123;
         if(!root)return;
-        else if(!root-&gt;left&amp;&amp;!root-&gt;right)
-        &#123;
-            v.push_back(root-&gt;val);
-            return;
-        &#125;
-        dfs(root-&gt;left,v);
-        dfs(root-&gt;right,v);
+        dfs(root-&gt;left);
+        mymap.push_back(root-&gt;val);
+        dfs(root-&gt;right);
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -726,7 +656,7 @@ public:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/11/03/2021-11-03-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/03/2021-11-03-mei-ri-shua-ti-da-qia/</a>
+                    <a href="http://example.com/2021/11/10/2021-11-10-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/10/2021-11-10-mei-ri-shua-ti-da-qia/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1203,28 +1133,29 @@ public:
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2021/11/04/2021-11-04-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/10/2021-11-10-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/14.jpg" class="responsive-img" alt="2021-11-04每日刷题打卡">
+                        <img src="/images/20.jpg" class="responsive-img" alt="2021-11-10每日刷题打卡">
                         
-                        <span class="card-title">2021-11-04每日刷题打卡</span>
+                        <span class="card-title">2021-11-10每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-04每日刷题打卡
+                            2021-11-10每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1237,6 +1168,7 @@ public:
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1255,23 +1187,23 @@ public:
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/11/02/2021-11-02-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/09/2021-11-09-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/12.jpg" class="responsive-img" alt="2021-11-02每日刷题打卡">
+                        <img src="/images/19.jpg" class="responsive-img" alt="2021-11-09每日刷题打卡">
                         
-                        <span class="card-title">2021-11-02每日刷题打卡</span>
+                        <span class="card-title">2021-11-09每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-02每日刷题打卡
+                            2021-11-09每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-09
                             </span>
                         <span class="publish-author">
                             
