@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="2021-11-02每日刷题打卡, Hexo">
-    <meta name="description" content="2021-11-02每日刷题打卡">
+    <meta name="keywords" content="2021-11-13每日刷题打卡, Hexo">
+    <meta name="description" content="2021-11-13每日刷题打卡">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>2021-11-02每日刷题打卡 | Hexo</title>
+    <title>2021-11-13每日刷题打卡 | Hexo</title>
     <link rel="icon" type="image/png" href="/medias/comment_bg.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/24.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">2021-11-02每日刷题打卡</h1>
+                    <h1 class="description center-align post-title">2021-11-13每日刷题打卡</h1>
                 </div>
             </div>
         </div>
@@ -340,6 +340,10 @@
                                 <span class="chip bg-color">每日打卡</span>
                             </a>
                         
+                            <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
+                                <span class="chip bg-color">y总算法课</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -361,7 +365,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-11-02
+                    2021-11-13
                 </div>
                 
 
@@ -370,7 +374,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    2.4k
+                    1.2k
                 </div>
                 
 
@@ -395,242 +399,37 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="2021-11-02每日刷题打卡"><a href="#2021-11-02每日刷题打卡" class="headerlink" title="2021-11-02每日刷题打卡"></a>2021-11-02每日刷题打卡</h1><h2 id="力扣——二叉树"><a href="#力扣——二叉树" class="headerlink" title="力扣——二叉树"></a>力扣——二叉树</h2><h4 id="104-二叉树的最大深度和剑指-Offer-55-I-二叉树的深度"><a href="#104-二叉树的最大深度和剑指-Offer-55-I-二叉树的深度" class="headerlink" title="104. 二叉树的最大深度和剑指 Offer 55 - I. 二叉树的深度"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/">104. 二叉树的最大深度</a>和<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/">剑指 Offer 55 - I. 二叉树的深度</a></h4><p>给定一个二叉树，找出其最大深度。</p>
-<p>二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。</p>
-<p>说明: 叶子节点是指没有子节点的节点。</p>
-<p>示例：<br>给定二叉树 [3,9,20,null,null,15,7]，</p>
-<p>​    3</p>
-<p>   / <br>  9  20<br>    /  <br>   15   7</p>
-<p>返回它的最大深度 3 。</p>
-<p>遍历树，每次对比左子树和右子树的深度，选最大的那个。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    int maxDepth(TreeNode* root) &#123;
-        if (root &#x3D;&#x3D; nullptr) return 0;
-        return max(maxDepth(root-&gt;left), maxDepth(root-&gt;right)) + 1;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="111-二叉树的最小深度"><a href="#111-二叉树的最小深度" class="headerlink" title="111. 二叉树的最小深度"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/">111. 二叉树的最小深度</a></h4><p>给定一个二叉树，找出其最小深度。</p>
-<p>最小深度是从根节点到最近叶子节点的最短路径上的节点数量。</p>
-<p>说明：叶子节点是指没有子节点的节点。</p>
+                <h1 id="2021-11-13每日刷题打卡"><a href="#2021-11-13每日刷题打卡" class="headerlink" title="2021-11-13每日刷题打卡"></a>2021-11-13每日刷题打卡</h1><h2 id="力扣——每日一题"><a href="#力扣——每日一题" class="headerlink" title="力扣——每日一题"></a>力扣——每日一题</h2><h4 id="520-检测大写字母"><a href="#520-检测大写字母" class="headerlink" title="520. 检测大写字母"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/detect-capital/">520. 检测大写字母</a></h4><p>我们定义，在以下情况时，单词的大写用法是正确的：</p>
+<p>全部字母都是大写，比如 “USA” 。<br>单词中所有字母都不是大写，比如 “leetcode” 。<br>如果单词不只含有一个字母，只有首字母大写， 比如 “Google” 。<br>给你一个字符串 word 。如果大写用法正确，返回 true ；否则，返回 false 。</p>
 <p>示例 1：</p>
-<p><img src="https://assets.leetcode.com/uploads/2020/10/12/ex_depth.jpg" alt="ex_depth.jpg (432×302) (leetcode.com)"></p>
-<p>输入：root = [3,9,20,null,null,15,7]<br>输出：2</p>
-<p>遍历树，每遍历一个结点判断一下，如果这个结点为NULL就返回0，如果这个结点left和right都为NULL，说明这个结点就是叶子结点，返回1。如果不是叶子节点，拿这个结点接着去遍历，这个结点的左子树和右子树看看哪个的深度最小，最后返回这个小的深度+1（+1是算上根节点）。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
+<p>输入：word = “USA”<br>输出：true</p>
+<p>准备两个数big_num和small_num来计算单词的大写字母数和小写字母数，遍历一遍word，每遇到一个大写字母big_num就++，反之small_num++。遍历完后进行判断，如果big_num等于word的长度，说明word全是由大写字母组成，如果small_num等于word的长度，说明全是由小写字母组成，如果small_num+1等于word的长度，且word首字母为大写，说明是开头大写其余小写的情况，这三种情况都返回true，其余情况返回false。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
 public:
-    int minDepth(TreeNode* root) &#123;
-        if(!root)return 0;
-        if(!root-&gt;left&amp;&amp;!root-&gt;right)return 1;
-        int num&#x3D;100000;
-        if(root-&gt;left!&#x3D;NULL)num&#x3D;min(minDepth(root-&gt;left),num);
-        if(root-&gt;right!&#x3D;NULL)num&#x3D;min(minDepth(root-&gt;right),num);
-        return num+1;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="222-完全二叉树的节点个数"><a href="#222-完全二叉树的节点个数" class="headerlink" title="222. 完全二叉树的节点个数"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/count-complete-tree-nodes/">222. 完全二叉树的节点个数</a></h4><p>给你一棵 完全二叉树 的根节点 root ，求出该树的节点个数。</p>
-<p>完全二叉树 的定义如下：在完全二叉树中，除了最底层节点可能没填满外，其余每层节点数都达到最大值，并且最下面一层的节点都集中在该层最左边的若干位置。若最底层为第 h 层，则该层包含 1~ 2h 个节点。</p>
-<p>示例 1：</p>
-<p><img src="https://assets.leetcode.com/uploads/2021/01/14/complete.jpg" alt="complete.jpg (372×302) (leetcode.com)"></p>
-<p>输入：root = [1,2,3,4,5,6]<br>输出：6</p>
-<p>用dfs来写树是最方便了，dfs函数一开始先判断结点是否为NULL，如果是就返回0，如果不是再判断这节点是否是叶子节点（无左节点和右节点），如果是就只记此处有一个节点（return 1)。如果不是就递归调用dfs本身，把这个节点的左节点和右节点当做参数送去遍历，把结果相加后再＋1返回(+1是为了算上自己本身的节点)。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    int countNodes(TreeNode* root) &#123;
-        if(!root)return 0;
-        return dfs(root-&gt;left)+dfs(root-&gt;right)+1;
-    &#125;
-    int dfs(TreeNode *p)
-    &#123;
-        if(!p)return 0;
-        else if(!p-&gt;left&amp;&amp;!p-&gt;right)return 1;
-        return dfs(p-&gt;left)+dfs(p-&gt;right)+1;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="572-另一棵树的子树"><a href="#572-另一棵树的子树" class="headerlink" title="572. 另一棵树的子树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/subtree-of-another-tree/">572. 另一棵树的子树</a></h4><p>给你两棵二叉树 root 和 subRoot 。检验 root 中是否包含和 subRoot 具有相同结构和节点值的子树。如果存在，返回 true ；否则，返回 false 。</p>
-<p>二叉树 tree 的一棵子树包括 tree 的某个节点和这个节点的所有后代节点。tree 也可以看做它自身的一棵子树。</p>
-<p>示例 1：</p>
-<p><img src="https://assets.leetcode.com/uploads/2021/04/28/subtree1-tree.jpg" alt="subtree1-tree.jpg (532×400) (leetcode.com)"></p>
-<p>输入：root = [3,4,5,1,2], subRoot = [4,1,2]<br>输出：true</p>
-<p>判断root中有subRoot的条件是：root和subRoot相等，或subRoot是root的一个左子树，或subRoot是root的一个右子树。而判断root和subRoot相等的条件是：root和subRoot的val值相等，且root的左子树和subRoot的左子树的val值相等，且root的右子树和subRoot的右子树的val值相等。所以我们要写两个递归函数，一个是判断root中有subRoot的dfs函数，还有一个是判断root和subRoot相等的check函数。</p>
-<p>dfs的实现是，先判断当前节点是否为NULL，如果是说明不与subRoot本身相等（subRoot本身至少有一个节点），然后用check来判断当前节点是否和subRoot相等，判断subRoot是否是root的左子树或右子树，只要这三者有一个为true那就为true；</p>
-<p>check的实现是，判断当前节点和subRoot是否都为NULL（我们传递的参数有可能是subRoot的子节点，所以会出现subRoot为空的情况），如果都为空说明相等返回true，然后判断当前节点和subRoot是否有一个为空，如果有就返回false，判断当前节点的val和subRoot的val是否相等，如果不相等返回false，如果相等把当前节点的左节点和subRoot的左节点拿去下一次判断，再把当前节点的右节点和subRoot的右节点拿去下一次判断，两者只要有一个不为true那就都不为true。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    bool isSubtree(TreeNode* root, TreeNode* subRoot) &#123;
-        return dfs(root,subRoot);
-    &#125;
-    bool dfs(TreeNode*p,TreeNode*q)
-    &#123;
-        if(!p)return false;
-
-        return check(p,q)||dfs(p-&gt;left,q)||dfs(p-&gt;right,q);
-    &#125;
-    bool check(TreeNode*p,TreeNode*q)
-    &#123;
-        if(!p&amp;&amp;!q)return true;
-        if(!p&amp;&amp;q||p&amp;&amp;!q||p-&gt;val!&#x3D;q-&gt;val)return false;
-        return check(p-&gt;left,q-&gt;left)&amp;&amp;check(p-&gt;right,q-&gt;right);
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="144-二叉树的前序遍历"><a href="#144-二叉树的前序遍历" class="headerlink" title="144. 二叉树的前序遍历"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-preorder-traversal/">144. 二叉树的前序遍历</a></h4><p>给你二叉树的根节点 <code>root</code> ，返回它节点值的 <strong>前序</strong> 遍历。</p>
-<p><strong>示例 1：</strong></p>
-<p><img src="https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg" alt="img"></p>
-<pre class="line-numbers language-none"><code class="language-none">输入：root &#x3D; [1,null,2,3]
-输出：[1,2,3]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-
-
-<p>前序遍历：先从根节点开始，然后到左节点，再到右节点。</p>
-<p>我们准备一个vector容器v来存放遍历顺序，用dfs来遍历树，dfs的实现是：先判断当前节点是否为空，如果为空就结束程序，如果不为空就先把当前节点的值存入v中，然后把节点的左子树先送去dfs下一次递归，再把右子树送去下一次递归。当递归完后前序排列的顺序就都存在v中了，返回v即可。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    vector&lt;int&gt; preorderTraversal(TreeNode* root) &#123;
-        vector&lt;int&gt;v;
-        dfs(root,v);
-        return v;
-    &#125;
-    void dfs(TreeNode* p,vector&lt;int&gt;&amp; v)
-    &#123;
-        if(!p)return;
-        else
-        &#123;
-            v.push_back(p-&gt;val);
-            dfs(p-&gt;left,v);
-            dfs(p-&gt;right,v);
-        &#125;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="94-二叉树的中序遍历"><a href="#94-二叉树的中序遍历" class="headerlink" title="94. 二叉树的中序遍历"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-inorder-traversal/">94. 二叉树的中序遍历</a></h4><p>给定一个二叉树的根节点 <code>root</code> ，返回它的 <strong>中序</strong> 遍历。</p>
-<p><strong>示例 1：</strong></p>
-<p><img src="https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg" alt="img"></p>
-<pre class="line-numbers language-none"><code class="language-none">输入：root &#x3D; [1,null,2,3]
-输出：[1,3,2]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-
-
-<p>中序遍历：先从左节点开始，然后到跟节点，再到右节点。</p>
-<p>我们准备一个vector容器v来存放遍历顺序，用dfs来遍历树，dfs的实现是：先判断当前节点是否为空，如果为空就结束程序，如果不为空就先把节点的左子树先送去dfs下一次递归，然后把当前节点的值存入v中，再把右子树送去下一次递归。当递归完后中序排列的顺序就都存在v中了，返回v即可。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    vector&lt;int&gt; inorderTraversal(TreeNode* root) &#123;
-        vector&lt;int&gt;v;
-        dfs(root,v);
-        return v;
+    bool detectCapitalUse(string word) &#123;
+        int n&#x3D;word.size(),big_num&#x3D;0,small_num&#x3D;0;
+        for(auto i:word)
+            if(i&gt;&#x3D;97&amp;&amp;i&lt;&#x3D;122)
+                small_num++;
+            else
+                big_num++;
+        if(n&#x3D;&#x3D;big_num)return true;
+        else if(n&#x3D;&#x3D;small_num)return true;
+        else if(small_num+1&#x3D;&#x3D;n&amp;&amp;word[0]&gt;&#x3D;65&amp;&amp;word[0]&lt;&#x3D;90)return true;
+        return false;
     &#125;   
-    void dfs(TreeNode* p,vector&lt;int&gt;&amp; v)
-    &#123;
-        if(!p)return;
-        else
-        &#123;
-            dfs(p-&gt;left,v);
-            v.push_back(p-&gt;val);
-            dfs(p-&gt;right,v);
-        &#125;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<h4 id="145-二叉树的后序遍历"><a href="#145-二叉树的后序遍历" class="headerlink" title="145. 二叉树的后序遍历"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-postorder-traversal/">145. 二叉树的后序遍历</a></h4><p>给定一个二叉树，返回它的 后序 遍历。</p>
-<p>示例:</p>
-<p>输入: [1,null,2,3]<br>   1<br>    <br>     2<br>    /<br>   3 </p>
-<p>输出: [3,2,1]</p>
-<p>后序遍历：先从左节点开始，然后到右节点，再到跟节点。</p>
-<p>我们准备一个vector容器v来存放遍历顺序，用dfs来遍历树，dfs的实现是：先判断当前节点是否为空，如果为空就结束程序，如果不为空就先把节点的左子树先送去dfs下一次递归，然后把右子树送去下一次递归，再把当前节点的值存入v中。当递归完后后序排列的顺序就都存在v中了，返回v即可。</p>
+<h2 id="力扣——二叉搜索树"><a href="#力扣——二叉搜索树" class="headerlink" title="力扣——二叉搜索树"></a>力扣——二叉搜索树</h2><h4 id="653-两数之和-IV-输入-BST和剑指-Offer-II-056-二叉搜索树中两个节点之和"><a href="#653-两数之和-IV-输入-BST和剑指-Offer-II-056-二叉搜索树中两个节点之和" class="headerlink" title="653. 两数之和 IV - 输入 BST和剑指 Offer II 056. 二叉搜索树中两个节点之和"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/two-sum-iv-input-is-a-bst/">653. 两数之和 IV - 输入 BST</a>和<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/opLdQZ/">剑指 Offer II 056. 二叉搜索树中两个节点之和</a></h4><p>给定一个二叉搜索树 root 和一个目标结果 k，如果 BST 中存在两个元素且它们的和等于给定的目标结果，则返回 true。</p>
+<p>示例 1：</p>
+<p><img src="https://assets.leetcode.com/uploads/2020/09/21/sum_tree_1.jpg" alt="sum_tree_1.jpg (562×322) (leetcode.com)"></p>
+<p>输入: root = [5,3,6,2,4,null,7], k = 9<br>输出: true</p>
+<p>中序遍历root，序列存入vector中，然后用双指针的方法来判断是否有需要的结果。</p>
+<p>设定两个指针，一个left=0，一个right=v.size()-1。while循环遍历，当l不小于r时结束循环，每次判断l+r的大小，如果大于目标值，r–；如果小于目标值，l++；如果等于目标值，返回true。while结束后，说明没有等于目标值的情况，直接返回false即可。</p>
 <pre class="line-numbers language-none"><code class="language-none">&#x2F;**
  * Definition for a binary tree node.
  * struct TreeNode &#123;
@@ -644,28 +443,76 @@ public:
  *&#x2F;
 class Solution &#123;
 public:
-    vector&lt;int&gt; postorderTraversal(TreeNode* root) &#123;
-        vector&lt;int&gt;v;
-        dfs(root,v);
-        return v;
-    &#125;
-    void dfs(TreeNode*p,vector&lt;int&gt;&amp; v)
-    &#123;
-        if(!p)return;
-        else
+    vector&lt;int&gt;v;
+    bool findTarget(TreeNode* root, int k) &#123;
+        dfs(root);
+        int l&#x3D;0,r&#x3D;v.size()-1;
+        while(l&lt;r)
         &#123;
-            dfs(p-&gt;left,v);
-            dfs(p-&gt;right,v);
-            v.push_back(p-&gt;val);
+            if(v[l]+v[r]&gt;k)
+                r--;
+            else if(v[l]+v[r]&lt;k)
+                l++;
+            else if(v[l]+v[r]&#x3D;&#x3D;k)
+                return true;
         &#125;
+        return false;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    void dfs(TreeNode* root)
+    &#123;
+        if(!root)return;
+        dfs(root-&gt;left);
+        v.push_back(root-&gt;val);
+        dfs(root-&gt;right);
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<p>这三个遍历只是改变了在v中插入值、传左子树递归、传右子树递归的顺序而已。本质上来说是一模一样的。</p>
+<h2 id="AcWing——算法基础"><a href="#AcWing——算法基础" class="headerlink" title="AcWing——算法基础"></a>AcWing——算法基础</h2><h4 id="793-高精度乘法-AcWing题库"><a href="#793-高精度乘法-AcWing题库" class="headerlink" title="793. 高精度乘法 - AcWing题库"></a><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/795/">793. 高精度乘法 - AcWing题库</a></h4><p>给定两个非负整数（不含前导 0） A 和 B，请你计算 A×B 的值。</p>
+<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>共两行，第一行包含整数 A，第二行包含整数 BB。</p>
+<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>共一行，包含 A×B 的值。</p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤A的长度≤100000<br>0≤B≤10000</p>
+<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre class="line-numbers language-none"><code class="language-none">2
+3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre class="line-numbers language-none"><code class="language-none">6<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<p>跟高精度的加法类似，不过这里要存入vector的只有a，因为b最大只有10000，不用拆开存到vector中。所以我们把a设置成字符串存到vector容器v中（也是倒着存），b就设置成int类型就可以。开始运算，准备存储结果的C和一个整型t=0，每次A的各位数字都要直接乘上b，而不是像加减法那样一位一位的来，把A[i] * b加到t上，然后往C中插入数据，不过我们插入的是t%10，因为乘法可能出现大于10的情况，我们就取t的余数就行，然后把t/10，这样t此时剩下的数就是下一次的进位了（比如计算3* 4=12，C存的就是12%10=2，然后t/10=1，这样下次的运算就是进位1，所以我们前面说要把A[i] * b加到t上，这是考虑进位的情况）。循环结束后判断t是否为0，不为0就继续往C中插入数据知道t为0位置。注意要判断一下前导0，即如果C的末尾元素是0，则要把0去掉。最后把c输出即可。</p>
+<pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;
+using namespace std;
+#include&lt;vector&gt;
+
+vector&lt;int&gt; mul(vector&lt;int&gt;&amp;A,int b)
+&#123;
+    vector&lt;int&gt;C;
+    int t&#x3D;0;
+    for(int i&#x3D;0;i&lt;A.size()||t;i++)
+    &#123;
+        if(i&lt;A.size())t+&#x3D;A[i]*b;
+        C.push_back(t%10);
+        t&#x2F;&#x3D;10;
+    &#125;
+    while(C.size()&gt;1&amp;&amp;!C.back())C.pop_back();
+    return C;
+&#125;
+
+int main()
+&#123;
+    int b;
+    string a;
+    vector&lt;int&gt;A;
+    cin&gt;&gt;a&gt;&gt;b;
+    for(int i&#x3D;a.size()-1;i&gt;&#x3D;0;i--)A.push_back(a[i]-&#39;0&#39;);
+    auto C&#x3D;mul(A,b);
+    for(int i&#x3D;C.size()-1;i&gt;&#x3D;0;i--)cout&lt;&lt;C[i];
+    return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -692,7 +539,7 @@ public:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/11/02/2021-11-02-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/02/2021-11-02-mei-ri-shua-ti-da-qia/</a>
+                    <a href="http://example.com/2021/11/13/2021-11-13-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/13/2021-11-13-mei-ri-shua-ti-da-qia/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -732,6 +579,10 @@ public:
                             
                                 <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                                     <span class="chip bg-color">每日打卡</span>
+                                </a>
+                            
+                                <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
+                                    <span class="chip bg-color">y总算法课</span>
                                 </a>
                             
                         </div>
@@ -1169,28 +1020,29 @@ public:
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2021/11/03/2021-11-03-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/13/2021-11-13-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/13.jpg" class="responsive-img" alt="2021-11-03每日刷题打卡">
+                        <img src="/images/24.jpg" class="responsive-img" alt="2021-11-13每日刷题打卡">
                         
-                        <span class="card-title">2021-11-03每日刷题打卡</span>
+                        <span class="card-title">2021-11-13每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-03每日刷题打卡
+                            2021-11-13每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1203,11 +1055,16 @@ public:
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
                     <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                         <span class="chip bg-color">每日打卡</span>
+                    </a>
+                    
+                    <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
+                        <span class="chip bg-color">y总算法课</span>
                     </a>
                     
                 </div>
@@ -1221,23 +1078,23 @@ public:
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/11/01/2021-11-01-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/12/2021-11-12-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/11.jpg" class="responsive-img" alt="2021-11-01每日刷题打卡">
+                        <img src="/images/22.jpg" class="responsive-img" alt="2021-11-12每日刷题打卡">
                         
-                        <span class="card-title">2021-11-01每日刷题打卡</span>
+                        <span class="card-title">2021-11-12每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-01每日刷题打卡
+                            2021-11-12每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-12
                             </span>
                         <span class="publish-author">
                             
