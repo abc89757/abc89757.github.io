@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="2021-11-17每日刷题打卡, Hexo">
-    <meta name="description" content="2021-11-17每日刷题打卡">
+    <meta name="keywords" content="2021-11-19每日刷题打卡, Hexo">
+    <meta name="description" content="2021-11-19每日刷题打卡">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>2021-11-17每日刷题打卡 | Hexo</title>
+    <title>2021-11-19每日刷题打卡 | Hexo</title>
     <link rel="icon" type="image/png" href="/medias/comment_bg.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/28.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/30.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">2021-11-17每日刷题打卡</h1>
+                    <h1 class="description center-align post-title">2021-11-19每日刷题打卡</h1>
                 </div>
             </div>
         </div>
@@ -340,10 +340,6 @@
                                 <span class="chip bg-color">每日打卡</span>
                             </a>
                         
-                            <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                                <span class="chip bg-color">y总算法课</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -365,7 +361,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-11-17
+                    2021-11-19
                 </div>
                 
 
@@ -374,7 +370,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    2k
+                    1.4k
                 </div>
                 
 
@@ -399,155 +395,157 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="2021-11-17每日刷题打卡"><a href="#2021-11-17每日刷题打卡" class="headerlink" title="2021-11-17每日刷题打卡"></a>2021-11-17每日刷题打卡</h1><h2 id="力扣——每日一题"><a href="#力扣——每日一题" class="headerlink" title="力扣——每日一题"></a>力扣——每日一题</h2><h4 id="318-最大单词长度乘积"><a href="#318-最大单词长度乘积" class="headerlink" title="318. 最大单词长度乘积"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/maximum-product-of-word-lengths/">318. 最大单词长度乘积</a></h4><p>给定一个字符串数组 words，找到 length(word[i]) * length(word[j]) 的最大值，并且这两个单词不含有公共字母。你可以认为每个单词只包含小写字母。如果不存在这样的两个单词，返回 0。</p>
-<p>示例 1:</p>
-<p>输入: [“abcw”,”baz”,”foo”,”bar”,”xtfn”,”abcdef”]<br>输出: 16<br>解释: 这两个单词为 “abcw”, “xtfn”。</p>
-<p>这题我用了两个方法，第一个是几分钟前还不会位运算的本笨比写的暴力方法，第二个是稍稍学习了下位运算的聪明的笨比写的较轻松的方法。</p>
-<p>第一个：准备一个以map容器为元素的vector容器v（即vector&lt;map&lt;char,int&gt;&gt;)，还有一个数max来存最大值（初始化为0），遍历words数组，把各个单词的组成情况用map&lt;char,int&gt;容器存储起来插入到v中，等所有的单词都遍历完后开始下一轮遍历，遍历v容器，先拿第一个元素和剩下所有元素比较，再拿第二个元素和剩下所有元素比较…………以此往复，(比较方式是用for遍历26个字母，因为前面我们用map存下了各个单词的组成状况，所以这里我们用，map[‘a’]或map[‘b’]这样的方式就可以知道这字母的数为多少，假如一个单词为look，那么map[l]=1,map[o]=2，如果没有这个字母那就是为0，比如map[a]=0……)。然后我们比较同时比较两个单词的组成情况，判断一下有没有出现map1[]!=0&amp;&amp;map2[]!=0的情况，如果有就说明这两个单词有重复的字母，不满足条件，我们直接去比较下一对。如果对比结束了发现没有重复的字母，那我们把两个单词的长度相乘，和max对比，大于max就把乘积赋给max，小于则不管。最后一切遍历结束后返回max即可。</p>
+                <h1 id="2021-11-19每日刷题打卡"><a href="#2021-11-19每日刷题打卡" class="headerlink" title="2021-11-19每日刷题打卡"></a>2021-11-19每日刷题打卡</h1><h2 id="力扣——每日一题"><a href="#力扣——每日一题" class="headerlink" title="力扣——每日一题"></a>力扣——每日一题</h2><h4 id="397-整数替换"><a href="#397-整数替换" class="headerlink" title="397. 整数替换"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/integer-replacement/">397. 整数替换</a></h4><p>给定一个正整数 n ，你可以做如下操作：</p>
+<p>如果 n 是偶数，则用 n / 2替换 n 。<br>如果 n 是奇数，则可以用 n + 1或n - 1替换 n 。<br>n 变为 1 所需的最小替换次数是多少？</p>
+<p>示例 1：</p>
+<p>输入：n = 8<br>输出：3<br>解释：8 -&gt; 4 -&gt; 2 -&gt; 1</p>
+<p>我们可以用枚举的情况来计算操作数，这就相当于一个二叉树，只要n不为1，树就向下延伸，当n为1时就是叶子节点了，然后就开始找最小深度即可。</p>
+<p>n为偶数时我们只能/2，分支在n为奇数时该-1还是+1，我们利用二叉树的想法，如果n是偶数就除于2然后送去下次递归，如果是奇数就n+1或n-1送去递归。但有一点问题，当n为2^32-1时，我们+1会直接爆内存，所以我们把两步步骤合起来，比较+1或-1后n就是偶数了，直接/2，那我们就把这两步和一起，众所周知，整数除法是向下取整的，所以我们也不用减一了直接/2就行，至于加一我们可以先除然后再加一，比如7+1再/2是4，我们直接/2+1也是4。每次n为偶数时我们直接记上一次步骤然后把n/2送去递归，为奇数我们就记上两次步骤然后分别送n/2-1和n/2去递归，取两者的最小值，最后递归全部结束时，得到的即时最少的步骤数。</p>
 <pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
 public:
-    int maxProduct(vector&lt;string&gt;&amp; words) &#123;
-        vector&lt;unordered_map&lt;char, int&gt;&gt;v;
-        int max_len &#x3D; 0;
-        for (auto i : words)
-        &#123;
-            unordered_map&lt;char, int&gt;mymap;
-            for (auto j : i)
-                mymap[j]++;
-            v.push_back(mymap);
-        &#125;
-        int n &#x3D; v.size(), l &#x3D; 0, r &#x3D; 1;
-        bool flag &#x3D; true;
-        while(l&lt;n)
-        &#123;
-            r&#x3D;0;
-            while (r &lt; n)
-            &#123;
-                
-                for (char i &#x3D; &#39;a&#39;; i &lt;&#x3D; &#39;z&#39;; i++)
-                &#123;
-                    if (v[l][i] !&#x3D; 0 &amp;&amp; v[r][i] !&#x3D; 0)
-                    &#123;
-                        flag &#x3D; false;
-                        break;
-                    &#125;
-                &#125;
-                int num &#x3D;  words[l].size() * words[r].size();
-                if (flag)
-                    max_len &#x3D; max(max_len,num);
-                flag &#x3D; true;
-                r++;
-            &#125;
-            l++;
-        &#125;
-        return max_len;
+    int integerReplacement(int n) &#123;
+        if(n&#x3D;&#x3D;1)return 0;
+        if(n%2&#x3D;&#x3D;0)return 1+integerReplacement(n&#x2F;2);
+        return 2+min(integerReplacement(n&#x2F;2+1),integerReplacement(n&#x2F;2));
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>第二个是位运算，上面的方法我们是分析了一个单词的组成，比方拿look来说是有一个l、两个o、三个k组成的。但我们其实并不需要知道它的组成，我们只需要知道这个字母有没有在这个单词里出现过就行。那我们可以用二进制数的方式来存一个字母是否在单词里出现，因为二进制只用0和1，那么我们可以设定一个26位长的二进制数，即一开始是26个0（000000000……00）哪个字母出现了就把对应的数从0变成1，比如a就是把第一个0变成1即可，然后我们把这个二进制数存入vector里即可（比起上面的vector里存map容器，这里存的只是一个int，方便很多）。到时候比较，我们只需要用到&amp;即可，&amp;的功能是比较两个二进制数，如果两边都为1才为1，比如两个二进制数0010和0110，除了第二位都为1以外，其余位置要么只有一个1，要么都为0，所以运算后的结果为0010（转换成bool就是true），如果一个1都没有就直接是0（转换成bool就是false），我们可以用这个方法来判断单词是否有相同的地方，比如单词abc和aef就是0111和00110001，运算后为0001，说明有相同的，如果是ab和cd，就是0011和1100，运算后为0，说明没有相同的，然后我们在计算然后取最大值即可。</p>
-<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+
+
+
+
+<h4 id="236-二叉树的最近公共祖先"><a href="#236-二叉树的最近公共祖先" class="headerlink" title="236. 二叉树的最近公共祖先"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/">236. 二叉树的最近公共祖先</a></h4><p>给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。</p>
+<p>百度百科中最近公共祖先的定义为：“对于有根树 T 的两个节点 p、q，最近公共祖先表示为一个节点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”</p>
+<p>示例 1：</p>
+<p><img src="https://assets.leetcode.com/uploads/2018/12/14/binarytree.png" alt="binarytree.png (200×190) (leetcode.com)"></p>
+<p>输入：root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1<br>输出：3<br>解释：节点 5 和节点 1 的最近公共祖先是节点 3 。</p>
+<p>送root去递归，每次先判断root是否为空，为空就返回root，然后创建两个节点，一个l判断左子树中有没有p或q的节点，如果有，把拿个节点赋给l，另一个节点r判断右子树。然后判断，如果l为空就返回r节点，如果r为空就返回l节点，如果都不为空说明当前的root就是最近祖先。返回即可。</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for a binary tree node.
+ * struct TreeNode &#123;
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+class Solution &#123;
 public:
-    int maxProduct(vector&lt;string&gt;&amp; words) &#123;
-        vector&lt;int&gt;v;
-        for(auto i:words)
-        &#123;
-            int maxk&#x3D;0;
-            for(auto j:i)
-            &#123;
-                maxk |&#x3D; 1&lt;&lt; (j-&#39;a&#39;);
-            &#125;
-            v.push_back(maxk);
-        &#125;
-        int n&#x3D;v.size(),max_num&#x3D;0;;
-        for(int i&#x3D;0;i&lt;n;i++)
-        &#123;
-            
-            for(int j&#x3D;i+1;j&lt;n;j++)
-            &#123;
-                int num&#x3D;words[i].size()*words[j].size();
-                if(!(v[i]&amp;v[j]))
-                    max_num&#x3D;max(max_num,num);
-                else continue;
-            &#125;
-        &#125;
-        return max_num;
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) &#123;
+        if(!root||root-&gt;val&#x3D;&#x3D;p-&gt;val||root-&gt;val&#x3D;&#x3D;q-&gt;val)return root;
+        TreeNode*l&#x3D;lowestCommonAncestor(root-&gt;left,p,q);
+        TreeNode*r&#x3D;lowestCommonAncestor(root-&gt;right,p,q);
+        if(!r)return l;
+        if(!l)return r;
+        return root;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<h2 id="AcWing——算法基础"><a href="#AcWing——算法基础" class="headerlink" title="AcWing——算法基础"></a>AcWing——算法基础</h2><h4 id="40-顺时针打印矩阵-AcWing题库"><a href="#40-顺时针打印矩阵-AcWing题库" class="headerlink" title="40. 顺时针打印矩阵 - AcWing题库"></a><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/39/">40. 顺时针打印矩阵 - AcWing题库</a></h4><p>输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字。</p>
-<h4 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h4><pre class="line-numbers language-none"><code class="language-none">输入：
-[
-  [1, 2, 3, 4],
-  [5, 6, 7, 8],
-  [9,10,11,12]
-]
+<h4 id="226-翻转二叉树"><a href="#226-翻转二叉树" class="headerlink" title="226. 翻转二叉树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/invert-binary-tree/">226. 翻转二叉树</a></h4><p>翻转一棵二叉树。</p>
+<p><strong>示例：</strong></p>
+<p>输入：</p>
+<pre class="line-numbers language-none"><code class="language-none">     4
+   &#x2F;   \
+  2     7
+ &#x2F; \   &#x2F; \
+1   3 6   9<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-输出：[1,2,3,4,8,12,11,10,9,5,6,7]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>输出：</p>
+<pre class="line-numbers language-none"><code class="language-none">     4
+   &#x2F;   \
+  7     2
+ &#x2F; \   &#x2F; \
+9   6 3   1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
-<p>我们从x=0,y=0处开始逐步把数存入数组里，准备四个方向：上（-1，0），右（0，1），下（1，0），左（0，-1），每次遍历的时候按照方向xy坐标的不同加在我们遍历的xy处就可以达到顺时针遍历，每当遇到边界或是到了之前的位置（转了一圈）就转方向。</p>
-<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+<p>递归遍历root，每次把左右子树交换即可。</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for a binary tree node.
+ * struct TreeNode &#123;
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+class Solution &#123;
 public:
-    vector&lt;int&gt; printMatrix(vector&lt;vector&lt;int&gt; &gt; matrix) &#123;
-        int n&#x3D;matrix.size();
-        vector&lt;int&gt;v;
-        if(!n)return v;
-        int m&#x3D;matrix[0].size();
-        vector&lt;vector&lt;bool&gt;&gt;st(n,vector&lt;bool&gt;(m,false));
-        int dx[]&#x3D;&#123;-1,0,1,0&#125;,dy[]&#x3D;&#123;0,1,0,-1&#125;;
-        int x&#x3D;0,y&#x3D;0,d&#x3D;1;
-        for(int i&#x3D;0;i&lt;n*m;i++)
+    TreeNode* invertTree(TreeNode* root) &#123;
+        if(!root)return root;
+        TreeNode*p&#x3D;root-&gt;left;
+        root-&gt;left&#x3D;root-&gt;right;
+        root-&gt;right&#x3D;p;
+        invertTree(root-&gt;left);
+        invertTree(root-&gt;right);
+        return root;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h4 id="117-填充每个节点的下一个右侧节点指针-II和116-填充每个节点的下一个右侧节点指针"><a href="#117-填充每个节点的下一个右侧节点指针-II和116-填充每个节点的下一个右侧节点指针" class="headerlink" title="117. 填充每个节点的下一个右侧节点指针 II和116. 填充每个节点的下一个右侧节点指针"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node-ii/">117. 填充每个节点的下一个右侧节点指针 II</a>和<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/">116. 填充每个节点的下一个右侧节点指针</a></h4><p>（116给的是完全二叉树，比这题简单一点，但我做法都是一样的，两题都适用）</p>
+<p>给定一个二叉树</p>
+<p>struct Node {<br>  int val;<br>  Node *left;<br>  Node *right;<br>  Node *next;<br>}<br>填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。</p>
+<p>初始状态下，所有 next 指针都被设置为 NULL。</p>
+<p>示例：</p>
+<p><img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/02/15/117_sample.png" alt="117_sample.png (1058×361) (leetcode-cn.com)"></p>
+<p>输入：root = [1,2,3,4,5,null,7]<br>输出：[1,#,2,3,#,4,5,7,#]<br>解释：给定二叉树如图 A 所示，你的函数应该填充它的每个 next 指针，以指向其下一个右侧节点，如图 B 所示。序列化输出按层序遍历顺序（由 next 指针连接），’#’ 表示每层的末尾。</p>
+<p>层序遍历，每次把当前节点的next指针指向同一层的下一个节点，如果没有下一个节点就指向NULL。</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;*
+&#x2F;&#x2F; Definition for a Node.
+class Node &#123;
+public:
+    int val;
+    Node* left;
+    Node* right;
+    Node* next;
+
+    Node() : val(0), left(NULL), right(NULL), next(NULL) &#123;&#125;
+
+    Node(int _val) : val(_val), left(NULL), right(NULL), next(NULL) &#123;&#125;
+
+    Node(int _val, Node* _left, Node* _right, Node* _next)
+        : val(_val), left(_left), right(_right), next(_next) &#123;&#125;
+&#125;;
+*&#x2F;
+
+class Solution &#123;
+public:
+    Node* connect(Node* root) &#123;
+        if(!root)return root;
+        queue&lt;Node*&gt;que;
+        que.push(root);
+        while(que.size())
         &#123;
-            v.push_back(matrix[x][y]);
-            st[x][y]&#x3D;true;
-            int a&#x3D;x+dx[d],b&#x3D;y+dy[d];
-            if(a&gt;&#x3D;n||a&lt;0||b&lt;0||b&gt;&#x3D;m||st[a][b])
+            int len&#x3D;que.size();
+            Node*p&#x3D;new Node(-1);
+            for(int i&#x3D;0;i&lt;len;i++)
             &#123;
-                d&#x3D;(d+1)%4;
-                a&#x3D;x+dx[d],b&#x3D;y+dy[d];
+                p-&gt;next&#x3D;que.front();
+                p&#x3D;que.front();
+                if(que.front()-&gt;left)que.push(que.front()-&gt;left);
+                if(que.front()-&gt;right)que.push(que.front()-&gt;right);
+                que.pop();
             &#125;
-            x&#x3D;a,y&#x3D;b;
+            p-&gt;next&#x3D;NULL;
         &#125;
-        return v;
+        return root;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
-
-<h4 id="801-二进制中1的个数-AcWing题库"><a href="#801-二进制中1的个数-AcWing题库" class="headerlink" title="801. 二进制中1的个数 - AcWing题库"></a><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/803/">801. 二进制中1的个数 - AcWing题库</a></h4><p>给定一个长度为 n 的数列，请你求出数列中每个数的二进制表示中 1 的个数。</p>
-<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>第一行包含整数 n。</p>
-<p>第二行包含 n 个整数，表示整个数列。</p>
-<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>共一行，包含 n 个整数，其中的第 i 个数表示数列中的第 i 个数的二进制表示中 1 的个数。</p>
-<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤n≤100000<br>0≤数列中元素的值≤10^9</p>
-<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre class="line-numbers language-none"><code class="language-none">5
-1 2 3 4 5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-
-
-<p>这里我们用到的是位运算的知识点，采用的是右移运算符（&gt;&gt;)，使用格式是a&gt;&gt;b;意思是把数字a的二进制数向右移动b位，比如7&gt;&gt;2，就是把5的二进制数向右移动2位，7二进制是0111，向右移动两位就变成了01，我们就是采用这个方式，让一个数的二进制数上各个位的数移动到右边第一位，然后和&amp;1，&amp;是按位与的意思，它的意思是两个数的二进制数对应位置上都为1才为1，比如5&amp;7就是0101&amp;0111，运算结果就是0101，我们把右移的数和1进行&amp;运算，就是只看一个数的最右边位置上是不是1，如果是1就就计算有一个1，然后再右移，在计算，最后右移完后就可以知道这个数的二进制有几个1了。（我们这里从32开始右移，移到1停止，从32开始是因为int类型是32字节，即二进制有32位数）</p>
-<pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;
-using namespace std;
-int main()
-&#123;
-    int m,num,math;
-    cin&gt;&gt;m;
-    while(m--)
-    &#123;
-        math&#x3D;0;
-        cin&gt;&gt;num;
-        for(int i&#x3D;32;i&gt;0;i--)
-            if(num&gt;&gt;i&amp;1)math++;
-        cout&lt;&lt;math&lt;&lt;&quot; &quot;;
-    &#125;
-    return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -575,7 +573,7 @@ int main()
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/11/17/2021-11-17-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/17/2021-11-17-mei-ri-shua-ti-da-qia/</a>
+                    <a href="http://example.com/2021/11/19/2021-11-19-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/19/2021-11-19-mei-ri-shua-ti-da-qia/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -615,10 +613,6 @@ int main()
                             
                                 <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                                     <span class="chip bg-color">每日打卡</span>
-                                </a>
-                            
-                                <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                                    <span class="chip bg-color">y总算法课</span>
                                 </a>
                             
                         </div>
@@ -1056,9 +1050,59 @@ int main()
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
+            <div class="card">
+                <a href="/2021/11/19/2021-11-19-mei-ri-shua-ti-da-qia/">
+                    <div class="card-image">
+                        
+                        <img src="/images/30.jpg" class="responsive-img" alt="2021-11-19每日刷题打卡">
+                        
+                        <span class="card-title">2021-11-19每日刷题打卡</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            2021-11-19每日刷题打卡
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/" class="post-category">
+                                    每日打卡
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
+                        <span class="chip bg-color">每日打卡</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2021/11/18/2021-11-18-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
@@ -1075,60 +1119,8 @@ int main()
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-18
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/" class="post-category">
-                                    每日打卡
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
-                        <span class="chip bg-color">每日打卡</span>
-                    </a>
-                    
-                    <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                        <span class="chip bg-color">y总算法课</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/11/16/2021-11-16-mei-ri-shua-ti-da-qia/">
-                    <div class="card-image">
-                        
-                        <img src="/images/27.jpg" class="responsive-img" alt="2021-11-16每日刷题打卡">
-                        
-                        <span class="card-title">2021-11-16每日刷题打卡</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            2021-11-16每日刷题打卡
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-18
                             </span>
                         <span class="publish-author">
                             
