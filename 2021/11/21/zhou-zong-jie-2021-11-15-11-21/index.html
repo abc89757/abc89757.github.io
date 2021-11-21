@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="2021-11-01每日刷题打卡, Hexo">
-    <meta name="description" content="2021-11-01每日刷题打卡">
+    <meta name="keywords" content="周总结：2021-11-15——11-21, Hexo">
+    <meta name="description" content="周总结：2021-11-15——11-21">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>2021-11-01每日刷题打卡 | Hexo</title>
+    <title>周总结：2021-11-15——11-21 | Hexo</title>
     <link rel="icon" type="image/png" href="/medias/comment_bg.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/32.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">2021-11-01每日刷题打卡</h1>
+                    <h1 class="description center-align post-title">周总结：2021-11-15——11-21</h1>
                 </div>
             </div>
         </div>
@@ -340,10 +340,6 @@
                                 <span class="chip bg-color">每日打卡</span>
                             </a>
                         
-                            <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                                <span class="chip bg-color">y总算法课</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -365,7 +361,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-11-01
+                    2021-11-21
                 </div>
                 
 
@@ -374,7 +370,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    2.4k
+                    2k
                 </div>
                 
 
@@ -399,286 +395,216 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="2021-11-01每日刷题打卡"><a href="#2021-11-01每日刷题打卡" class="headerlink" title="2021-11-01每日刷题打卡"></a>2021-11-01每日刷题打卡</h1><h2 id="力扣——二叉树"><a href="#力扣——二叉树" class="headerlink" title="力扣——二叉树"></a>力扣——二叉树</h2><h4 id="965-单值二叉树"><a href="#965-单值二叉树" class="headerlink" title="965. 单值二叉树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/univalued-binary-tree/">965. 单值二叉树</a></h4><p>如果二叉树每个节点都具有相同的值，那么该二叉树就是单值二叉树。</p>
-<p>只有给定的树是单值二叉树时，才返回 true；否则返回 false。</p>
+                <h1 id="周总结：2021-11-15——11-21"><a href="#周总结：2021-11-15——11-21" class="headerlink" title="周总结：2021-11-15——11-21"></a>周总结：2021-11-15——11-21</h1><h2 id="这里是这一周来刷题时印象比较深的几道题，挑出来做个总结"><a href="#这里是这一周来刷题时印象比较深的几道题，挑出来做个总结" class="headerlink" title="这里是这一周来刷题时印象比较深的几道题，挑出来做个总结"></a>这里是这一周来刷题时印象比较深的几道题，挑出来做个总结</h2><h4 id="236-二叉树的最近公共祖先"><a href="#236-二叉树的最近公共祖先" class="headerlink" title="236. 二叉树的最近公共祖先"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/">236. 二叉树的最近公共祖先</a></h4><p>给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。</p>
+<p>百度百科中最近公共祖先的定义为：“对于有根树 T 的两个节点 p、q，最近公共祖先表示为一个节点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”</p>
 <p>示例 1：</p>
-<p><img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/29/screen-shot-2018-12-25-at-50104-pm.png" alt="screen-shot-2018-12-25-at-50104-pm.png "></p>
-<p>输入：[1,1,1,1,1,null,1]<br>输出：true</p>
-<p>这题考的就是树的遍历，比起链表的一个指针next，树有两个指针一个left，一个right。对于树的遍历我们最好用的就是递归的方式。全局变量设定一个bool类型flag初始化为true，每次遍历对比当前节点的val和其left与right的val值，如果不相等就设为false并直接结束所有程序返回flag，如果相等，就把root-&gt;left和root-&gt;right放入遍历中。最后返回flag。</p>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    bool flag&#x3D;true;
-    bool isUnivalTree(TreeNode* root) &#123;
-        if(root&#x3D;&#x3D;NULL)return flag;
-        if(root-&gt;left!&#x3D;NULL)
-        &#123;
-            if(root-&gt;val!&#x3D;root-&gt;left-&gt;val)flag&#x3D;false;
-            isUnivalTree(root-&gt;left);
-        &#125;
-        if(root-&gt;right!&#x3D;NULL)
-        &#123;
-            if(root-&gt;val!&#x3D;root-&gt;right-&gt;val)flag&#x3D;false;
-            isUnivalTree(root-&gt;right);
-        &#125;
-        return flag;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<p>另一种方法，不用全局变量。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;*
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    bool isUnivalTree(TreeNode* root) &#123;
-        bool flag&#x3D;true;
-        int val&#x3D;root-&gt;val;
-        dfs(root,flag,val);
-        return flag;
-    &#125;
-    void dfs(TreeNode* root,bool &amp;flag,int val)
-    &#123;
-        if(root&#x3D;&#x3D;NULL)return;
-        if(root-&gt;left!&#x3D;NULL&amp;&amp;root-&gt;left-&gt;val!&#x3D;val)flag&#x3D;false;
-        if(root-&gt;right!&#x3D;NULL&amp;&amp;root-&gt;right-&gt;val!&#x3D;val)flag&#x3D;false;
-        dfs(root-&gt;left,flag,val);
-        dfs(root-&gt;right,flag,val);
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="100-相同的树"><a href="#100-相同的树" class="headerlink" title="100. 相同的树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/same-tree/">100. 相同的树</a></h4><p>给你两棵二叉树的根节点 p 和 q ，编写一个函数来检验这两棵树是否相同。</p>
-<p>如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。</p>
-<p>示例 1：</p>
-<p><img src="https://assets.leetcode.com/uploads/2020/12/20/ex1.jpg" alt="ex1.jpg (622×182) (leetcode.com)"></p>
-<p>输入：p = [1,2,3], q = [1,2,3]<br>输出：true</p>
-<p>还是遍历树，不过这次是同时遍历两个，还要对比他们的val值。注意有一点，对比root-&gt;val时要考虑到节点为NULL的情况，这会使程序报错，所以对比值前我们应该先判断一下两个节点是否为NULL，如果两个都为NULL那就直接return结束程序，如果只有一个为空就把flag改为false（一个节点有值一个节点没值肯定不一样），如果都不为空就对比val。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/023761b7beccfe21c750c1b8faf96073.png" alt="binarytree.png (200×190) (leetcode.com)"></p>
+<p>输入：root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1<br>输出：3<br>解释：节点 5 和节点 1 的最近公共祖先是节点 3 。</p>
+<p>送root去递归，每次先判断root是否为空，为空就返回root，然后创建两个节点，一个l判断左子树中有没有p或q的节点，如果有，把拿个节点赋给l，另一个节点r判断右子树。然后判断，如果l为空就返回r节点，如果r为空就返回l节点，如果都不为空说明当前的root就是最近祖先。返回即可。</p>
 <pre class="line-numbers language-none"><code class="language-none">&#x2F;**
  * Definition for a binary tree node.
  * struct TreeNode &#123;
  *     int val;
  *     TreeNode *left;
  *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;
  * &#125;;
  *&#x2F;
 class Solution &#123;
 public:
-    bool isSameTree(TreeNode* p, TreeNode* q) &#123;
-        bool flag&#x3D;true;
-        dfs(p,q,flag);
-        return flag;
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) &#123;
+        if(!root||root-&gt;val&#x3D;&#x3D;p-&gt;val||root-&gt;val&#x3D;&#x3D;q-&gt;val)return root;
+        TreeNode*l&#x3D;lowestCommonAncestor(root-&gt;left,p,q);
+        TreeNode*r&#x3D;lowestCommonAncestor(root-&gt;right,p,q);
+        if(!r)return l;
+        if(!l)return r;
+        return root;
     &#125;
-    void dfs(TreeNode* p, TreeNode* q,bool &amp;flag) &#123;
-        if(!flag)return;
-        if(p&#x3D;&#x3D;NULL&amp;&amp;q&#x3D;&#x3D;NULL)return;
-        else if(p&#x3D;&#x3D;NULL&amp;&amp;q!&#x3D;NULL||p!&#x3D;NULL&amp;&amp;q&#x3D;&#x3D;NULL)
-        &#123;
-            flag&#x3D;false;
-            return;
-        &#125;
-        if(p-&gt;val!&#x3D;q-&gt;val)flag&#x3D;false;
-        dfs(p-&gt;left,q-&gt;left,flag);
-        dfs(p-&gt;right,q-&gt;right,flag);
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<h4 id="101-对称二叉树和剑指-Offer-28-对称的二叉树（这两题完全一样，我们放在一起说）"><a href="#101-对称二叉树和剑指-Offer-28-对称的二叉树（这两题完全一样，我们放在一起说）" class="headerlink" title="101. 对称二叉树和剑指 Offer 28. 对称的二叉树（这两题完全一样，我们放在一起说）"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/symmetric-tree/">101. 对称二叉树</a>和<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/">剑指 Offer 28. 对称的二叉树</a>（这两题完全一样，我们放在一起说）</h4><p>给定一个二叉树，检查它是否是镜像对称的。</p>
-<p>例如，二叉树 [1,2,2,3,4,4,3] 是对称的。</p>
-<p>​    1</p>
-<p>   / <br>  2   2<br> / \ / <br>3  4 4  3</p>
-<p>这题就是上题的翻版，不过上题比较的是相同的子节点，即left和left比，right和right比。这题是left和right比，right和left比。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
+<h4 id="40-顺时针打印矩阵-AcWing题库"><a href="#40-顺时针打印矩阵-AcWing题库" class="headerlink" title="40. 顺时针打印矩阵 - AcWing题库"></a><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/39/">40. 顺时针打印矩阵 - AcWing题库</a></h4><p>输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字。</p>
+<h4 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h4><pre class="line-numbers language-none"><code class="language-none">输入：
+[
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [9,10,11,12]
+]
+
+输出：[1,2,3,4,8,12,11,10,9,5,6,7]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>我们从x=0,y=0处开始逐步把数存入数组里，准备四个方向：上（-1，0），右（0，1），下（1，0），左（0，-1），每次遍历的时候按照方向xy坐标的不同加在我们遍历的xy处就可以达到顺时针遍历，每当遇到边界或是到了之前的位置（转了一圈）就转方向。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
 public:
-    bool isSymmetric(TreeNode* root) &#123;
-        bool flag&#x3D;true;
-        dfs(root-&gt;left,root-&gt;right,flag);
-        return flag;
-    &#125;
-    void dfs(TreeNode *p,TreeNode*q,bool &amp;flag)
-    &#123;
-        if(!flag)return;
-        if(!p&amp;&amp;!q)return;
-        else if(!p&amp;&amp;q || p&amp;&amp;!q)
+    vector&lt;int&gt; printMatrix(vector&lt;vector&lt;int&gt; &gt; matrix) &#123;
+        int n&#x3D;matrix.size();
+        vector&lt;int&gt;v;
+        if(!n)return v;
+        int m&#x3D;matrix[0].size();
+        vector&lt;vector&lt;bool&gt;&gt;st(n,vector&lt;bool&gt;(m,false));
+        int dx[]&#x3D;&#123;-1,0,1,0&#125;,dy[]&#x3D;&#123;0,1,0,-1&#125;;
+        int x&#x3D;0,y&#x3D;0,d&#x3D;1;
+        for(int i&#x3D;0;i&lt;n*m;i++)
         &#123;
-            flag&#x3D;false;
-            return;
+            v.push_back(matrix[x][y]);
+            st[x][y]&#x3D;true;
+            int a&#x3D;x+dx[d],b&#x3D;y+dy[d];
+            if(a&gt;&#x3D;n||a&lt;0||b&lt;0||b&gt;&#x3D;m||st[a][b])
+            &#123;
+                d&#x3D;(d+1)%4;
+                a&#x3D;x+dx[d],b&#x3D;y+dy[d];
+            &#125;
+            x&#x3D;a,y&#x3D;b;
         &#125;
-        if(p-&gt;val!&#x3D;q-&gt;val)flag&#x3D;false;
-        dfs(p-&gt;left,q-&gt;right,flag);
-        dfs(p-&gt;right,q-&gt;left,flag);
+        return v;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<h2 id="AcWing——算法基础"><a href="#AcWing——算法基础" class="headerlink" title="AcWing——算法基础"></a>AcWing——算法基础</h2><h4 id="842-排列数字-AcWing题库"><a href="#842-排列数字-AcWing题库" class="headerlink" title="842. 排列数字 - AcWing题库"></a><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/844/">842. 排列数字 - AcWing题库</a></h4><p>给定一个整数 n，将数字 1∼n 排成一排，将会有很多种排列方法。</p>
-<p>现在，请你按照字典序将所有的排列方法输出。</p>
-<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>共一行，包含一个整数 n。</p>
-<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>按字典序输出所有排列方案，每个方案占一行。</p>
-<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤n≤7</p>
-<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre class="line-numbers language-none"><code class="language-none">3<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="826-单链表-AcWing题库"><a href="#826-单链表-AcWing题库" class="headerlink" title="826. 单链表 - AcWing题库"></a><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/828/">826. 单链表 - AcWing题库</a></h4><p>实现一个单链表，链表初始为空，支持三种操作：</p>
+<ol>
+<li>向链表头插入一个数；</li>
+<li>删除第 k 个插入的数后面的数；</li>
+<li>在第 k 个插入的数后插入一个数。</li>
+</ol>
+<p>现在要对该链表进行 M 次操作，进行完所有操作后，从头到尾输出整个链表。</p>
+<p><strong>注意</strong>:题目中第 k 个插入的数并不是指当前链表的第 k 个数。例如操作过程中一共插入了 n 个数，则按照插入的时间顺序，这 n 个数依次为：第 1 个插入的数，第 22 个插入的数，…第 n 个插入的数。</p>
+<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>第一行包含整数 M，表示操作次数。</p>
+<p>接下来 M 行，每行包含一个操作命令，操作命令可能为以下几种：</p>
+<ol>
+<li><code>H x</code>，表示向链表头插入一个数 x。</li>
+<li><code>D k</code>，表示删除第 k 个插入的数后面的数（当 k 为 0 时，表示删除头结点）。</li>
+<li><code>I k x</code>，表示在第 k 个插入的数后面插入一个数 x（此操作中 k 均大于 0）。</li>
+</ol>
+<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>共一行，将整个链表从头到尾输出。</p>
+<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤M≤100000<br>所有操作保证合法。</p>
+<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre class="line-numbers language-none"><code class="language-none">10
+H 9
+I 1 1
+D 1
+D 0
+H 6
+I 3 6
+I 4 5
+I 4 5
+I 3 4
+D 6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre class="line-numbers language-none"><code class="language-none">1 2 3
-1 3 2
-2 1 3
-2 3 1
-3 1 2
-3 2 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre class="line-numbers language-none"><code class="language-none">6 4 6 5<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 
-<p>这是我们第一次接触到DFS（深度优先搜索）：一种用于遍历或搜索树或图的算法。 沿着树的深度遍历树的节点，尽可能深的搜索树的分支。当节点v的所在边都己被探寻过或者在搜寻时结点不满足条件，搜索将  <em>回溯</em>  到发现节点v的那条边的起始节点。整个进程反复进行直到所有节点都被访问为止。</p>
-<p>这里排列数字的过程就是，我们要组成一个三位数的数字，第一位的可能性有1、2、3，我们先选1，第二位的可能性就剩2、3，我们选2，第三位就只剩3了，这条路搜索完毕，我们回溯到第二位上，选3为第二位，这样第三位就只剩2了，这条路也搜索完毕，我们回溯到第二位上，第二位可能的结果也都搜索完，我们回溯到第一位上，选数字2为第一位，然后继续搜…………这样最后我们就可以拿到所有的数。</p>
-<p>我们准备一个int数组math来存放结果，一个bool数组st来告诉我们哪些数不能用，写一个递归函数dfs来进行我们的搜索，只有一个参数u，dfs进来先判断u和n是否相同，如果相同则输出math里存放的结果（要注意换行）。如果不相同我们就开始for(int i=0;i&lt; n;i++)遍历，判断st[i]的值是否为true，如果为true说明i表示的数我们已经使用过了，如果为false说明这个数我们没用过，可以放在第u位上，所有我们math[u]=i，同时把st[i]改为true告诉程序这个数已经被用过了。然后我们递归调用dfs(u+1)，下面是回溯的操作，我们要把数变回原来的样子，即这个数没被使用过的样子st[i]=false。这样我们最后就能获得所有的结果。</p>
+<p>简单的一道实现连标题，但是这里我们不能用以往的方式来new节点一个个连，因为new的效率实在太慢，我们这里有10w次操作肯定要超时，这里我们采用另一种方式来写链表。</p>
+<p>我们用两个数组来实现链表，一个数组e来存链节点的值，一个数组ne来存对应链节点的next，比如这样一个链表2 1 4 3，这就是e里面存的值，然后ne存的是{1，2，3，-1}（-1代表结尾），意思是第一个节点在e的位置为0，值为2，它的next指针存在ne里，因为他在e的位置为0，所以它的next的位置也为0，ne[0]等于1，说明这个节点的next指向的是下标为1的节点，在e里，下标为1的是1，然后这个e[1]节点的next指针指向的是ne[1]=2。就是这么简单，然后删除操作插入操作就按照这个格式来。（你要看不懂那就直接看代码吧）</p>
 <pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;
 using namespace std;
 
 const int N&#x3D;100010;
-int n;
-int math[N];
-bool st[N];
+int head,idx,e[N],ne[N];
 
-void dfs(int u)
+void init()
 &#123;
-    if(u&#x3D;&#x3D;n)
-    &#123;
-        for(int i&#x3D;0;i&lt;n;i++)printf(&quot;%d &quot;,math[i]);
-        cout&lt;&lt;endl;
-        return;
-    &#125;
-    for(int i&#x3D;1;i&lt;&#x3D;n;i++)
-    &#123;
-        if(!st[i])
-        &#123;
-            st[i]&#x3D;true;
-            math[u]&#x3D;i;
-            dfs(u+1);
-            st[i]&#x3D;false;
-        &#125;
-    &#125;
+    head&#x3D;-1;
+    idx&#x3D;0;
+&#125;
+
+void push_head(int x)
+&#123;
+    e[idx]&#x3D;x;
+    ne[idx]&#x3D;head;
+    head&#x3D;idx++;
+&#125;
+
+void del_node(int k)
+&#123;
+    ne[k-1]&#x3D;ne[ne[k-1]];
+&#125;
+
+void push_node(int k,int x)
+&#123;
+    e[idx]&#x3D;x;
+    ne[idx]&#x3D;ne[k-1];
+    ne[k-1]&#x3D;idx++;
 &#125;
 
 int main()
 &#123;
-    cin&gt;&gt;n;
-    for(int i&#x3D;0;i&lt;n;i++)scanf(&quot;%d&quot;,&amp;math[i]);
-    dfs(0);
-    return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="843-n-皇后问题-AcWing题库"><a href="#843-n-皇后问题-AcWing题库" class="headerlink" title="843. n-皇后问题 - AcWing题库"></a><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/845/">843. n-皇后问题 - AcWing题库</a></h4><p>n−n−皇后问题是指将 n 个皇后放在 n×n的国际象棋棋盘上，使得皇后不能相互攻击到，即任意两个皇后都不能处于同一行、同一列或同一斜线上。</p>
-<p><img src="https://cdn.acwing.com/media/article/image/2019/06/08/19_860e00c489-1_597ec77c49-8-queens.png" alt="1_597ec77c49-8-queens.png"></p>
-<p>现在给定整数 n，请你输出所有的满足条件的棋子摆法。</p>
-<h4 id="输入格式-1"><a href="#输入格式-1" class="headerlink" title="输入格式"></a>输入格式</h4><p>共一行，包含整数 n。</p>
-<h4 id="输出格式-1"><a href="#输出格式-1" class="headerlink" title="输出格式"></a>输出格式</h4><p>每个解决方案占 n 行，每行输出一个长度为 nn 的字符串，用来表示完整的棋盘状态。</p>
-<p>其中 <code>.</code> 表示某一个位置的方格状态为空，<code>Q</code> 表示某一个位置的方格上摆着皇后。</p>
-<p>每个方案输出完成后，输出一个空行。</p>
-<p><strong>注意：行末不能有多余空格。</strong></p>
-<p>输出方案的顺序任意，只要不重复且没有遗漏即可。</p>
-<h4 id="数据范围-1"><a href="#数据范围-1" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤n≤9</p>
-<h4 id="输入样例：-1"><a href="#输入样例：-1" class="headerlink" title="输入样例："></a>输入样例：</h4><pre class="line-numbers language-none"><code class="language-none">4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="输出样例：-1"><a href="#输出样例：-1" class="headerlink" title="输出样例："></a>输出样例：</h4><pre class="line-numbers language-none"><code class="language-none">.Q..
-...Q
-Q...
-..Q.
-
-..Q.
-Q...
-...Q
-.Q..<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<p>DFS中最最最最最最最最最经典的八皇后问题，我们用的就是深度优先搜索的方法来写这道题，拿一个二维数组来模拟棋盘的样子，Q代表皇后的位置，我们的想法是先把皇后放在所有可能的地方上，每放一个皇后，就判断这个皇后同行同列同斜列上有没有皇后，如果有就说明这个方法不可行，然后回溯，然后再选新地方放…………以此类推。</p>
-<pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;
-using namespace std;
-
-const int N&#x3D;100;
-int n;
-char queen[N][N];
-bool col[N],dg[N],udg[N];
-
-void dfs(int u)
-&#123;
-    if(u&#x3D;&#x3D;n)
+    int T;
+    cin&gt;&gt;T;
+    init();
+    while(T--)
     &#123;
-        for(int i&#x3D;0;i&lt;n;i++)cout&lt;&lt;queen[i]&lt;&lt;endl;
-        cout&lt;&lt;endl;
-        return;
-    &#125;
-    for(int i&#x3D;0;i&lt;n;i++)
-    &#123;
-        if(!col[i]&amp;&amp;!dg[i+u]&amp;&amp;!udg[n-u+i])
+        char s;
+        int k,x;
+        cin&gt;&gt;s;
+        if(s&#x3D;&#x3D;&#39;H&#39;)
         &#123;
-            queen[u][i]&#x3D;&#39;Q&#39;;
-            col[i]&#x3D;dg[u+i]&#x3D;udg[n-u+i]&#x3D;true;
-            dfs(u+1);
-            col[i]&#x3D;dg[u+i]&#x3D;udg[n-u+i]&#x3D;false;
-            queen[u][i]&#x3D;&#39;.&#39;;
+            cin&gt;&gt;x;
+            push_head(x);
+        &#125;
+        else if(s&#x3D;&#x3D;&#39;D&#39;)
+        &#123;
+            cin&gt;&gt;k;
+            if(!k)head&#x3D;ne[head];
+            else del_node(k);
+        &#125;
+        else if(s&#x3D;&#x3D;&#39;I&#39;)
+        &#123;
+            cin&gt;&gt;k&gt;&gt;x;
+            push_node(k,x);
         &#125;
     &#125;
-&#125;
-
-int main()
-&#123;
-    cin&gt;&gt;n;
-    for(int i&#x3D;0;i&lt;n;i++)
-        for(int j&#x3D;0;j&lt;n;j++)
-            queen[i][j]&#x3D;&#39;.&#39;;
-    dfs(0);
+    for(int i&#x3D;head;i!&#x3D;-1;i&#x3D;ne[i])cout&lt;&lt;e[i]&lt;&lt;&quot; &quot;;
     return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
+
+
+
+<h4 id="124-二叉树中的最大路径和"><a href="#124-二叉树中的最大路径和" class="headerlink" title="124. 二叉树中的最大路径和"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/">124. 二叉树中的最大路径和</a></h4><p>路径 被定义为一条从树中任意节点出发，沿父节点-子节点连接，达到任意节点的序列。同一个节点在一条路径序列中 至多出现一次 。该路径 至少包含一个 节点，且不一定经过根节点。</p>
+<p>路径和 是路径中各节点值的总和。</p>
+<p>给你一个二叉树的根节点 root ，返回其 最大路径和 。</p>
+<p>示例 1：</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/ca0d0d9f728f2aeda1976de9b08940e5.png" alt="exx1.jpg (322×182) (leetcode.com)"></p>
+<p>输入：root = [1,2,3]<br>输出：6<br>解释：最优路径是 2 -&gt; 1 -&gt; 3 ，路径和为 2 + 1 + 3 = 6</p>
+<p>这题还是递归遍历root，准备一个sum存储最大路径和，每次把左子树和右子树分别送去下一次递归，以求得左子树和右子树谁的路径和最大，每次计算路径和有三选择，一种是左子树+root然后返回到上面的根节点，一种是右子树+root，还有一种是左子树+root+右子树。每次比较这三个值的大小，取最大的和sum作比较，如果大于sum就把sum更新。每次递归返回当前节点值和左子树或右子树的和（取最大）给上一级的节点，然后不断比较sum。当递归全部结束后把sum返回。</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for a binary tree node.
+ * struct TreeNode &#123;
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+class Solution &#123;
+public:
+    int sum&#x3D;INT_MIN;
+    int maxPathSum(TreeNode* root) &#123;
+        dfs(root);
+        return sum;
+    &#125;
+    int dfs(TreeNode*root)
+    &#123;
+        if(!root)return 0;
+        int l&#x3D;max(dfs(root-&gt;left),0);
+        int r&#x3D;max(dfs(root-&gt;right),0);
+        int ans&#x3D;root-&gt;val+max(l,r);
+        sum&#x3D;max(sum,max(ans,root-&gt;val+r+l));
+        return ans;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -704,7 +630,7 @@ int main()
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/11/01/2021-11-01-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/01/2021-11-01-mei-ri-shua-ti-da-qia/</a>
+                    <a href="http://example.com/2021/11/21/zhou-zong-jie-2021-11-15-11-21/">http://example.com/2021/11/21/zhou-zong-jie-2021-11-15-11-21/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -744,10 +670,6 @@ int main()
                             
                                 <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                                     <span class="chip bg-color">每日打卡</span>
-                                </a>
-                            
-                                <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                                    <span class="chip bg-color">y总算法课</span>
                                 </a>
                             
                         </div>
@@ -1185,28 +1107,78 @@ int main()
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2021/11/02/2021-11-02-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/21/zhou-zong-jie-2021-11-15-11-21/">
                     <div class="card-image">
                         
-                        <img src="/images/12.jpg" class="responsive-img" alt="2021-11-02每日刷题打卡">
+                        <img src="/images/32.jpg" class="responsive-img" alt="周总结：2021-11-15——11-21">
                         
-                        <span class="card-title">2021-11-02每日刷题打卡</span>
+                        <span class="card-title">周总结：2021-11-15——11-21</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-02每日刷题打卡
+                            周总结：2021-11-15——11-21
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-02
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-21
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/" class="post-category">
+                                    每日打卡
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
+                        <span class="chip bg-color">每日打卡</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/11/20/2021-11-20-mei-ri-shua-ti-da-qia/">
+                    <div class="card-image">
+                        
+                        <img src="/images/31.jpg" class="responsive-img" alt="2021-11-20每日刷题打卡">
+                        
+                        <span class="card-title">2021-11-20每日刷题打卡</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            2021-11-20每日刷题打卡
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1226,52 +1198,8 @@ int main()
                         <span class="chip bg-color">每日打卡</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/10/31/zhou-zong-jie-2021-10-25-10-31/">
-                    <div class="card-image">
-                        
-                        <img src="/images/10.jpg" class="responsive-img" alt="周总结：2021-10-25——10-31">
-                        
-                        <span class="card-title">周总结：2021-10-25——10-31</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            周总结：2021-10-25——10-31
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-31
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/" class="post-category">
-                                    每日打卡
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
-                        <span class="chip bg-color">每日打卡</span>
+                    <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
+                        <span class="chip bg-color">y总算法课</span>
                     </a>
                     
                 </div>
