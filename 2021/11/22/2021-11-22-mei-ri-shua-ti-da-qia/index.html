@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="2021-11-11每日刷题打卡, Hexo">
-    <meta name="description" content="2021-11-11每日刷题打卡">
+    <meta name="keywords" content="2021-11-22每日刷题打卡, Hexo">
+    <meta name="description" content="2021-11-22每日刷题打卡">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>2021-11-11每日刷题打卡 | Hexo</title>
+    <title>2021-11-22每日刷题打卡 | Hexo</title>
     <link rel="icon" type="image/png" href="/medias/comment_bg.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/33.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">2021-11-11每日刷题打卡</h1>
+                    <h1 class="description center-align post-title">2021-11-22每日刷题打卡</h1>
                 </div>
             </div>
         </div>
@@ -340,10 +340,6 @@
                                 <span class="chip bg-color">每日打卡</span>
                             </a>
                         
-                            <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                                <span class="chip bg-color">y总算法课</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -365,7 +361,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-11-11
+                    2021-11-22
                 </div>
                 
 
@@ -374,7 +370,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    2k
+                    1.8k
                 </div>
                 
 
@@ -399,228 +395,140 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="2021-11-11每日刷题打卡"><a href="#2021-11-11每日刷题打卡" class="headerlink" title="2021-11-11每日刷题打卡"></a>2021-11-11每日刷题打卡</h1><h2 id="力扣——二叉搜索树"><a href="#力扣——二叉搜索树" class="headerlink" title="力扣——二叉搜索树"></a>力扣——二叉搜索树</h2><h4 id="538-把二叉搜索树转换为累加树和1038-把二叉搜索树转换为累加树和剑指-Offer-II-054-所有大于等于节点的值之和"><a href="#538-把二叉搜索树转换为累加树和1038-把二叉搜索树转换为累加树和剑指-Offer-II-054-所有大于等于节点的值之和" class="headerlink" title="538. 把二叉搜索树转换为累加树和1038. 把二叉搜索树转换为累加树和剑指 Offer II 054. 所有大于等于节点的值之和"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/convert-bst-to-greater-tree/">538. 把二叉搜索树转换为累加树</a>和<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/">1038. 把二叉搜索树转换为累加树</a>和<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/w6cpku/">剑指 Offer II 054. 所有大于等于节点的值之和</a></h4><p>给出二叉 搜索 树的根节点，该树的节点值各不相同，请你将其转换为累加树（Greater Sum Tree），使每个节点 node 的新值等于原树中大于或等于 node.val 的值之和。</p>
-<p>提醒一下，二叉搜索树满足下列约束条件：</p>
-<p>节点的左子树仅包含键 小于 节点键的节点。<br>节点的右子树仅包含键 大于 节点键的节点。<br>左右子树也必须是二叉搜索树。<br>注意：本题和 1038: <a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/">https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/</a> 相同</p>
-<p>示例 1：</p>
-<p><img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/05/03/tree.png" alt="tree.png (775×529) (leetcode-cn.com)"></p>
-<p>输入：[4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]<br>输出：[30,36,21,36,35,26,15,null,null,null,33,null,null,null,8]</p>
-<p>准备一个vector容器v，然后对root中序遍历，每遍历到一个节点时，先用这个节点的值对v中所有元素相加，然后再把这个节点的值插入v中，这样最好得到的是所有大于等于当前节点的和了，再遍历一遍root，把节点值用v中的值替换掉即可。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    vector&lt;int&gt;v;
-    TreeNode* convertBST(TreeNode* root) &#123;
-        dfs(root);
-        int i&#x3D;0;
-        dfs2(root,i);
-        return root;
-    &#125;
-    void dfs(TreeNode* root)
-    &#123;
-        if(!root)return;
-        dfs(root-&gt;left);
-        for(int&amp; i:v)
-            i+&#x3D;root-&gt;val;
-        v.push_back(root-&gt;val);
-        dfs(root-&gt;right);
-    &#125;
-    void dfs2(TreeNode*&amp; root,int&amp; i)
-    &#123;
-        if(!root)return;
-        dfs2(root-&gt;left,i);
-        root-&gt;val&#x3D;v[i++];
-        dfs2(root-&gt;right,i);
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="剑指-Offer-33-二叉搜索树的后序遍历序列"><a href="#剑指-Offer-33-二叉搜索树的后序遍历序列" class="headerlink" title="剑指 Offer 33. 二叉搜索树的后序遍历序列"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/">剑指 Offer 33. 二叉搜索树的后序遍历序列</a></h4><p>输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历结果。如果是则返回 true，否则返回 false。假设输入的数组的任意两个数字都互不相同。</p>
-<p>参考以下这颗二叉搜索树：</p>
-<pre><code> 5
-/ \
-</code></pre>
-<p>   2   6<br>  / <br> 1   3<br>示例 1：</p>
-<p>输入: [1,6,3,2,5]<br>输出: false</p>
-<p>后序遍历的特点是：[左子树] [右子树] [根节点]，所以可知根节点是最后一位，然后左子树总比根节点小，右子树总比根节点大，所以我们在遍历 postorder时可以准备两个vector容器v1、v2来分别存左子树和右子树的节点值（顺便要提前判断一下postorder的size，如果小于等于1，说明必是一个后序遍历，返回true），开始遍历 postorder，把前面遍历到的所有小于根节点的值存入v1中，当遇到第一个大于根节点的值时停止插入v1，而后所有的值都插入v2，这个过程中也要比较，如果有存在小于根节点的值，说明这不是一个合格的二叉搜索数的后序序列，直接返回false，如果一直遍历到结尾也没问题，那么就进行下一次递归，把v1和v2分别送去递归，当所有递归结束后，我们就得到了bool类型的结果。</p>
+                <h1 id="2021-11-22每日刷题打卡"><a href="#2021-11-22每日刷题打卡" class="headerlink" title="2021-11-22每日刷题打卡"></a>2021-11-22每日刷题打卡</h1><h2 id="力扣——每日一题"><a href="#力扣——每日一题" class="headerlink" title="力扣——每日一题"></a>力扣——每日一题</h2><h4 id="384-打乱数组"><a href="#384-打乱数组" class="headerlink" title="384. 打乱数组"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/shuffle-an-array/">384. 打乱数组</a></h4><p>给你一个整数数组 nums ，设计算法来打乱一个没有重复元素的数组。</p>
+<p>实现 Solution class:</p>
+<p>Solution(int[] nums) 使用整数数组 nums 初始化对象<br>int[] reset() 重设数组到它的初始状态并返回<br>int[] shuffle() 返回数组随机打乱后的结果</p>
+<p>示例：</p>
+<p>输入<br>[“Solution”, “shuffle”, “reset”, “shuffle”]<br>[[[1, 2, 3]], [], [], []]<br>输出<br>[null, [3, 1, 2], [1, 2, 3], [1, 3, 2]]</p>
+<p>解释<br>Solution solution = new Solution([1, 2, 3]);<br>solution.shuffle();    // 打乱数组 [1,2,3] 并返回结果。任何 [1,2,3]的排列返回的概率应该相同。例如，返回 [3, 1, 2]<br>solution.reset();      // 重设数组到它的初始状态 [1, 2, 3] 。返回 [1, 2, 3]<br>solution.shuffle();    // 随机返回数组 [1, 2, 3] 打乱后的结果。例如，返回 [1, 3, 2]</p>
+<p>不知道这题有什么意义，但这次学到了个叫做洗牌算法的东西，就是随机的打乱一个数组，每次打乱的地方都不一样。</p>
+<p>这个洗牌算法就是，for循环从下标0开始遍历，生成一个随机数，范围是0~数组长度内，然后每次把下标为i的元素和下标为随机数的元素交换，这样就是随机打乱了数组，把数组遍历完后得到的就是随机打乱的数组了，因为随机数生成每个数的概率都是一样的，所以打乱的也是随机的不会有换了好几次结果都是一样的情况发生。</p>
 <pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
 public:
-    bool flag;
-    bool verifyPostorder(vector&lt;int&gt;&amp; postorder) &#123;
-        return dfs(postorder);
+    vector&lt;int&gt;v;
+    vector&lt;int&gt;v1;
+    Solution(vector&lt;int&gt;&amp; nums) &#123;
+        v&#x3D;nums;
+        v1&#x3D;nums;
     &#125;
-    bool dfs(vector&lt;int&gt;&amp;v)
-    &#123;
+    
+    vector&lt;int&gt; reset() &#123;
+        v&#x3D;v1;
+        return v;
+    &#125;
+    
+    vector&lt;int&gt; shuffle() &#123;
         int n&#x3D;v.size();
-        if(n&lt;&#x3D;1)return true;
-        int j&#x3D;0;
-        vector&lt;int&gt;v1;
-        vector&lt;int&gt;v2;
         for(int i&#x3D;0;i&lt;n;i++)
         &#123;
-            
-            if(v[i]&gt;&#x3D;v[n-1])
-            &#123;
-                j&#x3D;i;
-                break;
-            &#125;
-            v1.push_back(v[i]);
+            int a&#x3D;(i+rand()%n)%n;
+            int temp&#x3D;v[a];
+            v[a]&#x3D;v[i];
+            v[i]&#x3D;temp;
         &#125;
-        for(int i&#x3D;j;i&lt;n-1;i++)
-        &#123;
-            if(v[i]&lt;v[n-1])
-            &#123;
-                return false;
-            &#125;
-            else
-                v2.push_back(v[i]);
-        &#125;
-        return dfs(v1)&amp;&amp;dfs(v2);
+        return v;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;
+
+&#x2F;**
+ * Your Solution object will be instantiated and called as such:
+ * Solution* obj &#x3D; new Solution(nums);
+ * vector&lt;int&gt; param_1 &#x3D; obj-&gt;reset();
+ * vector&lt;int&gt; param_2 &#x3D; obj-&gt;shuffle();
+ *&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<h2 id="AcWing——算法基础"><a href="#AcWing——算法基础" class="headerlink" title="AcWing——算法基础"></a>AcWing——算法基础</h2><h4 id="788-逆序对的数量-AcWing题库"><a href="#788-逆序对的数量-AcWing题库" class="headerlink" title="788. 逆序对的数量 - AcWing题库"></a><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/790/">788. 逆序对的数量 - AcWing题库</a></h4><p>给定一个长度为 n 的整数数列，请你计算数列中的逆序对的数量。</p>
-<p>逆序对的定义如下：对于数列的第 i 个和第 j 个元素，如果满足 i&lt;j 且 a[i]&gt;a[j]，则其为一个逆序对；否则不是。</p>
-<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>第一行包含整数 nn，表示数列的长度。</p>
-<p>第二行包含 nn 个整数，表示整个数列。</p>
-<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出一个整数，表示逆序对的个数。</p>
-<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤n≤100000<br>数列中的元素的取值范围 [1,1^9][1,109]。</p>
-<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre class="line-numbers language-none"><code class="language-none">6
-2 3 4 5 6 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="151-翻转字符串里的单词"><a href="#151-翻转字符串里的单词" class="headerlink" title="151. 翻转字符串里的单词"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-words-in-a-string/">151. 翻转字符串里的单词</a></h4><p>给你一个字符串 s ，逐个翻转字符串中的所有 单词 。</p>
+<p>单词 是由非空格字符组成的字符串。s 中使用至少一个空格将字符串中的 单词 分隔开。</p>
+<p>请你返回一个翻转 s 中单词顺序并用单个空格相连的字符串。</p>
+<p>说明：</p>
+<p>输入字符串 s 可以在前面、后面或者单词间包含多余的空格。<br>翻转后单词间应当仅用一个空格分隔。<br>翻转后的字符串中不应包含额外的空格。</p>
+<p>示例 1：</p>
+<p>输入：s = “the sky is blue”<br>输出：”blue is sky the”</p>
+<p>先把字符串整个翻转过来，然后遍历字符串，用双指针遍历找到一个单词的头和尾，然后把这个单词调转过来，然后继续找下一个单词，循环下去即可。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+public:
+    string reverseWords(string s) &#123;
+        int n&#x3D;s.size(),l&#x3D;0,r&#x3D;n-1,idx&#x3D;0;
+        reverse(s.begin(),s.end());
+        for(int i&#x3D;0;i&lt;n;i++)
+        &#123;
+            if(s[i]!&#x3D;&#39; &#39;)
+            &#123;
+                if(idx)s[idx++]&#x3D;&#39; &#39;;
+                int end&#x3D;i;
+                while(end&lt;n&amp;&amp;s[end]!&#x3D;&#39; &#39;)s[idx++]&#x3D;s[end++];
+                reverse(s.begin()+idx-end+i,s.begin()+idx);
+                i&#x3D;end;
+            &#125;
+        &#125;
+        s.erase(s.begin()+idx,s.end());
+        return s;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre class="line-numbers language-none"><code class="language-none">5<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 
-<p>这题用的是归并排序来解，你可能有点不理解为什么是归并，这里举个例子。比如有一个序列 15 4 2 3 6，我们最后一步归并会把它变成</p>
-<p>1 4 5  |（mid)| 2 3 6  然后比较左右两边的序列，把小的存到数组里，对比1和2，1小，不构成逆序对；然后对比4和2，2小，此时在左边的数组里，因为4右边的数都比4大，所以2能和4以及4右边的全部数组成逆序对，逆序对的数量就为mid-4的下标+1，然后对比4和3……所以我们可以利用归并来求得逆序对的数量，当左边的数组小时我们不多做操作，右边的小时逆序对的数量要加上mid-左边数组当前索引+1。</p>
-<pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;
-using namespace std;
-const int N&#x3D;1e6+5;
-int n;
-long long res&#x3D;0;
-int arr[N],tmp[N];
 
-void merge_sort(int l,int r)
-&#123;
-    if (l &gt;&#x3D; r)return;
-    int mid &#x3D; (l + r) &#x2F; 2;
-    merge_sort(l, mid);
-    merge_sort(mid + 1, r);
-    int i &#x3D; l, j &#x3D; mid + 1, k &#x3D; 0;
-
-    while (i &lt;&#x3D; mid &amp;&amp; j &lt;&#x3D; r)
+<h4 id="165-比较版本号"><a href="#165-比较版本号" class="headerlink" title="165. 比较版本号"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/compare-version-numbers/">165. 比较版本号</a></h4><p>给你两个版本号 version1 和 version2 ，请你比较它们。</p>
+<p>版本号由一个或多个修订号组成，各修订号由一个 ‘.’ 连接。每个修订号由 多位数字 组成，可能包含 前导零 。每个版本号至少包含一个字符。修订号从左到右编号，下标从 0 开始，最左边的修订号下标为 0 ，下一个修订号下标为 1 ，以此类推。例如，2.5.33 和 0.1 都是有效的版本号。</p>
+<p>比较版本号时，请按从左到右的顺序依次比较它们的修订号。比较修订号时，只需比较 忽略任何前导零后的整数值 。也就是说，修订号 1 和修订号 001 相等 。如果版本号没有指定某个下标处的修订号，则该修订号视为 0 。例如，版本 1.0 小于版本 1.1 ，因为它们下标为 0 的修订号相同，而下标为 1 的修订号分别为 0 和 1 ，0 &lt; 1 。</p>
+<p>返回规则如下：</p>
+<p>如果 version1 &gt; version2 返回 1，<br>如果 version1 &lt; version2 返回 -1，<br>除此之外返回 0。</p>
+<p>示例 1：</p>
+<p>输入：version1 = “1.01”, version2 = “1.001”<br>输出：0<br>解释：忽略前导零，”01” 和 “001” 都表示相同的整数 “1”</p>
+<p>我们把版本号以“.”为分界线拆开来，拆成一个个数字字符串，然后我们把字符串转成数字，依次和另一个字符串的数字进行对比，根据大小决定返回-1还是1还是0。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+public:
+    int compareVersion(string version1, string version2) &#123;
+    int l &#x3D; 0, r &#x3D; 0, n &#x3D; version1.size(), m &#x3D; version2.size();
+    while(l&lt;n||r&lt;m)
     &#123;
-        if (arr[i] &lt;&#x3D; arr[j])tmp[k++] &#x3D; arr[i++];
-        else
-        &#123;
-            tmp[k++] &#x3D; arr[j++];
-            res +&#x3D; mid - i + 1;
-        &#125;
+        int x&#x3D;0;
+        for(l;l&lt;n;l++)
+            if(version1[l]&#x3D;&#x3D;&#39;.&#39;)break;
+            else x&#x3D;x*10+version1[l]-&#39;0&#39;;
+        int y&#x3D;0;
+        for(r;r&lt;m;r++)
+            if(version2[r]&#x3D;&#x3D;&#39;.&#39;)break;
+            else y&#x3D;y*10+version2[r]-&#39;0&#39;;
+        r++,l++;
+        if(x!&#x3D;y)return x&gt;y?1:-1;
     &#125;
-    while (i &lt;&#x3D; mid)tmp[k++] &#x3D; arr[i++];
-    while (j &lt;&#x3D; r)tmp[k++] &#x3D; arr[j++];
-    for (int i &#x3D; l, j &#x3D; 0; i &lt;&#x3D; r; i++, j++)
-        arr[i] &#x3D; tmp[j];
-    
-
+    return 0;
 &#125;
-
-int main()
-&#123;
-    scanf(&quot;%d&quot;,&amp;n);
-    for(int i&#x3D;0;i&lt;n;i++)
-        scanf(&quot;%d&quot;,&amp;arr[i]);
-    
-    merge_sort(0,n-1);
-    cout&lt;&lt;res;
-    return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<h4 id="789-数的范围-AcWing题库"><a href="#789-数的范围-AcWing题库" class="headerlink" title="789. 数的范围 - AcWing题库"></a><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/791/">789. 数的范围 - AcWing题库</a></h4><p>给定一个按照升序排列的长度为 n 的整数数组，以及 q 个查询。</p>
-<p>对于每个查询，返回一个元素 k 的起始位置和终止位置（位置从 00 开始计数）。</p>
-<p>如果数组中不存在该元素，则返回 <code>-1 -1</code>。</p>
-<h4 id="输入格式-1"><a href="#输入格式-1" class="headerlink" title="输入格式"></a>输入格式</h4><p>第一行包含整数 n 和 q，表示数组长度和询问个数。</p>
-<p>第二行包含 n 个整数（均在 1∼100001∼10000 范围内），表示完整数组。</p>
-<p>接下来 q 行，每行包含一个整数 k，表示一个询问元素。</p>
-<h4 id="输出格式-1"><a href="#输出格式-1" class="headerlink" title="输出格式"></a>输出格式</h4><p>共 q 行，每行包含两个整数，表示所求元素的起始位置和终止位置。</p>
-<p>如果数组中不存在该元素，则返回 <code>-1 -1</code>。</p>
-<h4 id="数据范围-1"><a href="#数据范围-1" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤n≤100000<br>1≤q≤10000<br>1≤k≤10000</p>
-<h4 id="输入样例：-1"><a href="#输入样例：-1" class="headerlink" title="输入样例："></a>输入样例：</h4><pre class="line-numbers language-none"><code class="language-none">6 3
-1 2 2 3 3 4
-3
-4
-5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="输出样例：-1"><a href="#输出样例：-1" class="headerlink" title="输出样例："></a>输出样例：</h4><pre class="line-numbers language-none"><code class="language-none">3 4
-5 5
--1 -1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-
-
-<p>二分查找，查找两次，第一次找数的起始位，第二次找数的终止位</p>
-<pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;
-using namespace std;
-const int N&#x3D;100010;
-int n,m;
-int nums[N];
-int main()
-&#123;
-    scanf(&quot;%d%d&quot;,&amp;n,&amp;m);
-    for(int i&#x3D;0;i&lt;n;i++)scanf(&quot;%d&quot;,&amp;nums[i]);
-    while(m--)
-    &#123;
-        int x;
-        scanf(&quot;%d&quot;,&amp;x);
-        int l&#x3D;0,r&#x3D;n-1;
-        int mid&#x3D;(l+r)&#x2F;2;
-        while(l&lt;r)
+<h4 id="287-寻找重复数"><a href="#287-寻找重复数" class="headerlink" title="287. 寻找重复数"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/find-the-duplicate-number/">287. 寻找重复数</a></h4><p>给定一个包含 n + 1 个整数的数组 nums ，其数字都在 1 到 n 之间（包括 1 和 n），可知至少存在一个重复的整数。</p>
+<p>假设 nums 只有 一个重复的整数 ，找出 这个重复的数 。</p>
+<p>你设计的解决方案必须不修改数组 nums 且只用常量级 O(1) 的额外空间。</p>
+<p>示例 1：</p>
+<p>输入：nums = [1,3,4,2,2]<br>输出：2</p>
+<p>这题和我们写的环状链表可以是一样的解法，也就是快慢指针，环状链表是当走到某一点时，他会回到之前遍历的点上，这里我们遍历数组也可以用类似的方式。</p>
+<p>题目说了数字都在1~n之间，那我们每次可以用遍历到的数字来当我们的下标，循环以往，当出现重复数字的时候，我们就会出现在同一个地方，然后快指针回到开头开始和我们走一样的速度，第二次相遇的时候的那个数就是重复数字了。比如 1 3 4 2 2，l慢指针走一格到下标0，r快指针走两步先到0，然后根据nums[0]走到下标1，l走一步到下标1，r根据nums[1]走到下标3，再根据nums[3]走到2，然后l走到3，r先走到4再走到2，l再走走到2，r先走到4再走到2，此时l和r相等，把r放回原位1，l和r同时走，l到4、r到3，l到2、r到2.此时l和r第二次相遇了，相遇的这个2就是重复的数。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+public:
+    int findDuplicate(vector&lt;int&gt;&amp; nums) &#123;
+        int l&#x3D;0,n&#x3D;nums.size(),r&#x3D;n-1;
+        while(l&lt;n)
         &#123;
-            if(nums[mid]&gt;&#x3D;x)r&#x3D;mid;
-            else l&#x3D;mid+1;
-            mid&#x3D;(l+r)&#x2F;2;
+            r&#x3D;n-1;
+            while(l&lt;r)
+                if(nums[l]&#x3D;&#x3D;nums[r])return nums[l];
+                else r--;
+            l++;
         &#125;
-        if(nums[l]!&#x3D;x)
-        &#123;
-            cout&lt;&lt;&quot;-1 -1&quot;&lt;&lt;endl;
-            continue;
-        &#125;
-        else
-            cout&lt;&lt;l&lt;&lt;&quot; &quot;;
-            
-        l&#x3D;0,r&#x3D;n-1;
-        mid&#x3D;(l+r+1)&#x2F;2;
-        while(l&lt;r)
-        &#123;
-            if(nums[mid]&lt;&#x3D;x)l&#x3D;mid;
-            else r&#x3D;mid-1;
-            mid&#x3D;(l+r+1)&#x2F;2;
-        &#125;
-        cout&lt;&lt;l&lt;&lt;endl;
+        return nums[l];
     &#125;
-    return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -648,7 +556,7 @@ int main()
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/11/11/2021-11-11-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/11/2021-11-11-mei-ri-shua-ti-da-qia/</a>
+                    <a href="http://example.com/2021/11/22/2021-11-22-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/22/2021-11-22-mei-ri-shua-ti-da-qia/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -688,10 +596,6 @@ int main()
                             
                                 <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                                     <span class="chip bg-color">每日打卡</span>
-                                </a>
-                            
-                                <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                                    <span class="chip bg-color">y总算法课</span>
                                 </a>
                             
                         </div>
@@ -1129,28 +1033,29 @@ int main()
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2021/11/12/2021-11-12-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/22/2021-11-22-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/22.jpg" class="responsive-img" alt="2021-11-12每日刷题打卡">
+                        <img src="/images/33.jpg" class="responsive-img" alt="2021-11-22每日刷题打卡">
                         
-                        <span class="card-title">2021-11-12每日刷题打卡</span>
+                        <span class="card-title">2021-11-22每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-12每日刷题打卡
+                            2021-11-22每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1163,15 +1068,12 @@ int main()
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
                     <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                         <span class="chip bg-color">每日打卡</span>
-                    </a>
-                    
-                    <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                        <span class="chip bg-color">y总算法课</span>
                     </a>
                     
                 </div>
@@ -1185,23 +1087,23 @@ int main()
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/11/10/2021-11-10-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/21/zhou-zong-jie-2021-11-15-11-21/">
                     <div class="card-image">
                         
-                        <img src="/images/20.jpg" class="responsive-img" alt="2021-11-10每日刷题打卡">
+                        <img src="/images/32.jpg" class="responsive-img" alt="周总结：2021-11-15——11-21">
                         
-                        <span class="card-title">2021-11-10每日刷题打卡</span>
+                        <span class="card-title">周总结：2021-11-15——11-21</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-10每日刷题打卡
+                            周总结：2021-11-15——11-21
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-21
                             </span>
                         <span class="publish-author">
                             
