@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="2021-11-01每日刷题打卡, Hexo">
-    <meta name="description" content="2021-11-01每日刷题打卡">
+    <meta name="keywords" content="2021-11-24每日刷题打卡, Hexo">
+    <meta name="description" content="2021-11-24每日刷题打卡">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>2021-11-01每日刷题打卡 | Hexo</title>
+    <title>2021-11-24每日刷题打卡 | Hexo</title>
     <link rel="icon" type="image/png" href="/medias/comment_bg.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/35.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">2021-11-01每日刷题打卡</h1>
+                    <h1 class="description center-align post-title">2021-11-24每日刷题打卡</h1>
                 </div>
             </div>
         </div>
@@ -340,10 +340,6 @@
                                 <span class="chip bg-color">每日打卡</span>
                             </a>
                         
-                            <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                                <span class="chip bg-color">y总算法课</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -365,7 +361,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-11-01
+                    2021-11-24
                 </div>
                 
 
@@ -374,7 +370,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    2.4k
+                    1.2k
                 </div>
                 
 
@@ -399,285 +395,119 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="2021-11-01每日刷题打卡"><a href="#2021-11-01每日刷题打卡" class="headerlink" title="2021-11-01每日刷题打卡"></a>2021-11-01每日刷题打卡</h1><h2 id="力扣——二叉树"><a href="#力扣——二叉树" class="headerlink" title="力扣——二叉树"></a>力扣——二叉树</h2><h4 id="965-单值二叉树"><a href="#965-单值二叉树" class="headerlink" title="965. 单值二叉树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/univalued-binary-tree/">965. 单值二叉树</a></h4><p>如果二叉树每个节点都具有相同的值，那么该二叉树就是单值二叉树。</p>
-<p>只有给定的树是单值二叉树时，才返回 true；否则返回 false。</p>
+                <h1 id="2021-11-24每日刷题打卡"><a href="#2021-11-24每日刷题打卡" class="headerlink" title="2021-11-24每日刷题打卡"></a>2021-11-24每日刷题打卡</h1><h2 id="力扣——每日一题"><a href="#力扣——每日一题" class="headerlink" title="力扣——每日一题"></a>力扣——每日一题</h2><h4 id="423-从英文中重建数字"><a href="#423-从英文中重建数字" class="headerlink" title="423. 从英文中重建数字"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reconstruct-original-digits-from-english/">423. 从英文中重建数字</a></h4><p>给你一个字符串 s ，其中包含字母顺序打乱的用英文单词表示的若干数字（0-9）。按 升序 返回原始的数字。</p>
 <p>示例 1：</p>
-<p><img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/29/screen-shot-2018-12-25-at-50104-pm.png" alt="screen-shot-2018-12-25-at-50104-pm.png "></p>
-<p>输入：[1,1,1,1,1,null,1]<br>输出：true</p>
-<p>这题考的就是树的遍历，比起链表的一个指针next，树有两个指针一个left，一个right。对于树的遍历我们最好用的就是递归的方式。全局变量设定一个bool类型flag初始化为true，每次遍历对比当前节点的val和其left与right的val值，如果不相等就设为false并直接结束所有程序返回flag，如果相等，就把root-&gt;left和root-&gt;right放入遍历中。最后返回flag。</p>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
+<p>输入：s = “owoztneoer”<br>输出：”012”</p>
+<p>究极无敌笨比式写法。 我的顺序是：zero four six two one five seven nine three eight 因为 z 这个字母只有zero有，所以有几个z就代表有几个0. 以此类推: four的u， six的x， two的w， one的o （因为其它有o的已经被排除了）， five的f （同上）， seven的v， nine的n， three的r， 和最后eight任意一个字母都行。 最后把数排序一下构建字符串即可。（代码太长了）</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
 public:
-    bool flag&#x3D;true;
-    bool isUnivalTree(TreeNode* root) &#123;
-        if(root&#x3D;&#x3D;NULL)return flag;
-        if(root-&gt;left!&#x3D;NULL)
-        &#123;
-            if(root-&gt;val!&#x3D;root-&gt;left-&gt;val)flag&#x3D;false;
-            isUnivalTree(root-&gt;left);
-        &#125;
-        if(root-&gt;right!&#x3D;NULL)
-        &#123;
-            if(root-&gt;val!&#x3D;root-&gt;right-&gt;val)flag&#x3D;false;
-            isUnivalTree(root-&gt;right);
-        &#125;
-        return flag;
+    string originalDigits(string s) &#123;
+        &#x2F;&#x2F;zero four six two one five seven nine three eight
+        unordered_map&lt;char,int&gt;mymap;
+        vector&lt;int&gt;v(10);
+        string str;
+        for(auto i:s)
+            mymap[i]++;
+        v[0]&#x3D;mymap[&#39;z&#39;];
+        v[4]&#x3D;mymap[&#39;u&#39;];
+        v[6]&#x3D;mymap[&#39;x&#39;];
+        v[2]&#x3D;mymap[&#39;w&#39;];
+        v[1]&#x3D;mymap[&#39;o&#39;]-v[0]-v[4]-v[2];
+        v[5]&#x3D;mymap[&#39;f&#39;]-v[4];
+        v[7]&#x3D;mymap[&#39;v&#39;]-v[5];
+        v[9]&#x3D;(mymap[&#39;n&#39;]-v[1]-v[7])&#x2F;2;
+        v[3]&#x3D;mymap[&#39;r&#39;]-v[4]-v[0];
+        v[8]&#x3D;mymap[&#39;g&#39;];
+
+        for(int i&#x3D;0;i&lt;v.size();i++)
+            for(int j&#x3D;0;j&lt;v[i];j++)
+                str+&#x3D;(i+&#39;0&#39;);
+        
+        return str;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<p>另一种方法，不用全局变量。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;*
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    bool isUnivalTree(TreeNode* root) &#123;
-        bool flag&#x3D;true;
-        int val&#x3D;root-&gt;val;
-        dfs(root,flag,val);
-        return flag;
-    &#125;
-    void dfs(TreeNode* root,bool &amp;flag,int val)
-    &#123;
-        if(root&#x3D;&#x3D;NULL)return;
-        if(root-&gt;left!&#x3D;NULL&amp;&amp;root-&gt;left-&gt;val!&#x3D;val)flag&#x3D;false;
-        if(root-&gt;right!&#x3D;NULL&amp;&amp;root-&gt;right-&gt;val!&#x3D;val)flag&#x3D;false;
-        dfs(root-&gt;left,flag,val);
-        dfs(root-&gt;right,flag,val);
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<h4 id="100-相同的树"><a href="#100-相同的树" class="headerlink" title="100. 相同的树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/same-tree/">100. 相同的树</a></h4><p>给你两棵二叉树的根节点 p 和 q ，编写一个函数来检验这两棵树是否相同。</p>
-<p>如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。</p>
+<h4 id="1332-删除回文子序列"><a href="#1332-删除回文子序列" class="headerlink" title="1332. 删除回文子序列"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/remove-palindromic-subsequences/">1332. 删除回文子序列</a></h4><p>给你一个字符串 s，它仅由字母 ‘a’ 和 ‘b’ 组成。每一次删除操作都可以从 s 中删除一个回文 子序列。</p>
+<p>返回删除给定字符串中所有字符（字符串为空）的最小删除次数。</p>
+<p>「子序列」定义：如果一个字符串可以通过删除原字符串某些字符而不改变原字符顺序得到，那么这个字符串就是原字符串的一个子序列。</p>
+<p>「回文」定义：如果一个字符串向后和向前读是一致的，那么这个字符串就是一个回文。</p>
 <p>示例 1：</p>
-<p><img src="https://assets.leetcode.com/uploads/2020/12/20/ex1.jpg" alt="ex1.jpg (622×182) (leetcode.com)"></p>
-<p>输入：p = [1,2,3], q = [1,2,3]<br>输出：true</p>
-<p>还是遍历树，不过这次是同时遍历两个，还要对比他们的val值。注意有一点，对比root-&gt;val时要考虑到节点为NULL的情况，这会使程序报错，所以对比值前我们应该先判断一下两个节点是否为NULL，如果两个都为NULL那就直接return结束程序，如果只有一个为空就把flag改为false（一个节点有值一个节点没值肯定不一样），如果都不为空就对比val。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
+<p>输入：s = “ababa”<br>输出：1<br>解释：字符串本身就是回文序列，只需要删除一次。</p>
+<p>注意，这里说的是子序列，也就是说我们可以把a和b两个字母分别提出来，这样就必然是两个回文了，比如abbbab这个，我们可以提成aa 和 bbbb这样就是两个回文了只用删两次。所以这题一共就三种情况，一种是s为空时返回0，不为空但整体是个回文时返回1，其他情况返回2.</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
 public:
-    bool isSameTree(TreeNode* p, TreeNode* q) &#123;
-        bool flag&#x3D;true;
-        dfs(p,q,flag);
-        return flag;
-    &#125;
-    void dfs(TreeNode* p, TreeNode* q,bool &amp;flag) &#123;
-        if(!flag)return;
-        if(p&#x3D;&#x3D;NULL&amp;&amp;q&#x3D;&#x3D;NULL)return;
-        else if(p&#x3D;&#x3D;NULL&amp;&amp;q!&#x3D;NULL||p!&#x3D;NULL&amp;&amp;q&#x3D;&#x3D;NULL)
+    int removePalindromeSub(string s) &#123;
+        int l&#x3D;0,n&#x3D;s.size(),r&#x3D;n-1;
+        if(!n)return 0;
+        while(l&lt;r)
         &#123;
-            flag&#x3D;false;
-            return;
+            if (s[l] !&#x3D; s[r])break;
+            else r--, l++;
         &#125;
-        if(p-&gt;val!&#x3D;q-&gt;val)flag&#x3D;false;
-        dfs(p-&gt;left,q-&gt;left,flag);
-        dfs(p-&gt;right,q-&gt;right,flag);
+        if(l&gt;&#x3D;r)return 1;
+        
+        return 2;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<h4 id="101-对称二叉树和剑指-Offer-28-对称的二叉树（这两题完全一样，我们放在一起说）"><a href="#101-对称二叉树和剑指-Offer-28-对称的二叉树（这两题完全一样，我们放在一起说）" class="headerlink" title="101. 对称二叉树和剑指 Offer 28. 对称的二叉树（这两题完全一样，我们放在一起说）"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/symmetric-tree/">101. 对称二叉树</a>和<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/">剑指 Offer 28. 对称的二叉树</a>（这两题完全一样，我们放在一起说）</h4><p>给定一个二叉树，检查它是否是镜像对称的。</p>
-<p>例如，二叉树 [1,2,2,3,4,4,3] 是对称的。</p>
-<p>​    1</p>
-<p>   / <br>  2   2<br> / \ / <br>3  4 4  3</p>
-<p>这题就是上题的翻版，不过上题比较的是相同的子节点，即left和left比，right和right比。这题是left和right比，right和left比。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
+<h4 id="1089-复写零"><a href="#1089-复写零" class="headerlink" title="1089. 复写零"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/duplicate-zeros/">1089. 复写零</a></h4><p>给你一个长度固定的整数数组 arr，请你将该数组中出现的每个零都复写一遍，并将其余的元素向右平移。</p>
+<p>注意：请不要在超过该数组长度的位置写入元素。</p>
+<p>要求：请对输入的数组 就地 进行上述修改，不要从函数返回任何东西。</p>
+<p>示例 1：</p>
+<p>输入：[1,0,2,3,0,4,5,0]<br>输出：null<br>解释：调用函数后，输入的数组将被修改为：[1,0,0,2,3,0,0,4]</p>
+<p>一个指针遍历arr，准备一个数组v接收，把遍历arr的数都存入v中，当遍历到0时就存两次，当v和arr的元素数量相同时结束遍历，再把v复制回arr。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
 public:
-    bool isSymmetric(TreeNode* root) &#123;
-        bool flag&#x3D;true;
-        dfs(root-&gt;left,root-&gt;right,flag);
-        return flag;
-    &#125;
-    void dfs(TreeNode *p,TreeNode*q,bool &amp;flag)
-    &#123;
-        if(!flag)return;
-        if(!p&amp;&amp;!q)return;
-        else if(!p&amp;&amp;q || p&amp;&amp;!q)
-        &#123;
-            flag&#x3D;false;
-            return;
+    void duplicateZeros(vector&lt;int&gt;&amp; arr) &#123;
+        int n &#x3D; arr.size();
+        vector&lt;int&gt;v;
+        for (int i &#x3D; 0; i &lt; n&amp;&amp;v.size()&lt;n; i++)
+        &#123;   
+            v.push_back(arr[i]);
+            if (arr[i] &#x3D;&#x3D; 0&amp;&amp;v.size()&lt;n)
+                v.push_back(arr[i]);
         &#125;
-        if(p-&gt;val!&#x3D;q-&gt;val)flag&#x3D;false;
-        dfs(p-&gt;left,q-&gt;right,flag);
-        dfs(p-&gt;right,q-&gt;left,flag);
+        arr&#x3D;v;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<h2 id="AcWing——算法基础"><a href="#AcWing——算法基础" class="headerlink" title="AcWing——算法基础"></a>AcWing——算法基础</h2><h4 id="842-排列数字-AcWing题库"><a href="#842-排列数字-AcWing题库" class="headerlink" title="842. 排列数字 - AcWing题库"></a><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/844/">842. 排列数字 - AcWing题库</a></h4><p>给定一个整数 n，将数字 1∼n 排成一排，将会有很多种排列方法。</p>
-<p>现在，请你按照字典序将所有的排列方法输出。</p>
-<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>共一行，包含一个整数 n。</p>
-<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>按字典序输出所有排列方案，每个方案占一行。</p>
-<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤n≤7</p>
-<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre class="line-numbers language-none"><code class="language-none">3<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre class="line-numbers language-none"><code class="language-none">1 2 3
-1 3 2
-2 1 3
-2 3 1
-3 1 2
-3 2 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<p>这是我们第一次接触到DFS（深度优先搜索）：一种用于遍历或搜索树或图的算法。 沿着树的深度遍历树的节点，尽可能深的搜索树的分支。当节点v的所在边都己被探寻过或者在搜寻时结点不满足条件，搜索将  <em>回溯</em>  到发现节点v的那条边的起始节点。整个进程反复进行直到所有节点都被访问为止。</p>
-<p>这里排列数字的过程就是，我们要组成一个三位数的数字，第一位的可能性有1、2、3，我们先选1，第二位的可能性就剩2、3，我们选2，第三位就只剩3了，这条路搜索完毕，我们回溯到第二位上，选3为第二位，这样第三位就只剩2了，这条路也搜索完毕，我们回溯到第二位上，第二位可能的结果也都搜索完，我们回溯到第一位上，选数字2为第一位，然后继续搜…………这样最后我们就可以拿到所有的数。</p>
-<p>我们准备一个int数组math来存放结果，一个bool数组st来告诉我们哪些数不能用，写一个递归函数dfs来进行我们的搜索，只有一个参数u，dfs进来先判断u和n是否相同，如果相同则输出math里存放的结果（要注意换行）。如果不相同我们就开始for(int i=0;i&lt; n;i++)遍历，判断st[i]的值是否为true，如果为true说明i表示的数我们已经使用过了，如果为false说明这个数我们没用过，可以放在第u位上，所有我们math[u]=i，同时把st[i]改为true告诉程序这个数已经被用过了。然后我们递归调用dfs(u+1)，下面是回溯的操作，我们要把数变回原来的样子，即这个数没被使用过的样子st[i]=false。这样我们最后就能获得所有的结果。</p>
-<pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;
-using namespace std;
-
-const int N&#x3D;100010;
-int n;
-int math[N];
-bool st[N];
-
-void dfs(int u)
-&#123;
-    if(u&#x3D;&#x3D;n)
-    &#123;
-        for(int i&#x3D;0;i&lt;n;i++)printf(&quot;%d &quot;,math[i]);
-        cout&lt;&lt;endl;
-        return;
-    &#125;
-    for(int i&#x3D;1;i&lt;&#x3D;n;i++)
-    &#123;
-        if(!st[i])
-        &#123;
-            st[i]&#x3D;true;
-            math[u]&#x3D;i;
-            dfs(u+1);
-            st[i]&#x3D;false;
+<h4 id="942-增减字符串匹配"><a href="#942-增减字符串匹配" class="headerlink" title="942. 增减字符串匹配"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/di-string-match/">942. 增减字符串匹配</a></h4><p>给定只含 “I”（增大）或 “D”（减小）的字符串 S ，令 N = S.length。</p>
+<p>返回 [0, 1, …, N] 的任意排列 A 使得对于所有 i = 0, …, N-1，都有：</p>
+<p>如果 S[i] == “I”，那么 A[i] &lt; A[i+1]<br>如果 S[i] == “D”，那么 A[i] &gt; A[i+1]</p>
+<p>示例 1：</p>
+<p>输入：”IDID”<br>输出：[0,4,1,3,2]</p>
+<p>我们可以发现，如果原来的字符串是i，那么数组对应位置的数就是从0开始增加，如果是d，就是从n开始减少，根据这个规律我们就可以直接把数存入数组里。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+public:
+    void duplicateZeros(vector&lt;int&gt;&amp; arr) &#123;
+        int n &#x3D; arr.size();
+        for (int i &#x3D; 0; i &lt; n; i++)
+        &#123;   &#x2F;&#x2F;[1,0,2,3,0,4,5,0]
+            if (arr[i] &#x3D;&#x3D; 0)
+            &#123;
+                int r &#x3D; n - 1;
+                while (r &gt; i)
+                &#123;
+                    arr[r] &#x3D; arr[r - 1];
+                    r--;
+                &#125;
+                i++;
+            &#125;
         &#125;
     &#125;
-&#125;
-
-int main()
-&#123;
-    cin&gt;&gt;n;
-    for(int i&#x3D;0;i&lt;n;i++)scanf(&quot;%d&quot;,&amp;math[i]);
-    dfs(0);
-    return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="843-n-皇后问题-AcWing题库"><a href="#843-n-皇后问题-AcWing题库" class="headerlink" title="843. n-皇后问题 - AcWing题库"></a><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/845/">843. n-皇后问题 - AcWing题库</a></h4><p>n−n−皇后问题是指将 n 个皇后放在 n×n的国际象棋棋盘上，使得皇后不能相互攻击到，即任意两个皇后都不能处于同一行、同一列或同一斜线上。</p>
-<p><img src="https://cdn.acwing.com/media/article/image/2019/06/08/19_860e00c489-1_597ec77c49-8-queens.png" alt="1_597ec77c49-8-queens.png"></p>
-<p>现在给定整数 n，请你输出所有的满足条件的棋子摆法。</p>
-<h4 id="输入格式-1"><a href="#输入格式-1" class="headerlink" title="输入格式"></a>输入格式</h4><p>共一行，包含整数 n。</p>
-<h4 id="输出格式-1"><a href="#输出格式-1" class="headerlink" title="输出格式"></a>输出格式</h4><p>每个解决方案占 n 行，每行输出一个长度为 nn 的字符串，用来表示完整的棋盘状态。</p>
-<p>其中 <code>.</code> 表示某一个位置的方格状态为空，<code>Q</code> 表示某一个位置的方格上摆着皇后。</p>
-<p>每个方案输出完成后，输出一个空行。</p>
-<p><strong>注意：行末不能有多余空格。</strong></p>
-<p>输出方案的顺序任意，只要不重复且没有遗漏即可。</p>
-<h4 id="数据范围-1"><a href="#数据范围-1" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤n≤9</p>
-<h4 id="输入样例：-1"><a href="#输入样例：-1" class="headerlink" title="输入样例："></a>输入样例：</h4><pre class="line-numbers language-none"><code class="language-none">4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h4 id="输出样例：-1"><a href="#输出样例：-1" class="headerlink" title="输出样例："></a>输出样例：</h4><pre class="line-numbers language-none"><code class="language-none">.Q..
-...Q
-Q...
-..Q.
-
-..Q.
-Q...
-...Q
-.Q..<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<p>DFS中最最最最最最最最最经典的八皇后问题，我们用的就是深度优先搜索的方法来写这道题，拿一个二维数组来模拟棋盘的样子，Q代表皇后的位置，我们的想法是先把皇后放在所有可能的地方上，每放一个皇后，就判断这个皇后同行同列同斜列上有没有皇后，如果有就说明这个方法不可行，然后回溯，然后再选新地方放…………以此类推。</p>
-<pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;
-using namespace std;
-
-const int N&#x3D;100;
-int n;
-char queen[N][N];
-bool col[N],dg[N],udg[N];
-
-void dfs(int u)
-&#123;
-    if(u&#x3D;&#x3D;n)
-    &#123;
-        for(int i&#x3D;0;i&lt;n;i++)cout&lt;&lt;queen[i]&lt;&lt;endl;
-        cout&lt;&lt;endl;
-        return;
-    &#125;
-    for(int i&#x3D;0;i&lt;n;i++)
-    &#123;
-        if(!col[i]&amp;&amp;!dg[i+u]&amp;&amp;!udg[n-u+i])
-        &#123;
-            queen[u][i]&#x3D;&#39;Q&#39;;
-            col[i]&#x3D;dg[u+i]&#x3D;udg[n-u+i]&#x3D;true;
-            dfs(u+1);
-            col[i]&#x3D;dg[u+i]&#x3D;udg[n-u+i]&#x3D;false;
-            queen[u][i]&#x3D;&#39;.&#39;;
-        &#125;
-    &#125;
-&#125;
-
-int main()
-&#123;
-    cin&gt;&gt;n;
-    for(int i&#x3D;0;i&lt;n;i++)
-        for(int j&#x3D;0;j&lt;n;j++)
-            queen[i][j]&#x3D;&#39;.&#39;;
-    dfs(0);
-    return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -704,7 +534,7 @@ int main()
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/11/01/2021-11-01-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/01/2021-11-01-mei-ri-shua-ti-da-qia/</a>
+                    <a href="http://example.com/2021/11/24/2021-11-24-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/24/2021-11-24-mei-ri-shua-ti-da-qia/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -744,10 +574,6 @@ int main()
                             
                                 <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                                     <span class="chip bg-color">每日打卡</span>
-                                </a>
-                            
-                                <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                                    <span class="chip bg-color">y总算法课</span>
                                 </a>
                             
                         </div>
@@ -1185,28 +1011,29 @@ int main()
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2021/11/02/2021-11-02-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/24/2021-11-24-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/12.jpg" class="responsive-img" alt="2021-11-02每日刷题打卡">
+                        <img src="/images/35.jpg" class="responsive-img" alt="2021-11-24每日刷题打卡">
                         
-                        <span class="card-title">2021-11-02每日刷题打卡</span>
+                        <span class="card-title">2021-11-24每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-02每日刷题打卡
+                            2021-11-24每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1219,6 +1046,7 @@ int main()
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1237,23 +1065,23 @@ int main()
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/10/31/zhou-zong-jie-2021-10-25-10-31/">
+                <a href="/2021/11/23/2021-11-23-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/10.jpg" class="responsive-img" alt="周总结：2021-10-25——10-31">
+                        <img src="/images/34.jpg" class="responsive-img" alt="2021-11-23每日刷题打卡">
                         
-                        <span class="card-title">周总结：2021-10-25——10-31</span>
+                        <span class="card-title">2021-11-23每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            周总结：2021-10-25——10-31
+                            2021-11-23每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-23
                             </span>
                         <span class="publish-author">
                             
