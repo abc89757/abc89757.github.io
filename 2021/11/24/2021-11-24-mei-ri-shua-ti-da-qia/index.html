@@ -395,7 +395,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="2021-11-24每日刷题打卡"><a href="#2021-11-24每日刷题打卡" class="headerlink" title="2021-11-24每日刷题打卡"></a>2021-11-24每日刷题打卡</h1><h2 id="力扣——每日一题"><a href="#力扣——每日一题" class="headerlink" title="力扣——每日一题"></a>力扣——每日一题</h2><h4 id="423-从英文中重建数字"><a href="#423-从英文中重建数字" class="headerlink" title="423. 从英文中重建数字"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reconstruct-original-digits-from-english/">423. 从英文中重建数字</a></h4><p>给你一个字符串 s ，其中包含字母顺序打乱的用英文单词表示的若干数字（0-9）。按 升序 返回原始的数字。</p>
+                <h1 id="2021-11-24每日刷题打卡"><a href="#2021-11-24每日刷题打卡" class="headerlink" title="2021-11-24每日刷题打卡"></a>2021-11-24每日刷题打卡</h1><h2 id="力扣——每日一题"><a href="#力扣——每日一题" class="headerlink" title="力扣——每日一题"></a>力扣——每日一题</h2><h4 id="423-从英文中重建数字"><a href="#423-从英文中重建数字" class="headerlink" title="423. 从英文中重建数字"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reconstruct-original-digits-from-english/">423. 从英文中重建数字</a></h4><p>给你一个字符串 s ，其中包含字母顺序打乱的用英文单词表示的若干数字（0-9）。按升序返回原始的数字。</p>
 <p>示例 1：</p>
 <p>输入：s = “owoztneoer”<br>输出：”012”</p>
 <p>究极无敌笨比式写法。 我的顺序是：zero four six two one five seven nine three eight 因为 z 这个字母只有zero有，所以有几个z就代表有几个0. 以此类推: four的u， six的x， two的w， one的o （因为其它有o的已经被排除了）， five的f （同上）， seven的v， nine的n， three的r， 和最后eight任意一个字母都行。 最后把数排序一下构建字符串即可。（代码太长了）</p>
