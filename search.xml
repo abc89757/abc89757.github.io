@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>2021-11-26每日刷题打卡</title>
+      <link href="/2021/11/26/2021-11-26-mei-ri-shua-ti-da-qia/"/>
+      <url>/2021/11/26/2021-11-26-mei-ri-shua-ti-da-qia/</url>
+      
+        <content type="html"><![CDATA[<h1 id="2021-11-26每日刷题打卡"><a href="#2021-11-26每日刷题打卡" class="headerlink" title="2021-11-26每日刷题打卡"></a>2021-11-26每日刷题打卡</h1><h4 id="剑指-Offer-58-I-翻转单词顺序"><a href="#剑指-Offer-58-I-翻转单词顺序" class="headerlink" title="剑指 Offer 58 - I. 翻转单词顺序"></a><a href="https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/">剑指 Offer 58 - I. 翻转单词顺序</a></h4><p>输入一个英文句子，翻转句子中单词的顺序，但单词内字符的顺序不变。为简单起见，标点符号和普通字母一样处理。例如输入字符串”I am a student. “，则输出”student. a am I”。</p><p>示例 1：</p><p>输入: “the sky is blue”<br>输出: “blue is sky the”</p><pre class="line-numbers language-none"><code class="language-none">class Solution &#123;public:    string reverseWords(string s) &#123;        reverse(s.begin(), s.end());        int idx &#x3D; 0, n &#x3D; s.size();        for (int i &#x3D; 0; i &lt; n; i++)        &#123;            if (s[i] !&#x3D; &#39; &#39;)            &#123;                if (idx !&#x3D; 0)s[idx++] &#x3D; &#39; &#39;;                int r &#x3D; 0;                string str;                while (i&lt;n&amp;&amp;s[i] !&#x3D; &#39; &#39;)                &#123;                    str +&#x3D; s[i++];                    r++;                &#125;                while (r--)                &#123;                    s[idx++] &#x3D; str[r];                &#125;                            &#125;        &#125;        s.erase(s.begin()+idx,s.end());        return s;    &#125;&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="LCP-18-早餐组合"><a href="#LCP-18-早餐组合" class="headerlink" title="LCP 18. 早餐组合"></a><a href="https://leetcode-cn.com/problems/2vYnGI/">LCP 18. 早餐组合</a></h4><p>小扣在秋日市集选择了一家早餐摊位，一维整型数组 staple 中记录了每种主食的价格，一维整型数组 drinks 中记录了每种饮料的价格。小扣的计划选择一份主食和一款饮料，且花费不超过 x 元。请返回小扣共有多少种购买方案。</p><p>注意：答案需要以 1e9 + 7 (1000000007) 为底取模，如：计算初始结果为：1000000008，请返回 1</p><p>示例 1：</p><p>输入：staple = [10,20,5], drinks = [5,5,2], x = 15</p><p>输出：6</p><p>解释：小扣有 6 种购买方案，所选主食与所选饮料在数组中对应的下标分别是：<br>第 1 种方案：staple[0] + drinks[0] = 10 + 5 = 15；<br>第 2 种方案：staple[0] + drinks[1] = 10 + 5 = 15；<br>第 3 种方案：staple[0] + drinks[2] = 10 + 2 = 12；<br>第 4 种方案：staple[2] + drinks[0] = 5 + 5 = 10；<br>第 5 种方案：staple[2] + drinks[1] = 5 + 5 = 10；<br>第 6 种方案：staple[2] + drinks[2] = 5 + 2 = 7。</p><pre class="line-numbers language-none"><code class="language-none">class Solution &#123;public:    int breakfastNumber(vector&lt;int&gt;&amp; staple, vector&lt;int&gt;&amp; drinks, int x) &#123;        sort(staple.begin(),staple.end());        sort(drinks.begin(),drinks.end());        int l&#x3D;0,m&#x3D;drinks.size(),r&#x3D;m-1,n&#x3D;staple.size(),ans&#x3D;0;        while(l&lt;n&amp;&amp;r&gt;&#x3D;0)        &#123;            if(staple[l]&gt;x)break;            int r1 &#x3D; 0, mid &#x3D; (r + r1) &#x2F; 2;            while (drinks[r] &gt; x - staple[l]&amp;&amp;r&gt;r1)            &#123;                if (drinks[mid] &gt;&#x3D; x - staple[l])r1 &#x3D; mid;                else r &#x3D; mid-1;                mid &#x3D; r + r1 &gt;&gt; 1;            &#125;            ans +&#x3D; r + 1;            ans %&#x3D; 1000000007;            l++;        &#125;        return ans-1;    &#125;&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 每日打卡 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 每日打卡 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2021-11-25每日刷题打卡</title>
       <link href="/2021/11/25/2021-11-25-mei-ri-shua-ti-da-qia/"/>
       <url>/2021/11/25/2021-11-25-mei-ri-shua-ti-da-qia/</url>
