@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>2021-11-27每日刷题打卡</title>
+      <link href="/2021/11/27/2021-11-27-mei-ri-shua-ti-da-qia/"/>
+      <url>/2021/11/27/2021-11-27-mei-ri-shua-ti-da-qia/</url>
+      
+        <content type="html"><![CDATA[<h1 id="2021-11-27每日刷题打卡"><a href="#2021-11-27每日刷题打卡" class="headerlink" title="2021-11-27每日刷题打卡"></a>2021-11-27每日刷题打卡</h1><h2 id="力扣——剑指offer"><a href="#力扣——剑指offer" class="headerlink" title="力扣——剑指offer"></a>力扣——剑指offer</h2><h4 id="剑指-Offer-35-复杂链表的复制"><a href="#剑指-Offer-35-复杂链表的复制" class="headerlink" title="剑指 Offer 35. 复杂链表的复制"></a><a href="https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/">剑指 Offer 35. 复杂链表的复制</a></h4><p>请实现 copyRandomList 函数，复制一个复杂链表。在复杂链表中，每个节点除了有一个 next 指针指向下一个节点，还有一个 random 指针指向链表中的任意节点或者 null。</p><p>示例 1：</p><p><img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/01/09/e1.png" alt="e1.png (1900×386) (leetcode-cn.com)"></p><p>输入：head = [[7,null],[13,0],[11,4],[10,2],[1,0]]<br>输出：[[7,null],[13,0],[11,4],[10,2],[1,0]]</p><pre class="line-numbers language-none"><code class="language-none">class Solution &#123;public:    unordered_map&lt;Node*, Node*&gt; cachedNode;    Node* copyRandomList(Node* head) &#123;        if (head &#x3D;&#x3D; nullptr) &#123;            return nullptr;        &#125;        if (!cachedNode.count(head)) &#123;            Node* headNew &#x3D; new Node(head-&gt;val);            cachedNode[head] &#x3D; headNew;            headNew-&gt;next &#x3D; copyRandomList(head-&gt;next);            headNew-&gt;random &#x3D; copyRandomList(head-&gt;random);        &#125;        return cachedNode[head];    &#125;&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="剑指-Offer-05-替换空格"><a href="#剑指-Offer-05-替换空格" class="headerlink" title="剑指 Offer 05. 替换空格"></a><a href="https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/">剑指 Offer 05. 替换空格</a></h4><p>请实现一个函数，把字符串 s 中的每个空格替换成”%20”。</p><p>示例 1：</p><p>输入：s = “We are happy.”<br>输出：”We%20are%20happy.”</p><pre class="line-numbers language-none"><code class="language-none">class Solution &#123;public:    string replaceSpace(string s) &#123;        string str;        for(auto i:s)            if(i&#x3D;&#x3D;&#39; &#39;)str+&#x3D;&quot;%20&quot;;            else str+&#x3D;i;        return str;    &#125;&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 每日打卡 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 每日打卡 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2021-11-26每日刷题打卡</title>
       <link href="/2021/11/26/2021-11-26-mei-ri-shua-ti-da-qia/"/>
       <url>/2021/11/26/2021-11-26-mei-ri-shua-ti-da-qia/</url>
