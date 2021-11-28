@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="2021-11-17每日刷题打卡, 你好Aの小屋">
-    <meta name="description" content="2021-11-17每日刷题打卡">
+    <meta name="keywords" content="周总结：2021-11-22——11-28, 你好Aの小屋">
+    <meta name="description" content="周总结：2021-11-22——11-28">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>2021-11-17每日刷题打卡 | 你好Aの小屋</title>
+    <title>周总结：2021-11-22——11-28 | 你好Aの小屋</title>
     <link rel="icon" type="image/png" href="/medias/comment_bg.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/28.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/39.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">2021-11-17每日刷题打卡</h1>
+                    <h1 class="description center-align post-title">周总结：2021-11-22——11-28</h1>
                 </div>
             </div>
         </div>
@@ -340,10 +340,6 @@
                                 <span class="chip bg-color">每日打卡</span>
                             </a>
                         
-                            <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                                <span class="chip bg-color">y总算法课</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -365,7 +361,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-11-17
+                    2021-11-28
                 </div>
                 
 
@@ -399,155 +395,146 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="2021-11-17每日刷题打卡"><a href="#2021-11-17每日刷题打卡" class="headerlink" title="2021-11-17每日刷题打卡"></a>2021-11-17每日刷题打卡</h1><h2 id="力扣——每日一题"><a href="#力扣——每日一题" class="headerlink" title="力扣——每日一题"></a>力扣——每日一题</h2><h4 id="318-最大单词长度乘积"><a href="#318-最大单词长度乘积" class="headerlink" title="318. 最大单词长度乘积"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/maximum-product-of-word-lengths/">318. 最大单词长度乘积</a></h4><p>给定一个字符串数组 words，找到 length(word[i]) * length(word[j]) 的最大值，并且这两个单词不含有公共字母。你可以认为每个单词只包含小写字母。如果不存在这样的两个单词，返回 0。</p>
-<p>示例 1:</p>
-<p>输入: [“abcw”,”baz”,”foo”,”bar”,”xtfn”,”abcdef”]<br>输出: 16<br>解释: 这两个单词为 “abcw”, “xtfn”。</p>
-<p>这题我用了两个方法，第一个是几分钟前还不会位运算的本笨比写的暴力方法，第二个是稍稍学习了下位运算的聪明的笨比写的较轻松的方法。</p>
-<p>第一个：准备一个以map容器为元素的vector容器v（即vector&lt;map&lt;char,int&gt;&gt;)，还有一个数max来存最大值（初始化为0），遍历words数组，把各个单词的组成情况用map&lt;char,int&gt;容器存储起来插入到v中，等所有的单词都遍历完后开始下一轮遍历，遍历v容器，先拿第一个元素和剩下所有元素比较，再拿第二个元素和剩下所有元素比较…………以此往复，(比较方式是用for遍历26个字母，因为前面我们用map存下了各个单词的组成状况，所以这里我们用，map[‘a’]或map[‘b’]这样的方式就可以知道这字母的数为多少，假如一个单词为look，那么map[l]=1,map[o]=2，如果没有这个字母那就是为0，比如map[a]=0……)。然后我们比较同时比较两个单词的组成情况，判断一下有没有出现map1[]!=0&amp;&amp;map2[]!=0的情况，如果有就说明这两个单词有重复的字母，不满足条件，我们直接去比较下一对。如果对比结束了发现没有重复的字母，那我们把两个单词的长度相乘，和max对比，大于max就把乘积赋给max，小于则不管。最后一切遍历结束后返回max即可。</p>
+                <h1 id="周总结：2021-11-22——11-28"><a href="#周总结：2021-11-22——11-28" class="headerlink" title="周总结：2021-11-22——11-28"></a>周总结：2021-11-22——11-28</h1><h2 id="这里是这一周来刷题时印象比较深的几道题，挑出来做个总结"><a href="#这里是这一周来刷题时印象比较深的几道题，挑出来做个总结" class="headerlink" title="这里是这一周来刷题时印象比较深的几道题，挑出来做个总结"></a>这里是这一周来刷题时印象比较深的几道题，挑出来做个总结</h2><h4 id="384-打乱数组"><a href="#384-打乱数组" class="headerlink" title="384. 打乱数组"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/shuffle-an-array/">384. 打乱数组</a></h4><p>给你一个整数数组 nums ，设计算法来打乱一个没有重复元素的数组。</p>
+<p>实现 Solution class:</p>
+<p>Solution(int[] nums) 使用整数数组 nums 初始化对象<br>int[] reset() 重设数组到它的初始状态并返回<br>int[] shuffle() 返回数组随机打乱后的结果</p>
+<p>示例：</p>
+<p>输入<br>[“Solution”, “shuffle”, “reset”, “shuffle”]<br>[[[1, 2, 3]], [], [], []]<br>输出<br>[null, [3, 1, 2], [1, 2, 3], [1, 3, 2]]</p>
+<p>解释<br>Solution solution = new Solution([1, 2, 3]);<br>solution.shuffle();    // 打乱数组 [1,2,3] 并返回结果。任何 [1,2,3]的排列返回的概率应该相同。例如，返回 [3, 1, 2]<br>solution.reset();      // 重设数组到它的初始状态 [1, 2, 3] 。返回 [1, 2, 3]<br>solution.shuffle();    // 随机返回数组 [1, 2, 3] 打乱后的结果。例如，返回 [1, 3, 2]</p>
+<p>不知道这题有什么意义，但这次学到了个叫做洗牌算法的东西，就是随机的打乱一个数组，每次打乱的地方都不一样。</p>
+<p>这个洗牌算法就是，for循环从下标0开始遍历，生成一个随机数，范围是0~数组长度内，然后每次把下标为i的元素和下标为随机数的元素交换，这样就是随机打乱了数组，把数组遍历完后得到的就是随机打乱的数组了，因为随机数生成每个数的概率都是一样的，所以打乱的也是随机的不会有换了好几次结果都是一样的情况发生。</p>
 <pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
 public:
-    int maxProduct(vector&lt;string&gt;&amp; words) &#123;
-        vector&lt;unordered_map&lt;char, int&gt;&gt;v;
-        int max_len &#x3D; 0;
-        for (auto i : words)
-        &#123;
-            unordered_map&lt;char, int&gt;mymap;
-            for (auto j : i)
-                mymap[j]++;
-            v.push_back(mymap);
-        &#125;
-        int n &#x3D; v.size(), l &#x3D; 0, r &#x3D; 1;
-        bool flag &#x3D; true;
-        while(l&lt;n)
-        &#123;
-            r&#x3D;0;
-            while (r &lt; n)
-            &#123;
-                
-                for (char i &#x3D; &#39;a&#39;; i &lt;&#x3D; &#39;z&#39;; i++)
-                &#123;
-                    if (v[l][i] !&#x3D; 0 &amp;&amp; v[r][i] !&#x3D; 0)
-                    &#123;
-                        flag &#x3D; false;
-                        break;
-                    &#125;
-                &#125;
-                int num &#x3D;  words[l].size() * words[r].size();
-                if (flag)
-                    max_len &#x3D; max(max_len,num);
-                flag &#x3D; true;
-                r++;
-            &#125;
-            l++;
-        &#125;
-        return max_len;
+    vector&lt;int&gt;v;
+    vector&lt;int&gt;v1;
+    Solution(vector&lt;int&gt;&amp; nums) &#123;
+        v&#x3D;nums;
+        v1&#x3D;nums;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>第二个是位运算，上面的方法我们是分析了一个单词的组成，比方拿look来说是有一个l、两个o、三个k组成的。但我们其实并不需要知道它的组成，我们只需要知道这个字母有没有在这个单词里出现过就行。那我们可以用二进制数的方式来存一个字母是否在单词里出现，因为二进制只用0和1，那么我们可以设定一个26位长的二进制数，即一开始是26个0（000000000……00）哪个字母出现了就把对应的数从0变成1，比如a就是把第一个0变成1即可，然后我们把这个二进制数存入vector里即可（比起上面的vector里存map容器，这里存的只是一个int，方便很多）。到时候比较，我们只需要用到&amp;即可，&amp;的功能是比较两个二进制数，如果两边都为1才为1，比如两个二进制数0010和0110，除了第二位都为1以外，其余位置要么只有一个1，要么都为0，所以运算后的结果为0010（转换成bool就是true），如果一个1都没有就直接是0（转换成bool就是false），我们可以用这个方法来判断单词是否有相同的地方，比如单词abc和aef就是0111和00110001，运算后为0001，说明有相同的，如果是ab和cd，就是0011和1100，运算后为0，说明没有相同的，然后我们在计算然后取最大值即可。</p>
-<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
-public:
-    int maxProduct(vector&lt;string&gt;&amp; words) &#123;
-        vector&lt;int&gt;v;
-        for(auto i:words)
-        &#123;
-            int maxk&#x3D;0;
-            for(auto j:i)
-            &#123;
-                maxk |&#x3D; 1&lt;&lt; (j-&#39;a&#39;);
-            &#125;
-            v.push_back(maxk);
-        &#125;
-        int n&#x3D;v.size(),max_num&#x3D;0;;
+    
+    vector&lt;int&gt; reset() &#123;
+        v&#x3D;v1;
+        return v;
+    &#125;
+    
+    vector&lt;int&gt; shuffle() &#123;
+        int n&#x3D;v.size();
         for(int i&#x3D;0;i&lt;n;i++)
         &#123;
-            
-            for(int j&#x3D;i+1;j&lt;n;j++)
-            &#123;
-                int num&#x3D;words[i].size()*words[j].size();
-                if(!(v[i]&amp;v[j]))
-                    max_num&#x3D;max(max_num,num);
-                else continue;
-            &#125;
-        &#125;
-        return max_num;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h2 id="AcWing——算法基础"><a href="#AcWing——算法基础" class="headerlink" title="AcWing——算法基础"></a>AcWing——算法基础</h2><h4 id="40-顺时针打印矩阵-AcWing题库"><a href="#40-顺时针打印矩阵-AcWing题库" class="headerlink" title="40. 顺时针打印矩阵 - AcWing题库"></a><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/39/">40. 顺时针打印矩阵 - AcWing题库</a></h4><p>输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字。</p>
-<h4 id="样例"><a href="#样例" class="headerlink" title="样例"></a>样例</h4><pre class="line-numbers language-none"><code class="language-none">输入：
-[
-  [1, 2, 3, 4],
-  [5, 6, 7, 8],
-  [9,10,11,12]
-]
-
-输出：[1,2,3,4,8,12,11,10,9,5,6,7]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<p>我们从x=0,y=0处开始逐步把数存入数组里，准备四个方向：上（-1，0），右（0，1），下（1，0），左（0，-1），每次遍历的时候按照方向xy坐标的不同加在我们遍历的xy处就可以达到顺时针遍历，每当遇到边界或是到了之前的位置（转了一圈）就转方向。</p>
-<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
-public:
-    vector&lt;int&gt; printMatrix(vector&lt;vector&lt;int&gt; &gt; matrix) &#123;
-        int n&#x3D;matrix.size();
-        vector&lt;int&gt;v;
-        if(!n)return v;
-        int m&#x3D;matrix[0].size();
-        vector&lt;vector&lt;bool&gt;&gt;st(n,vector&lt;bool&gt;(m,false));
-        int dx[]&#x3D;&#123;-1,0,1,0&#125;,dy[]&#x3D;&#123;0,1,0,-1&#125;;
-        int x&#x3D;0,y&#x3D;0,d&#x3D;1;
-        for(int i&#x3D;0;i&lt;n*m;i++)
-        &#123;
-            v.push_back(matrix[x][y]);
-            st[x][y]&#x3D;true;
-            int a&#x3D;x+dx[d],b&#x3D;y+dy[d];
-            if(a&gt;&#x3D;n||a&lt;0||b&lt;0||b&gt;&#x3D;m||st[a][b])
-            &#123;
-                d&#x3D;(d+1)%4;
-                a&#x3D;x+dx[d],b&#x3D;y+dy[d];
-            &#125;
-            x&#x3D;a,y&#x3D;b;
+            int a&#x3D;(i+rand()%n)%n;
+            int temp&#x3D;v[a];
+            v[a]&#x3D;v[i];
+            v[i]&#x3D;temp;
         &#125;
         return v;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;
+
+&#x2F;**
+ * Your Solution object will be instantiated and called as such:
+ * Solution* obj &#x3D; new Solution(nums);
+ * vector&lt;int&gt; param_1 &#x3D; obj-&gt;reset();
+ * vector&lt;int&gt; param_2 &#x3D; obj-&gt;shuffle();
+ *&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<h4 id="801-二进制中1的个数-AcWing题库"><a href="#801-二进制中1的个数-AcWing题库" class="headerlink" title="801. 二进制中1的个数 - AcWing题库"></a><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/803/">801. 二进制中1的个数 - AcWing题库</a></h4><p>给定一个长度为 n 的数列，请你求出数列中每个数的二进制表示中 1 的个数。</p>
-<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>第一行包含整数 n。</p>
-<p>第二行包含 n 个整数，表示整个数列。</p>
-<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>共一行，包含 n 个整数，其中的第 i 个数表示数列中的第 i 个数的二进制表示中 1 的个数。</p>
-<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤n≤100000<br>0≤数列中元素的值≤10^9</p>
-<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre class="line-numbers language-none"><code class="language-none">5
-1 2 3 4 5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 
-
-<p>这里我们用到的是位运算的知识点，采用的是右移运算符（&gt;&gt;)，使用格式是a&gt;&gt;b;意思是把数字a的二进制数向右移动b位，比如7&gt;&gt;2，就是把5的二进制数向右移动2位，7二进制是0111，向右移动两位就变成了01，我们就是采用这个方式，让一个数的二进制数上各个位的数移动到右边第一位，然后和&amp;1，&amp;是按位与的意思，它的意思是两个数的二进制数对应位置上都为1才为1，比如5&amp;7就是0101&amp;0111，运算结果就是0101，我们把右移的数和1进行&amp;运算，就是只看一个数的最右边位置上是不是1，如果是1就就计算有一个1，然后再右移，在计算，最后右移完后就可以知道这个数的二进制有几个1了。（我们这里从32开始右移，移到1停止，从32开始是因为int类型是32字节，即二进制有32位数）</p>
-<pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;
-using namespace std;
-int main()
-&#123;
-    int m,num,math;
-    cin&gt;&gt;m;
-    while(m--)
-    &#123;
-        math&#x3D;0;
-        cin&gt;&gt;num;
-        for(int i&#x3D;32;i&gt;0;i--)
-            if(num&gt;&gt;i&amp;1)math++;
-        cout&lt;&lt;math&lt;&lt;&quot; &quot;;
+<h4 id="859-亲密字符串"><a href="#859-亲密字符串" class="headerlink" title="859. 亲密字符串"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/buddy-strings/">859. 亲密字符串</a></h4><p>给你两个字符串 s 和 goal ，只要我们可以通过交换 s 中的两个字母得到与 goal 相等的结果，就返回 true ；否则返回 false 。</p>
+<p>交换字母的定义是：取两个下标 i 和 j （下标从 0 开始）且满足 i != j ，接着交换 s[i] 和 s[j] 处的字符。</p>
+<p>例如，在 “abcd” 中交换下标 0 和下标 2 的元素可以生成 “cbad” 。</p>
+<p>示例 1：</p>
+<p>输入：s = “ab”, goal = “ba”<br>输出：true<br>解释：你可以交换 s[0] = ‘a’ 和 s[1] = ‘b’ 生成 “ba”，此时 s 和 goal 相等。</p>
+<p>这题要注意一点，就是必须而且只能交换两个字符，也就是说你哪怕一开始就相等了，但你也得进行一次交换，如果交换完后不一样了，那你这个就不满足条件，返回false，比如ab和ab，但aa和aa这样，交换后还是一样的情况就满足条件返回true。你现在也能注意到，我只要交换两个一样的字母就行了，只要两个字母一样，交换和还是一样的。所以我们在遍历字符串的同时要把s的组成情况记录下来。</p>
+<p>先判断两个字符串长度是否相等，如果不相等就直接返回false，准备一个pos=-1来记录找到的字符，然后双指针比较两个字符串，找到第一个不一样的地方就把位置记录下来，然后继续遍历找第二个不一样的，要是找到了就把当前的字符和刚刚找到的字符交换一下，然后之间结束循环，每次遍历的时候把s的字符设定一个哈希表存起来。循环结束后判断pos是否为-1，如果为-1说明s和goal两个字符串完全一样，然后我们查看哈希表，看看s里面有没有两个一样的字符，如果有就返回true，没有就返回false。如果不为-1我们就比较两个字符串是否相等，相等就返回true，不相等就返回false。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+public:
+    bool buddyStrings(string s, string goal) &#123;
+        int l&#x3D;0,r&#x3D;0,n&#x3D;s.size(),m&#x3D;goal.size(),pos&#x3D;-1;
+        if(n!&#x3D;m)return false;
+        unordered_map&lt;char,int&gt;mymap;
+        while(l&lt;n)
+        &#123;
+            if(s[l]!&#x3D;goal[r]&amp;&amp;pos&#x3D;&#x3D;-1)pos&#x3D;l;
+            else if(s[l]!&#x3D;goal[r])
+            &#123;
+                swap(s[l],s[pos]);
+                break;
+            &#125;
+            mymap[s[l]]++;
+            l++,r++;
+        &#125;
+        if(pos&#x3D;&#x3D;-1)
+        &#123;
+            for(auto i:mymap)
+                if(i.second&gt;1)return true;
+            return false;
+        &#125;
+        return s&#x3D;&#x3D;goal?true:false;
     &#125;
-    return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h4 id="392-判断子序列"><a href="#392-判断子序列" class="headerlink" title="392. 判断子序列"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/is-subsequence/">392. 判断子序列</a></h4><p>给定字符串 s 和 t ，判断 s 是否为 t 的子序列。</p>
+<p>字符串的一个子序列是原始字符串删除一些（也可以不删除）字符而不改变剩余字符相对位置形成的新字符串。（例如，”ace”是”abcde”的一个子序列，而”aec”不是）。</p>
+<p>进阶：</p>
+<p>如果有大量输入的 S，称作 S1, S2, … , Sk 其中 k &gt;= 10亿，你需要依次检查它们是否为 T 的子序列。在这种情况下，你会怎样改变代码？</p>
+<p>致谢：</p>
+<p>特别感谢 @pbrother 添加此问题并且创建所有测试用例。</p>
+<p>示例 1：</p>
+<p>输入：s = “abc”, t = “ahbgdc”<br>输出：true</p>
+<p>双指针遍历，一个l遍历s，一个r遍历t，当l大于s.size()活r大于t.size()时结束遍历，每次遍历判断s[l]和t[r]是否相等，如果不相等r++,如果相等l和r一起++。当遍历结束后判断一下l是否走完了s，如果走完了说明可以在t中找到s的所有字母，即s为t子序列返回true。如果没找完返回false。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+public:
+    bool isSubsequence(string s, string t) &#123;
+        int l&#x3D;0,r&#x3D;0,n&#x3D;s.size(),m&#x3D;t.size();
+        while(l&lt;n&amp;&amp;r&lt;m)
+        &#123;
+            if(s[l]&#x3D;&#x3D;t[r])l++,r++;
+            else r++;
+        &#125;
+        if(n&#x3D;&#x3D;l)return true;
+        return false;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h4 id="42-接雨水"><a href="#42-接雨水" class="headerlink" title="42. 接雨水"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/trapping-rain-water/">42. 接雨水</a></h4><p>给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。</p>
+<p>示例 1：</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/21d9b78465c3806c2a0731a770f160cc.png" alt="rainwatertrap.png (412×161) (leetcode-cn.com)"></p>
+<p>输入：height = [0,1,0,2,1,0,1,3,2,1,2,1]<br>输出：6<br>解释：上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。 </p>
+<p>首先我们知道，只有中间的高度小于左右两边的高度才可以接到雨水，这种情况下我们可以使用头尾双指针向中间移动遍历。准备两个值l_max和r_max，来存左右两边的最大高度。开始遍历，每次比较height[l]和heigh[r]的大小，如果l大那就可以知道左边已经出现了大于当前高度的地方，只要在右边找到大于当前高度的地方即可，我们先更新一下最大高度，看是r_max大还是height[r]大，如果height[r]大就更新一下r_max，我们计算r_max-heigh[r]的值即为我们可以接到雨水的值，如果当前我们遍历到的柱子就是最高的柱子，那自然右边不会出现更高的柱子来让我们接雨水，所以是0，如果r_max大于heigh[r]则说明右边也有高的柱子，满足了中间小两边大的条件，此时能接雨水的容量就是r_max-heigh[r]，然后r–。如果是l小了则以上操作改一下即可。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+public:
+    int trap(vector&lt;int&gt;&amp; height) &#123;
+        int l&#x3D;0,r&#x3D;height.size()-1,l_max&#x3D;0,r_max&#x3D;0,ans&#x3D;0;
+        while(l&lt;r)
+        &#123;
+            if(height[l]&lt;height[r])
+            &#123;
+                l_max&#x3D;max(l_max,height[l]);
+                ans+&#x3D;l_max-height[l];
+                l++;
+            &#125;
+            else
+            &#123;
+                r_max&#x3D;max(r_max,height[r]);
+                ans+&#x3D;r_max-height[r];
+                r--;
+            &#125;
+        &#125;
+        return ans;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -575,7 +562,7 @@ int main()
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/11/17/2021-11-17-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/17/2021-11-17-mei-ri-shua-ti-da-qia/</a>
+                    <a href="http://example.com/2021/11/28/zhou-zong-jie-2021-11-22-11-28/">http://example.com/2021/11/28/zhou-zong-jie-2021-11-22-11-28/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -615,10 +602,6 @@ int main()
                             
                                 <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                                     <span class="chip bg-color">每日打卡</span>
-                                </a>
-                            
-                                <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                                    <span class="chip bg-color">y总算法课</span>
                                 </a>
                             
                         </div>
@@ -1056,28 +1039,29 @@ int main()
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2021/11/18/2021-11-18-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/28/zhou-zong-jie-2021-11-22-11-28/">
                     <div class="card-image">
                         
-                        <img src="/images/29.jpg" class="responsive-img" alt="2021-11-18每日刷题打卡">
+                        <img src="/images/39.jpg" class="responsive-img" alt="周总结：2021-11-22——11-28">
                         
-                        <span class="card-title">2021-11-18每日刷题打卡</span>
+                        <span class="card-title">周总结：2021-11-22——11-28</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-18每日刷题打卡
+                            周总结：2021-11-22——11-28
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1090,15 +1074,12 @@ int main()
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
                     <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                         <span class="chip bg-color">每日打卡</span>
-                    </a>
-                    
-                    <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                        <span class="chip bg-color">y总算法课</span>
                     </a>
                     
                 </div>
@@ -1112,23 +1093,23 @@ int main()
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/11/16/2021-11-16-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/27/2021-11-27-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/27.jpg" class="responsive-img" alt="2021-11-16每日刷题打卡">
+                        <img src="/images/37.jpg" class="responsive-img" alt="2021-11-27每日刷题打卡">
                         
-                        <span class="card-title">2021-11-16每日刷题打卡</span>
+                        <span class="card-title">2021-11-27每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-16每日刷题打卡
+                            2021-11-27每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-27
                             </span>
                         <span class="publish-author">
                             
@@ -1147,10 +1128,6 @@ int main()
                     
                     <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                         <span class="chip bg-color">每日打卡</span>
-                    </a>
-                    
-                    <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                        <span class="chip bg-color">y总算法课</span>
                     </a>
                     
                 </div>
