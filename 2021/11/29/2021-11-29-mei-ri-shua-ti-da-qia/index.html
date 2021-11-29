@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="周总结：2021-11-01——11-07, 你好Aの小屋">
-    <meta name="description" content="周总结：2021-11-01——11-07">
+    <meta name="keywords" content="2021-11-29每日刷题打卡, 你好Aの小屋">
+    <meta name="description" content="2021-11-29每日刷题打卡">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>周总结：2021-11-01——11-07 | 你好Aの小屋</title>
+    <title>2021-11-29每日刷题打卡 | 你好Aの小屋</title>
     <link rel="icon" type="image/png" href="/medias/comment_bg.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/40.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">周总结：2021-11-01——11-07</h1>
+                    <h1 class="description center-align post-title">2021-11-29每日刷题打卡</h1>
                 </div>
             </div>
         </div>
@@ -340,6 +340,10 @@
                                 <span class="chip bg-color">每日打卡</span>
                             </a>
                         
+                            <a href="/tags/%E5%89%91%E6%8C%87offer/">
+                                <span class="chip bg-color">剑指offer</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -361,7 +365,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-11-07
+                    2021-11-29
                 </div>
                 
 
@@ -370,7 +374,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    2.2k
+                    693
                 </div>
                 
 
@@ -395,226 +399,86 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="周总结：2021-11-01——11-07"><a href="#周总结：2021-11-01——11-07" class="headerlink" title="周总结：2021-11-01——11-07"></a>周总结：2021-11-01——11-07</h1><h3 id="这里是这一周来刷题时印象比较深的几道题，挑出来做个总结"><a href="#这里是这一周来刷题时印象比较深的几道题，挑出来做个总结" class="headerlink" title="这里是这一周来刷题时印象比较深的几道题，挑出来做个总结"></a>这里是这一周来刷题时印象比较深的几道题，挑出来做个总结</h3><h4 id="449-序列化和反序列化二叉搜索树"><a href="#449-序列化和反序列化二叉搜索树" class="headerlink" title="449. 序列化和反序列化二叉搜索树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/serialize-and-deserialize-bst/">449. 序列化和反序列化二叉搜索树</a></h4><p>序列化是将数据结构或对象转换为一系列位的过程，以便它可以存储在文件或内存缓冲区中，或通过网络连接链路传输，以便稍后在同一个或另一个计算机环境中重建。</p>
-<p>设计一个算法来序列化和反序列化 二叉搜索树 。 对序列化/反序列化算法的工作方式没有限制。 您只需确保二叉搜索树可以序列化为字符串，并且可以将该字符串反序列化为最初的二叉搜索树。</p>
-<p>编码的字符串应尽可能紧凑。</p>
+                <h1 id="2021-11-29每日刷题打卡"><a href="#2021-11-29每日刷题打卡" class="headerlink" title="2021-11-29每日刷题打卡"></a>2021-11-29每日刷题打卡</h1><h2 id="力扣——剑指offer"><a href="#力扣——剑指offer" class="headerlink" title="力扣——剑指offer"></a>力扣——剑指offer</h2><h4 id="剑指-Offer-03-数组中重复的数字"><a href="#剑指-Offer-03-数组中重复的数字" class="headerlink" title="剑指 Offer 03. 数组中重复的数字"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/">剑指 Offer 03. 数组中重复的数字</a></h4><p>找出数组中重复的数字。</p>
+<p>在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。</p>
 <p>示例 1：</p>
-<p>输入：root = [2,1,3]<br>输出：[2,1,3]</p>
-<p>前序转字符串的方式就是递归，每次先判断当前节点是否为空，如果为空就往字符串上加一个标志性的字符来说明这是空结点，我这里用的是N（NULL），如果不为空，就把当前节点的val值转为字符串加在字符串上，然后再把该节点的左右子节点送去递归，注意每个节点的val值之间要用特殊的字符隔开，我用的是“，”。等递归完后所有的字符串都合在一起了，直接return即可。</p>
-<p>字符串转换成二叉树的方式也是递归（递归真是个好东西），我们用自己写的dfs函数来完成递归，一共三个参数，字符串data，节点root和索引下标i（i和节点要以引用方式传递）。一开始i先为0在之后的递归里逐渐增加，每次先判断data[i]是否为“N”，如果是说明这里的节点应该为空，把当前节点指向空后直接结束程序，注意要把i+=2（跳过”，“）。如果不为N，那就先遍历字符串，当遇到”，“时结束遍历，再把遍历过的字符串转换成数字，这就是节点的val值，把值赋给root，然后送root的左右子节点去递归。当递归结束后我们得到的root就是最开始的二叉树了</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Codec &#123;
+<p>输入：<br>[2, 3, 1, 0, 2, 5, 3]<br>输出：2 或 3 </p>
+<p>hash计算nums的数，当有出现次数大于1的数时返回那个数。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
 public:
-
-    &#x2F;&#x2F; Encodes a tree to a single string.
-    string serialize(TreeNode* root) &#123;
-        if(!root)return &quot;N&quot;;
-        return to_string(root-&gt;val)+&quot;,&quot;+serialize(root-&gt;left)+&quot;,&quot;+serialize(root-&gt;right);
-    &#125;
-
-    &#x2F;&#x2F; Decodes your encoded data to tree.
-    TreeNode* deserialize(string data) &#123;
-        TreeNode *root;
-        int i&#x3D;0;
-        dfs(data,i,root);
-        return root;
-    &#125;
-
-    void dfs(string data,int&amp; i,TreeNode*&amp; root)
-    &#123;
-        if(data[i]&#x3D;&#x3D;&#39;N&#39;)
+    int findRepeatNumber(vector&lt;int&gt;&amp; nums) &#123;
+        unordered_map&lt;int, int&gt;mymap;
+        for (int i : nums)
         &#123;
-            i+&#x3D;2;
-            root&#x3D;NULL;
-            return;
-        &#125;
-
-        string str;
-        for(int j&#x3D;i;j&lt;data.size();j++)
-        &#123;
-            if(data[j]&#x3D;&#x3D;&#39;,&#39;)
+            if (mymap[i]&gt;&#x3D;1)
             &#123;
-                j++;
-                i&#x3D;j;
-                break;
+                return i;
             &#125;
-            str+&#x3D;data[j];
+            mymap[i]++;
         &#125;
-        root &#x3D;new TreeNode(get_num(str));
-        dfs(data,i,root-&gt;left);
-        dfs(data,i,root-&gt;right);
+
+        return &#123;&#125;;
     &#125;
-
-    int get_num(string str)
-    &#123;
-        int num&#x3D;0;
-        for(int i&#x3D;0;i&lt;str.size();i++)
-        &#123;
-            num&#x3D;num*10+(str[i]-&#39;0&#39;);
-        &#125;
-        return num;
-    &#125;
-&#125;;
-
-&#x2F;&#x2F; Your Codec object will be instantiated and called as such:
-&#x2F;&#x2F; Codec* ser &#x3D; new Codec();
-&#x2F;&#x2F; Codec* deser &#x3D; new Codec();
-&#x2F;&#x2F; string tree &#x3D; ser-&gt;serialize(root);
-&#x2F;&#x2F; TreeNode* ans &#x3D; deser-&gt;deserialize(tree);
-&#x2F;&#x2F; return ans;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<h4 id="993-二叉树的堂兄弟节点"><a href="#993-二叉树的堂兄弟节点" class="headerlink" title="993. 二叉树的堂兄弟节点"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/cousins-in-binary-tree/">993. 二叉树的堂兄弟节点</a></h4><p>在二叉树中，根节点位于深度 0 处，每个深度为 k 的节点的子节点位于深度 k+1 处。</p>
-<p>如果二叉树的两个节点深度相同，但 父节点不同 ，则它们是一对堂兄弟节点。</p>
-<p>我们给出了具有唯一值的二叉树的根节点 root ，以及树中两个不同节点的值 x 和 y 。</p>
-<p>只有与值 x 和 y 对应的节点是堂兄弟节点时，才返回 true 。否则，返回 false。</p>
-<p>示例 1：</p>
-<p><img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/02/16/q1248-01.png" alt="q1248-01.png (304×270) (leetcode-cn.com)"></p>
-<p>输入：root = [1,2,3,4], x = 4, y = 3<br>输出：false</p>
-<p>堂兄弟的定义是：深度一样，父节点不一样。所以我们准备两个全局map容器father和mymap（不全局也可以，但dfs传参要多加这两个容器）来分别存放父节点和深度，我们用dfs函数来遍历树，dfs有五个参数，一个是当当前节点，一个是当前节点的子节点（左节点或右节点），一个是深度u（初始为0），还有两个是x和y。dfs一开始先判断当前节点是否为空，如果是就直接结束程序，如果不是就判断节点的val值等不等于x或y，如果等于就用mymap函数存下这个节点的深度u，再用father存下节点的父节点。然后我们把当前节点的左节点和右节点接着送去递归。当一切结束后，我们判断两个节点x和y的深度是否相等，如果相等判断他俩的父节点是否为同一个，如果为同一个即不是堂兄弟，如果不是则是堂兄弟。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    unordered_map&lt;int,int&gt;mymap;
-    unordered_map&lt;int,int&gt;father;
-    bool isCousins(TreeNode* root, int x, int y) &#123;
-        TreeNode* t;
-        t&#x3D;new TreeNode(200);
-        dfs(root,x,y,0,t);
-        if(mymap[x]&#x3D;&#x3D;mymap[y]&amp;&amp;father[x]!&#x3D;father[y])
-        &#123;
-            return true;
-        &#125;
-        return false;
-    &#125;
-    void dfs(TreeNode* p,int x,int y,int u,TreeNode* q)
-    &#123;
-        if(mymap.size()&#x3D;&#x3D;2)return;
-        if(!p)return;
-        if(p-&gt;val&#x3D;&#x3D;x)
-        &#123;
-            mymap[x]&#x3D;u;
-            father[x]&#x3D;q-&gt;val;
-        &#125;
-        else if(p-&gt;val&#x3D;&#x3D;y)
-        &#123;
-            mymap[y]&#x3D;u;
-            father[y]&#x3D;q-&gt;val;
-        &#125;
-
-        dfs(p-&gt;left,x,y,u+1,p);
-        dfs(p-&gt;right,x,y,u+1,p);
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="102-二叉树的层序遍历"><a href="#102-二叉树的层序遍历" class="headerlink" title="102. 二叉树的层序遍历"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/binary-tree-level-order-traversal/">102. 二叉树的层序遍历</a></h4><p>给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。</p>
-<p>示例：<br>二叉树：[3,9,20,null,null,15,7],</p>
-<pre><code>3
-</code></pre>
-<p>   / <br>  9  20<br>    /  <br>   15   7</p>
-<p>因为迭代是在一个函数里进行的，所以可以把全局函数vector&lt;vector&lt; int&gt;&gt;v设置在函数开头，当然也可以继续全局函数。先判断root是否为空，如果为空就返回空的v给它，如果不为空，那我们先准备一个queue容器que来存节点，先把root存入que中，然后开始while遍历，只要que不为空就一直遍历，每次遍历先拿一个数len存que的size，len就是当前层的节点数，这也决定了下面for循环的次数，再准备一个vector容器v1来存这一层节点的val值，然后开始for循环，循环len次，先把当前队列的头结点的val值存入v1中，然后把队列头结点的左子节点和右子节点存入que中，再把队头元素出队，for结束后把v1插入v中。一切遍历结束后返回v即可。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
-public:
-    vector&lt;vector&lt;int&gt;&gt; levelOrder(TreeNode* root) &#123;   
-        vector&lt;vector&lt;int&gt;&gt;v;
-        if(!root)return v;
-        queue&lt;TreeNode*&gt;que;
-        que.push(root);
-        while(que.size())
-        &#123;
-            int len&#x3D;que.size();
-            vector&lt;int&gt;v1;
-            for(int i&#x3D;0;i&lt;len;i++)
-            &#123;
-                v1.push_back(que.front()-&gt;val);
-                if(que.front()-&gt;left)que.push(que.front()-&gt;left);
-                if(que.front()-&gt;right)que.push(que.front()-&gt;right);
-                que.pop();
-            &#125;
-            v.push_back(v1);
-        &#125;
-        return v;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="617-合并二叉树"><a href="#617-合并二叉树" class="headerlink" title="617. 合并二叉树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/merge-two-binary-trees/">617. 合并二叉树</a></h4><p>给定两个二叉树，想象当你将它们中的一个覆盖到另一个上时，两个二叉树的一些节点便会重叠。</p>
-<p>你需要将他们合并为一个新的二叉树。合并的规则是如果两个节点重叠，那么将他们的值相加作为节点合并后的新值，否则不为 NULL 的节点将直接作为新二叉树的节点。</p>
+<h4 id="剑指-Offer-53-II-0～n-1中缺失的数字"><a href="#剑指-Offer-53-II-0～n-1中缺失的数字" class="headerlink" title="剑指 Offer 53 - II. 0～n-1中缺失的数字"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/">剑指 Offer 53 - II. 0～n-1中缺失的数字</a></h4><p>一个长度为n-1的递增排序数组中的所有数字都是唯一的，并且每个数字都在范围0～n-1之内。在范围0～n-1内的n个数字中有且只有一个数字不在该数组中，请找出这个数字。</p>
 <p>示例 1:</p>
-<p>输入:<br>    Tree 1                     Tree 2<br>          1                         2<br>         / \                       / \<br>        3   2                     1   3<br>       /                           \   \<br>      5                             4   7<br>输出:<br>合并后的树:<br>         3<br>        / <br>       4   5<br>      / \   \<br>     5   4   7</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
- * Definition for a binary tree node.
- * struct TreeNode &#123;
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) &#123;&#125;
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) &#123;&#125;
- * &#125;;
- *&#x2F;
-class Solution &#123;
+<p>输入: [0,1,3]<br>输出: 2</p>
+<p>二分查找，如果nums[mid]！=mid说明在mid前就有数缺失，把右边界移到mid，如果nums[mid]==mid说明左边还没出现数确实，把左边界移过来。当遍历结束时，判断一下nums[mid]是否等于mid，如果不等于说明mid就是缺失的数，如果不等于说明缺失的是mid+1。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
 public:
-    TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2) &#123;
-        if(!root1&amp;&amp;!root2)return root1;
-        else if(!root1&amp;&amp;root2)return root2;
-        else if(!root2&amp;&amp;root1)return root1; 
-        dfs(root1,root2);
-        return root1;
-    &#125;
-    void dfs(TreeNode*&amp;p,TreeNode*&amp;q)
-    &#123;
-        if(!q)return;
-        else if(!p&amp;&amp;q)
+    int missingNumber(vector&lt;int&gt;&amp; nums) &#123;
+        int l&#x3D;0,r&#x3D;nums.size()-1;
+        while(l&lt;r)
         &#123;
-
-            p&#x3D;q;
-            return;
+            int mid&#x3D;(l+r)&#x2F;2;
+            if(nums[mid]!&#x3D;mid)r&#x3D;mid-1;
+            else l&#x3D;mid+1;
         &#125;
-        p-&gt;val+&#x3D;q-&gt;val;
-        dfs(p-&gt;left,q-&gt;left);
-        dfs(p-&gt;right,q-&gt;right);
+        return nums[l]!&#x3D;l?l:l+1;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h4 id="剑指-Offer-53-I-在排序数组中查找数字-I"><a href="#剑指-Offer-53-I-在排序数组中查找数字-I" class="headerlink" title="剑指 Offer 53 - I. 在排序数组中查找数字 I"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/">剑指 Offer 53 - I. 在排序数组中查找数字 I</a></h4><p>统计一个数字在排序数组中出现的次数。</p>
+<p><strong>示例 1:</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">输入: nums &#x3D; [5,7,7,8,8,10], target &#x3D; 8
+输出: 2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<p>类似<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/791/">789. 数的范围 - AcWing题库</a>，这题也是要找数的范围，先找第一次数出现的地方，再找最后一次出现的地方，呐最后一次出现的地方减去第一次出现的地方再+1就是出现的次数。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+public:
+    int search(vector&lt;int&gt;&amp; nums, int target) &#123;
+        if(nums.size()&#x3D;&#x3D;0)return 0;
+        int ans&#x3D;0,l&#x3D;0,r&#x3D;nums.size()-1,mid&#x3D;(l+r)&#x2F;2;
+        while(l&lt;r)
+        &#123;
+            if(nums[mid]&gt;&#x3D;target)r&#x3D;mid;
+            else l&#x3D;mid+1;
+            mid&#x3D;l+r&gt;&gt;1;
+        &#125;
+        if(nums[l]!&#x3D;target)return 0;
+        ans-&#x3D;l;
+        l&#x3D;0,r&#x3D;nums.size()-1,mid&#x3D;l+r&gt;&gt;1;
+        while(l&lt;r)
+        &#123;
+            if(nums[mid]&lt;&#x3D;target)l&#x3D;mid;
+            else r&#x3D;mid-1;
+            mid&#x3D;(l+r+1)&#x2F;2;
+        &#125;
+        ans+&#x3D;l;
+        return ans+1;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -642,7 +506,7 @@ public:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/11/07/zhou-zong-jie-2021-11-01-11-07/">http://example.com/2021/11/07/zhou-zong-jie-2021-11-01-11-07/</a>
+                    <a href="http://example.com/2021/11/29/2021-11-29-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/29/2021-11-29-mei-ri-shua-ti-da-qia/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -682,6 +546,10 @@ public:
                             
                                 <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                                     <span class="chip bg-color">每日打卡</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%89%91%E6%8C%87offer/">
+                                    <span class="chip bg-color">剑指offer</span>
                                 </a>
                             
                         </div>
@@ -1119,28 +987,29 @@ public:
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2021/11/08/2021-11-08-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/29/2021-11-29-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/18.jpg" class="responsive-img" alt="2021-11-08每日刷题打卡">
+                        <img src="/images/40.jpg" class="responsive-img" alt="2021-11-29每日刷题打卡">
                         
-                        <span class="card-title">2021-11-08每日刷题打卡</span>
+                        <span class="card-title">2021-11-29每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-08每日刷题打卡
+                            2021-11-29每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-29
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1153,11 +1022,16 @@ public:
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
                     <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                         <span class="chip bg-color">每日打卡</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%89%91%E6%8C%87offer/">
+                        <span class="chip bg-color">剑指offer</span>
                     </a>
                     
                 </div>
@@ -1171,23 +1045,23 @@ public:
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/11/06/2021-11-06-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/28/zhou-zong-jie-2021-11-22-11-28/">
                     <div class="card-image">
                         
-                        <img src="/images/16.jpg" class="responsive-img" alt="2021-11-06每日刷题打卡">
+                        <img src="/images/39.jpg" class="responsive-img" alt="周总结：2021-11-22——11-28">
                         
-                        <span class="card-title">2021-11-06每日刷题打卡</span>
+                        <span class="card-title">周总结：2021-11-22——11-28</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-06每日刷题打卡
+                            周总结：2021-11-22——11-28
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-28
                             </span>
                         <span class="publish-author">
                             
