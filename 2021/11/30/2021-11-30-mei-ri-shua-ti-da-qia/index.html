@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="周总结：2021-11-22——11-28, 你好Aの小屋">
-    <meta name="description" content="周总结：2021-11-22——11-28">
+    <meta name="keywords" content="2021-11-30每日刷题打卡, 你好Aの小屋">
+    <meta name="description" content="2021-11-30每日刷题打卡">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>周总结：2021-11-22——11-28 | 你好Aの小屋</title>
+    <title>2021-11-30每日刷题打卡 | 你好Aの小屋</title>
     <link rel="icon" type="image/png" href="/medias/comment_bg.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/39.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/41.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">周总结：2021-11-22——11-28</h1>
+                    <h1 class="description center-align post-title">2021-11-30每日刷题打卡</h1>
                 </div>
             </div>
         </div>
@@ -340,6 +340,10 @@
                                 <span class="chip bg-color">每日打卡</span>
                             </a>
                         
+                            <a href="/tags/%E5%89%91%E6%8C%87offer/">
+                                <span class="chip bg-color">剑指offer</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -361,7 +365,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-11-28
+                    2021-11-30
                 </div>
                 
 
@@ -370,7 +374,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    2k
+                    850
                 </div>
                 
 
@@ -395,146 +399,155 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="周总结：2021-11-22——11-28"><a href="#周总结：2021-11-22——11-28" class="headerlink" title="周总结：2021-11-22——11-28"></a>周总结：2021-11-22——11-28</h1><h2 id="这里是这一周来刷题时印象比较深的几道题，挑出来做个总结"><a href="#这里是这一周来刷题时印象比较深的几道题，挑出来做个总结" class="headerlink" title="这里是这一周来刷题时印象比较深的几道题，挑出来做个总结"></a>这里是这一周来刷题时印象比较深的几道题，挑出来做个总结</h2><h4 id="384-打乱数组"><a href="#384-打乱数组" class="headerlink" title="384. 打乱数组"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/shuffle-an-array/">384. 打乱数组</a></h4><p>给你一个整数数组 nums ，设计算法来打乱一个没有重复元素的数组。</p>
-<p>实现 Solution class:</p>
-<p>Solution(int[] nums) 使用整数数组 nums 初始化对象<br>int[] reset() 重设数组到它的初始状态并返回<br>int[] shuffle() 返回数组随机打乱后的结果</p>
-<p>示例：</p>
-<p>输入<br>[“Solution”, “shuffle”, “reset”, “shuffle”]<br>[[[1, 2, 3]], [], [], []]<br>输出<br>[null, [3, 1, 2], [1, 2, 3], [1, 3, 2]]</p>
-<p>解释<br>Solution solution = new Solution([1, 2, 3]);<br>solution.shuffle();    // 打乱数组 [1,2,3] 并返回结果。任何 [1,2,3]的排列返回的概率应该相同。例如，返回 [3, 1, 2]<br>solution.reset();      // 重设数组到它的初始状态 [1, 2, 3] 。返回 [1, 2, 3]<br>solution.shuffle();    // 随机返回数组 [1, 2, 3] 打乱后的结果。例如，返回 [1, 3, 2]</p>
-<p>不知道这题有什么意义，但这次学到了个叫做洗牌算法的东西，就是随机的打乱一个数组，每次打乱的地方都不一样。</p>
-<p>这个洗牌算法就是，for循环从下标0开始遍历，生成一个随机数，范围是0~数组长度内，然后每次把下标为i的元素和下标为随机数的元素交换，这样就是随机打乱了数组，把数组遍历完后得到的就是随机打乱的数组了，因为随机数生成每个数的概率都是一样的，所以打乱的也是随机的不会有换了好几次结果都是一样的情况发生。</p>
-<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+                <h1 id="2021-11-30每日刷题打卡"><a href="#2021-11-30每日刷题打卡" class="headerlink" title="2021-11-30每日刷题打卡"></a>2021-11-30每日刷题打卡</h1><h2 id="力扣——剑指offer"><a href="#力扣——剑指offer" class="headerlink" title="力扣——剑指offer"></a>力扣——剑指offer</h2><h4 id="剑指-Offer-32-I-从上到下打印二叉树"><a href="#剑指-Offer-32-I-从上到下打印二叉树" class="headerlink" title="剑指 Offer 32 - I. 从上到下打印二叉树"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/">剑指 Offer 32 - I. 从上到下打印二叉树</a></h4><p>从上到下打印出二叉树的每个节点，同一层的节点按照从左到右的顺序打印。</p>
+<p>例如:<br>给定二叉树: [3,9,20,null,null,15,7],</p>
+<pre><code>3
+/ \
+9  20
+  /  \
+ 15   7
+</code></pre>
+<p>嗨，层序遍历。</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for a binary tree node.
+ * struct TreeNode &#123;
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+class Solution &#123;
 public:
-    vector&lt;int&gt;v;
-    vector&lt;int&gt;v1;
-    Solution(vector&lt;int&gt;&amp; nums) &#123;
-        v&#x3D;nums;
-        v1&#x3D;nums;
-    &#125;
-    
-    vector&lt;int&gt; reset() &#123;
-        v&#x3D;v1;
+    vector&lt;int&gt; levelOrder(TreeNode* root) &#123;
+        if(!root)return &#123;&#125;;
+        queue&lt;TreeNode*&gt;que;
+        que.push(root);
+        vector&lt;int&gt;v;
+        while(!que.empty())
+        &#123;
+            int len&#x3D;que.size();
+            for(int i&#x3D;0;i&lt;len;i++)
+            &#123;
+                v.push_back(que.front()-&gt;val);
+                if(que.front()-&gt;left)que.push(que.front()-&gt;left);
+                if(que.front()-&gt;right)que.push(que.front()-&gt;right);
+                que.pop();
+            &#125;
+        &#125;
         return v;
     &#125;
-    
-    vector&lt;int&gt; shuffle() &#123;
-        int n&#x3D;v.size();
-        for(int i&#x3D;0;i&lt;n;i++)
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h4 id="剑指-Offer-50-第一个只出现一次的字符"><a href="#剑指-Offer-50-第一个只出现一次的字符" class="headerlink" title="剑指 Offer 50. 第一个只出现一次的字符"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/">剑指 Offer 50. 第一个只出现一次的字符</a></h4><p>在字符串 s 中找出第一个只出现一次的字符。如果没有，返回一个单空格。 s 只包含小写字母。</p>
+<p>示例 1:</p>
+<p>输入：s = “abaccdeff”<br>输出：’b’</p>
+<p>准备一个26大小的数组，来对应26个字母，一开始数都为0。遍历s，每遍历一个字符就让数组对应位置的数++(即计算出现次数)，遍历完后再遍历一遍s，从第一个字符到最后一个字符，每次看数组对应的数是否为1，如果为1就返回遍历到的字符。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+public:
+    char firstUniqChar(string s) &#123;
+        int a[26]&#x3D;&#123;0&#125;;
+        for(auto i:s)a[i-&#39;a&#39;]++;
+        for(auto i:s)
+            if(a[i-&#39;a&#39;]&#x3D;&#x3D;1)return i;
+        return &#39; &#39;;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h4 id="剑指-Offer-32-II-从上到下打印二叉树-II"><a href="#剑指-Offer-32-II-从上到下打印二叉树-II" class="headerlink" title="剑指 Offer 32 - II. 从上到下打印二叉树 II"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/">剑指 Offer 32 - II. 从上到下打印二叉树 II</a></h4><p>从上到下按层打印二叉树，同一层的节点按从左到右的顺序打印，每一层打印到一行。</p>
+<p>例如:<br>给定二叉树: [3,9,20,null,null,15,7],</p>
+<pre><code>  3
+ / \
+9  20
+  /  \
+ 15   7
+返回其层次遍历结果：
+
+[
+  [3],
+  [9,20],
+  [15,7]
+]
+</code></pre>
+<p>这题其实之前写二叉树的时候已经写过了，但还是再说一遍，毕竟现在是系统的写剑指offer。</p>
+<p>递归写法：用dfs遍历的时候加上一个深度的变量u，u从0开始，对应二维数组的每一行，每次把遍历到的val值存入对应u的vector容器中即可。</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for a binary tree node.
+ * struct TreeNode &#123;
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+class Solution &#123;
+public:
+    vector&lt;vector&lt;int&gt;&gt;v;
+    vector&lt;vector&lt;int&gt;&gt; levelOrder(TreeNode* root) &#123;
+        if(!root)return v;
+        vector&lt;int&gt;v1;
+        v.push_back(v1);
+        dfs(root,0);
+        return v;
+    &#125;
+    void dfs(TreeNode* root,int u)
+    &#123;
+        if(!root)return;
+        else
         &#123;
-            int a&#x3D;(i+rand()%n)%n;
-            int temp&#x3D;v[a];
-            v[a]&#x3D;v[i];
-            v[i]&#x3D;temp;
+            if(v.size()&lt;u+1)
+            &#123;
+                vector&lt;int&gt;v1;
+                v.push_back(v1);
+            &#125;
+            v[u].push_back(root-&gt;val);
+            dfs(root-&gt;left,u+1);
+            dfs(root-&gt;right,u+1);
+        &#125;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>迭代写法：和上面的层序遍历一样，只不过插入v的方式不同</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;**
+ * Definition for a binary tree node.
+ * struct TreeNode &#123;
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;
+ * &#125;;
+ *&#x2F;
+class Solution &#123;
+public:
+    vector&lt;vector&lt;int&gt;&gt;v;
+    vector&lt;vector&lt;int&gt;&gt; levelOrder(TreeNode* root) &#123;
+        if(!root)return v;
+        queue&lt;TreeNode*&gt;que;
+        que.push(root);
+        while(!que.empty())
+        &#123;
+            int len&#x3D;que.size();
+            vector&lt;int&gt;v1;
+            for(int i&#x3D;0;i&lt;len;i++)
+            &#123;
+                v1.push_back(que.front()-&gt;val);
+                if(que.front()-&gt;left)que.push(que.front()-&gt;left);
+                if(que.front()-&gt;right)que.push(que.front()-&gt;right);
+                que.pop();
+            &#125;
+            v.push_back(v1);
         &#125;
         return v;
     &#125;
-&#125;;
-
-&#x2F;**
- * Your Solution object will be instantiated and called as such:
- * Solution* obj &#x3D; new Solution(nums);
- * vector&lt;int&gt; param_1 &#x3D; obj-&gt;reset();
- * vector&lt;int&gt; param_2 &#x3D; obj-&gt;shuffle();
- *&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-
-
-<h4 id="859-亲密字符串"><a href="#859-亲密字符串" class="headerlink" title="859. 亲密字符串"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/buddy-strings/">859. 亲密字符串</a></h4><p>给你两个字符串 s 和 goal ，只要我们可以通过交换 s 中的两个字母得到与 goal 相等的结果，就返回 true ；否则返回 false 。</p>
-<p>交换字母的定义是：取两个下标 i 和 j （下标从 0 开始）且满足 i != j ，接着交换 s[i] 和 s[j] 处的字符。</p>
-<p>例如，在 “abcd” 中交换下标 0 和下标 2 的元素可以生成 “cbad” 。</p>
-<p>示例 1：</p>
-<p>输入：s = “ab”, goal = “ba”<br>输出：true<br>解释：你可以交换 s[0] = ‘a’ 和 s[1] = ‘b’ 生成 “ba”，此时 s 和 goal 相等。</p>
-<p>这题要注意一点，就是必须而且只能交换两个字符，也就是说你哪怕一开始就相等了，但你也得进行一次交换，如果交换完后不一样了，那你这个就不满足条件，返回false，比如ab和ab，但aa和aa这样，交换后还是一样的情况就满足条件返回true。你现在也能注意到，我只要交换两个一样的字母就行了，只要两个字母一样，交换和还是一样的。所以我们在遍历字符串的同时要把s的组成情况记录下来。</p>
-<p>先判断两个字符串长度是否相等，如果不相等就直接返回false，准备一个pos=-1来记录找到的字符，然后双指针比较两个字符串，找到第一个不一样的地方就把位置记录下来，然后继续遍历找第二个不一样的，要是找到了就把当前的字符和刚刚找到的字符交换一下，然后之间结束循环，每次遍历的时候把s的字符设定一个哈希表存起来。循环结束后判断pos是否为-1，如果为-1说明s和goal两个字符串完全一样，然后我们查看哈希表，看看s里面有没有两个一样的字符，如果有就返回true，没有就返回false。如果不为-1我们就比较两个字符串是否相等，相等就返回true，不相等就返回false。</p>
-<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
-public:
-    bool buddyStrings(string s, string goal) &#123;
-        int l&#x3D;0,r&#x3D;0,n&#x3D;s.size(),m&#x3D;goal.size(),pos&#x3D;-1;
-        if(n!&#x3D;m)return false;
-        unordered_map&lt;char,int&gt;mymap;
-        while(l&lt;n)
-        &#123;
-            if(s[l]!&#x3D;goal[r]&amp;&amp;pos&#x3D;&#x3D;-1)pos&#x3D;l;
-            else if(s[l]!&#x3D;goal[r])
-            &#123;
-                swap(s[l],s[pos]);
-                break;
-            &#125;
-            mymap[s[l]]++;
-            l++,r++;
-        &#125;
-        if(pos&#x3D;&#x3D;-1)
-        &#123;
-            for(auto i:mymap)
-                if(i.second&gt;1)return true;
-            return false;
-        &#125;
-        return s&#x3D;&#x3D;goal?true:false;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="392-判断子序列"><a href="#392-判断子序列" class="headerlink" title="392. 判断子序列"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/is-subsequence/">392. 判断子序列</a></h4><p>给定字符串 s 和 t ，判断 s 是否为 t 的子序列。</p>
-<p>字符串的一个子序列是原始字符串删除一些（也可以不删除）字符而不改变剩余字符相对位置形成的新字符串。（例如，”ace”是”abcde”的一个子序列，而”aec”不是）。</p>
-<p>进阶：</p>
-<p>如果有大量输入的 S，称作 S1, S2, … , Sk 其中 k &gt;= 10亿，你需要依次检查它们是否为 T 的子序列。在这种情况下，你会怎样改变代码？</p>
-<p>致谢：</p>
-<p>特别感谢 @pbrother 添加此问题并且创建所有测试用例。</p>
-<p>示例 1：</p>
-<p>输入：s = “abc”, t = “ahbgdc”<br>输出：true</p>
-<p>双指针遍历，一个l遍历s，一个r遍历t，当l大于s.size()活r大于t.size()时结束遍历，每次遍历判断s[l]和t[r]是否相等，如果不相等r++,如果相等l和r一起++。当遍历结束后判断一下l是否走完了s，如果走完了说明可以在t中找到s的所有字母，即s为t子序列返回true。如果没找完返回false。</p>
-<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
-public:
-    bool isSubsequence(string s, string t) &#123;
-        int l&#x3D;0,r&#x3D;0,n&#x3D;s.size(),m&#x3D;t.size();
-        while(l&lt;n&amp;&amp;r&lt;m)
-        &#123;
-            if(s[l]&#x3D;&#x3D;t[r])l++,r++;
-            else r++;
-        &#125;
-        if(n&#x3D;&#x3D;l)return true;
-        return false;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-
-
-<h4 id="42-接雨水"><a href="#42-接雨水" class="headerlink" title="42. 接雨水"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/trapping-rain-water/">42. 接雨水</a></h4><p>给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。</p>
-<p>示例 1：</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/21d9b78465c3806c2a0731a770f160cc.png" alt="rainwatertrap.png (412×161) (leetcode-cn.com)"></p>
-<p>输入：height = [0,1,0,2,1,0,1,3,2,1,2,1]<br>输出：6<br>解释：上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。 </p>
-<p>首先我们知道，只有中间的高度小于左右两边的高度才可以接到雨水，这种情况下我们可以使用头尾双指针向中间移动遍历。准备两个值l_max和r_max，来存左右两边的最大高度。开始遍历，每次比较height[l]和heigh[r]的大小，如果l大那就可以知道左边已经出现了大于当前高度的地方，只要在右边找到大于当前高度的地方即可，我们先更新一下最大高度，看是r_max大还是height[r]大，如果height[r]大就更新一下r_max，我们计算r_max-heigh[r]的值即为我们可以接到雨水的值，如果当前我们遍历到的柱子就是最高的柱子，那自然右边不会出现更高的柱子来让我们接雨水，所以是0，如果r_max大于heigh[r]则说明右边也有高的柱子，满足了中间小两边大的条件，此时能接雨水的容量就是r_max-heigh[r]，然后r–。如果是l小了则以上操作改一下即可。</p>
-<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
-public:
-    int trap(vector&lt;int&gt;&amp; height) &#123;
-        int l&#x3D;0,r&#x3D;height.size()-1,l_max&#x3D;0,r_max&#x3D;0,ans&#x3D;0;
-        while(l&lt;r)
-        &#123;
-            if(height[l]&lt;height[r])
-            &#123;
-                l_max&#x3D;max(l_max,height[l]);
-                ans+&#x3D;l_max-height[l];
-                l++;
-            &#125;
-            else
-            &#123;
-                r_max&#x3D;max(r_max,height[r]);
-                ans+&#x3D;r_max-height[r];
-                r--;
-            &#125;
-        &#125;
-        return ans;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -562,7 +575,7 @@ public:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/11/28/zhou-zong-jie-2021-11-22-11-28/">http://example.com/2021/11/28/zhou-zong-jie-2021-11-22-11-28/</a>
+                    <a href="http://example.com/2021/11/30/2021-11-30-mei-ri-shua-ti-da-qia/">http://example.com/2021/11/30/2021-11-30-mei-ri-shua-ti-da-qia/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -602,6 +615,10 @@ public:
                             
                                 <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                                     <span class="chip bg-color">每日打卡</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%89%91%E6%8C%87offer/">
+                                    <span class="chip bg-color">剑指offer</span>
                                 </a>
                             
                         </div>
@@ -1039,28 +1056,29 @@ public:
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2021/11/29/2021-11-29-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/30/2021-11-30-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/40.jpg" class="responsive-img" alt="2021-11-29每日刷题打卡">
+                        <img src="/images/41.jpg" class="responsive-img" alt="2021-11-30每日刷题打卡">
                         
-                        <span class="card-title">2021-11-29每日刷题打卡</span>
+                        <span class="card-title">2021-11-30每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-29每日刷题打卡
+                            2021-11-30每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-29
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1073,6 +1091,7 @@ public:
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1095,23 +1114,23 @@ public:
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/11/27/2021-11-27-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/11/29/2021-11-29-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/37.jpg" class="responsive-img" alt="2021-11-27每日刷题打卡">
+                        <img src="/images/40.jpg" class="responsive-img" alt="2021-11-29每日刷题打卡">
                         
-                        <span class="card-title">2021-11-27每日刷题打卡</span>
+                        <span class="card-title">2021-11-29每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-11-27每日刷题打卡
+                            2021-11-29每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-29
                             </span>
                         <span class="publish-author">
                             
@@ -1130,6 +1149,10 @@ public:
                     
                     <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                         <span class="chip bg-color">每日打卡</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%89%91%E6%8C%87offer/">
+                        <span class="chip bg-color">剑指offer</span>
                     </a>
                     
                 </div>
