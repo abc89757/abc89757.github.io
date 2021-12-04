@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>2021-12-05每日刷题打卡</title>
+      <link href="/2021/12/04/2021-12-04-mei-ri-shua-ti-da-qia/"/>
+      <url>/2021/12/04/2021-12-04-mei-ri-shua-ti-da-qia/</url>
+      
+        <content type="html"><![CDATA[<h1 id="2021-12-04每日刷题打卡"><a href="#2021-12-04每日刷题打卡" class="headerlink" title="2021-12-04每日刷题打卡"></a>2021-12-04每日刷题打卡</h1><h2 id="力扣——每日一题"><a href="#力扣——每日一题" class="headerlink" title="力扣——每日一题"></a>力扣——每日一题</h2><h4 id="383-赎金信"><a href="#383-赎金信" class="headerlink" title="383. 赎金信"></a><a href="https://leetcode-cn.com/problems/ransom-note/">383. 赎金信</a></h4><p>为了不在赎金信中暴露字迹，从杂志上搜索各个需要的字母，组成单词来表达意思。</p><p>给你一个赎金信 (ransomNote) 字符串和一个杂志(magazine)字符串，判断 ransomNote 能不能由 magazines 里面的字符构成。</p><p>如果可以构成，返回 true ；否则返回 false 。</p><p>magazine 中的每个字符只能在 ransomNote 中使用一次。</p><p>示例 1：</p><p>输入：ransomNote = “a”, magazine = “b”<br>输出：false</p><p>简简单单的哈希，开辟两个长度为26的数组r、m，对应26个字母的位置，遍历ransomNote和magazines，把相应字母的位置加上1，比如magazines是aab的话，就把m[0]的数+2，m[1]的数+1。然后开始遍历r数组，如果r[i]不为0，就判断m[i]是否大于r[i]，如果大于则说明可以组成，如果小于说明不能组成，直接返回false。当遍历结束后如果一直没有返回false说明magazines可以组成赎金信，返回true。</p><pre class="line-numbers language-none"><code class="language-none">class Solution &#123;public:    bool canConstruct(string ransomNote, string magazine) &#123;        vector&lt;int&gt;r(26);        vector&lt;int&gt;m(26);        for(auto i:ransomNote)            r[i-&#39;a&#39;]++;        for(auto i:magazine)            m[i-&#39;a&#39;]++;        for(int i&#x3D;0;i&lt;26;i++)        &#123;            if(r[i]&gt;0&amp;&amp;r[i]-m[i]&gt;0)            &#123;                return false;            &#125;        &#125;        return true;    &#125;&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="力扣——剑指offer"><a href="#力扣——剑指offer" class="headerlink" title="力扣——剑指offer"></a>力扣——剑指offer</h2><h4 id="剑指-Offer-47-礼物的最大价值"><a href="#剑指-Offer-47-礼物的最大价值" class="headerlink" title="剑指 Offer 47. 礼物的最大价值"></a><a href="https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/">剑指 Offer 47. 礼物的最大价值</a></h4><p>在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于 0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向右或者向下移动一格、直到到达棋盘的右下角。给定一个棋盘及其上面的礼物的价值，请计算你最多能拿到多少价值的礼物？</p><p>示例 1:</p><p>输入:<br>[<br>  [1,3,1],<br>  [1,5,1],<br>  [4,2,1]<br>]<br>输出: 12<br>解释: 路径 1→3→5→2→1 可以拿到最多价值的礼物</p><p>这里用的是动态规划的思想，我们可以想一想，如何一步走完不回头的情况下拿到最大价值的礼物，那我们就应该把所有路径都试过一遍然后取最大的那一个，但这样数据量大了肯定会超时，但我们可以优化一下它，比如在这里，我们只能往下或往右走，第一列一直往下和第一行一直往右的价值是确定了的，如果一直往右，第一行的价值就是1、1+3、1+3+1，第一列的价值就是1、1+1、1+1+4，每个位置的价值总和等于上一个位置的价值总和和自身价值的和。但如果在第二行第二列，此时出现了两种情况，我们可以从0 0开始先右走再下走走到1 1，也可以先下走再右走走到1 1，这两条路上的价值总和是不同的，那么，我们只要选择价值大的一条路即可，比如这里，先右走的价值总和为4，先下走的价值总和为2，显然我们选择的是先右再下，加上1 1位置自身的价值，1 1位置上可以达到的最大价值为1+3+5=9，然后下一个位置可以如法炮制，比如1 2，我们可以先右走到头再下，或者按照我们刚刚的路径再往右走，我们不用考虑先下走然后右走到头这个路径了，因为刚刚已经在1 1位置上被我们排除掉了，然后我们再比较最大值来决定怎么到达1 2位置，其它位置也都是如此，只要比较上面和左边的元素，选较大的那个加在自己身上即可，最后2 2位置（终点）的值就会是总和最大的了。</p><pre class="line-numbers language-none"><code class="language-none">class Solution &#123;public:    int maxValue(vector&lt;vector&lt;int&gt;&gt;&amp; grid) &#123;        int n&#x3D;grid.size(),m&#x3D;grid[0].size();        vector&lt;vector&lt;int&gt;&gt;dp(n,vector&lt;int&gt;(m));        dp[0][0]&#x3D;grid[0][0];        for(int i&#x3D;1;i&lt;m;i++)dp[0][i]+&#x3D;dp[0][i-1]+grid[0][i];        for(int i&#x3D;1;i&lt;n;i++)dp[i][0]+&#x3D;dp[i-1][0]+grid[i][0];        for(int i&#x3D;1;i&lt;n;i++)        &#123;            for(int j&#x3D;1;j&lt;m;j++)            &#123;                dp[i][j]&#x3D;max(dp[i-1][j],dp[i][j-1])+grid[i][j];            &#125;        &#125;        return dp[n-1][m-1];    &#125;&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="剑指-Offer-48-最长不含重复字符的子字符串"><a href="#剑指-Offer-48-最长不含重复字符的子字符串" class="headerlink" title="剑指 Offer 48. 最长不含重复字符的子字符串"></a><a href="https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/">剑指 Offer 48. 最长不含重复字符的子字符串</a></h4><p>请从字符串中找出一个最长的不包含重复字符的子字符串，计算该最长子字符串的长度。</p><p>示例 1:</p><p>输入: “pwwkew”<br>输出: 3<br>解释: 因为无重复字符的最长子串是 “wke”，所以其长度为 3。<br>     请注意，你的答案必须是 子串 的长度，”pwke” 是一个子序列，不是子串。</p><p>动态规划，我们准备一个长度和字符串长度一样的数组dp，dp存的是各个位置上的最大不包含重复字符的长度，第一个位置必然不会重复，我们先初始设为1，然后从i=1开始遍历字符串，每次用双指针遍历的方法向前遍历，准备一个指针j=i-1，只要s[j]!=s[i]，j就一直–，知道s[j]==s[i]或者j&lt;0为止，然后比较一下dp[i-1]和i-j的大小，如果i-j大，说明i到j这一段路中间是有重复字符出现的，比如这里的样例，如果i在e的位置上，j会因为一直没法和i相等而一直–，最后j会变成-1，此时i-j为5，但我们知道中间有两个ww重复了，是不满足条件的，所有我们不能取i-j给dp[i]，而是要取dp[i-1]+1给dp[i]，因为重复ww的问题在第二个w时就已经解决了，我们dp存的是不重复的最大长度，如果i-j大于dp[i-1]，说明i到j一定有重复的字符，而dp[i-1]+1是因为算上s[i]位置上的字符，最大长度要+1，遍历字符串的时候可以准备一个遍历ans维护最大长度，每次把ans和dp[i]做对比，取较大的给ans，最后返回ans即可。</p><pre class="line-numbers language-none"><code class="language-none">class Solution &#123;public:    int lengthOfLongestSubstring(string s) &#123;        int n&#x3D;s.size();        if(n&lt;2)return n;        vector&lt;int&gt;dp(n);        dp[0]&#x3D;1;        int ans&#x3D;1;        for(int i&#x3D;1;i&lt;n;i++)        &#123;            int j&#x3D;i-1;            while(j&gt;&#x3D;0&amp;&amp;s[j]!&#x3D;s[i])j--;            dp[i]&#x3D;dp[i-1]&lt;i-j?dp[i-1]+1:i-j;            ans&#x3D;max(ans,dp[i]);        &#125;        return ans;    &#125;&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 每日打卡 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 每日打卡 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2021-12-03每日刷题打卡</title>
       <link href="/2021/12/03/2021-12-03-mei-ri-shua-ti-da-qia/"/>
       <url>/2021/12/03/2021-12-03-mei-ri-shua-ti-da-qia/</url>

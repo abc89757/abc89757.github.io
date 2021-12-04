@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="2021-10-30每日刷题打卡, 你好Aの小屋">
-    <meta name="description" content="2021-10-30每日刷题打卡">
+    <meta name="keywords" content="2021-12-05每日刷题打卡, 你好Aの小屋">
+    <meta name="description" content="2021-12-04每日刷题打卡">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>2021-10-30每日刷题打卡 | 你好Aの小屋</title>
+    <title>2021-12-05每日刷题打卡 | 你好Aの小屋</title>
     <link rel="icon" type="image/png" href="/medias/comment_bg.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -309,12 +309,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/09.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/45.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">2021-10-30每日刷题打卡</h1>
+                    <h1 class="description center-align post-title">2021-12-05每日刷题打卡</h1>
                 </div>
             </div>
         </div>
@@ -340,10 +340,6 @@
                                 <span class="chip bg-color">每日打卡</span>
                             </a>
                         
-                            <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                                <span class="chip bg-color">y总算法课</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -365,7 +361,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-10-30
+                    2021-12-04
                 </div>
                 
 
@@ -374,7 +370,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    937
+                    1.7k
                 </div>
                 
 
@@ -399,127 +395,86 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="2021-10-30每日刷题打卡"><a href="#2021-10-30每日刷题打卡" class="headerlink" title="2021-10-30每日刷题打卡"></a>2021-10-30每日刷题打卡</h1><h2 id="力扣——每日一题"><a href="#力扣——每日一题" class="headerlink" title="力扣——每日一题"></a>力扣——每日一题</h2><h4 id="260-只出现一次的数字-III"><a href="#260-只出现一次的数字-III" class="headerlink" title="260. 只出现一次的数字 III"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/single-number-iii/">260. 只出现一次的数字 III</a></h4><p>给定一个整数数组 nums，其中恰好有两个元素只出现一次，其余所有元素均出现两次。 找出只出现一次的那两个元素。你可以按 任意顺序 返回答案。</p>
-<p>进阶：你的算法应该具有线性时间复杂度。你能否仅使用常数空间复杂度来实现？</p>
+                <h1 id="2021-12-04每日刷题打卡"><a href="#2021-12-04每日刷题打卡" class="headerlink" title="2021-12-04每日刷题打卡"></a>2021-12-04每日刷题打卡</h1><h2 id="力扣——每日一题"><a href="#力扣——每日一题" class="headerlink" title="力扣——每日一题"></a>力扣——每日一题</h2><h4 id="383-赎金信"><a href="#383-赎金信" class="headerlink" title="383. 赎金信"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/ransom-note/">383. 赎金信</a></h4><p>为了不在赎金信中暴露字迹，从杂志上搜索各个需要的字母，组成单词来表达意思。</p>
+<p>给你一个赎金信 (ransomNote) 字符串和一个杂志(magazine)字符串，判断 ransomNote 能不能由 magazines 里面的字符构成。</p>
+<p>如果可以构成，返回 true ；否则返回 false 。</p>
+<p>magazine 中的每个字符只能在 ransomNote 中使用一次。</p>
 <p>示例 1：</p>
-<p>输入：nums = [1,2,1,3,2,5]<br>输出：[3,5]<br>解释：[5, 3] 也是有效的答案。</p>
-<p>用哈希计数，准备一个unordered_map容器mymap，遍历nums，用mymap计算每个数字出现的次数。最后从mymap里找到出现次数为1的两个数，返回即可。</p>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">class Solution &#123;
-public:
-    vector&lt;int&gt; singleNumber(vector&lt;int&gt;&amp; nums) &#123;
-        unordered_map&lt;int,int&gt;mymap;
-        int n&#x3D;nums.size();
-        for(int i&#x3D;0;i&lt;n;i++)
-        &#123;
-            mymap[nums[i]]++;
-        &#125;
-        vector&lt;int&gt;v;
-        for(auto i:mymap)
-        &#123;
-            if(i.second&#x3D;&#x3D;1)
-            &#123;
-                v.push_back(i.first);
-            &#125;
-        &#125;
-        return v;
-    &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<p>进阶——常数空间：就准备一个vector容器v来存结果的两个数，对nums排序，遍历nums，每次判断当前数是否和下一个数相同，如果不相同就把数插入v中，如果相同就持续遍历，直到不相同为止。</p>
+<p>输入：ransomNote = “a”, magazine = “b”<br>输出：false</p>
+<p>简简单单的哈希，开辟两个长度为26的数组r、m，对应26个字母的位置，遍历ransomNote和magazines，把相应字母的位置加上1，比如magazines是aab的话，就把m[0]的数+2，m[1]的数+1。然后开始遍历r数组，如果r[i]不为0，就判断m[i]是否大于r[i]，如果大于则说明可以组成，如果小于说明不能组成，直接返回false。当遍历结束后如果一直没有返回false说明magazines可以组成赎金信，返回true。</p>
 <pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
 public:
-    vector&lt;int&gt; singleNumber(vector&lt;int&gt;&amp; nums) &#123;
-        sort(nums.begin(),nums.end());
-        vector&lt;int&gt;v;
-        int n&#x3D;nums.size();
-        for(int i&#x3D;0;i&lt;n;i++)
+    bool canConstruct(string ransomNote, string magazine) &#123;
+        vector&lt;int&gt;r(26);
+        vector&lt;int&gt;m(26);
+        for(auto i:ransomNote)
+            r[i-&#39;a&#39;]++;
+        for(auto i:magazine)
+            m[i-&#39;a&#39;]++;
+        for(int i&#x3D;0;i&lt;26;i++)
         &#123;
-            if(i+1&gt;&#x3D;n&amp;&amp;v.size()&lt;&#x3D;1)
+            if(r[i]&gt;0&amp;&amp;r[i]-m[i]&gt;0)
             &#123;
-                v.push_back(nums[i]);
-            &#125;
-            else
-            &#123;
-                if(nums[i]!&#x3D;nums[i+1])
-                &#123;
-                    v.push_back(nums[i]);   
-                    if(v.size()&#x3D;&#x3D;2)
-                    &#123;
-                        break;
-                    &#125;                                                
-                &#125;
-                else
-                &#123;
-                    int num&#x3D;nums[i];
-                    while(nums[i]&#x3D;&#x3D;num)
-                    &#123;
-                        i++;
-                    &#125;
-                    i--;
-                &#125;
+                return false;
             &#125;
         &#125;
-        return v;
+        return true;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
 
 
-<p><a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/789/">787. 归并排序 - AcWing题库</a></p>
-<p>给定你一个长度为 n 的整数数列。</p>
-<p>请你使用归并排序对这个数列按照从小到大进行排序。</p>
-<p>并将排好序的数列按顺序输出。</p>
-<h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>输入共两行，第一行包含整数 n。</p>
-<p>第二行包含 n 个整数（所有整数均在 1∼10^9 范围内），表示整个数列。</p>
-<h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出共一行，包含 n 个整数，表示排好序的数列。</p>
-<h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>1≤n≤100000</p>
-<h4 id="输入样例："><a href="#输入样例：" class="headerlink" title="输入样例："></a>输入样例：</h4><pre class="line-numbers language-none"><code class="language-none">5
-3 1 2 4 5<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h4 id="输出样例："><a href="#输出样例：" class="headerlink" title="输出样例："></a>输出样例：</h4><pre class="line-numbers language-none"><code class="language-none">1 2 3 4 5<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-
-
-<p>归并排序也是分治的思想，把一串数组对半分，直到分成一个个数，在把数两个两个的组合成有序对数。比如我们把6 2 4 5 3 1这个数组进行排序，最终分成6和2和4和5和3和1这六个数组，然后两两组合成2 6、4 5、3 1，（组合的方式是，拿一个数组tmp来存，把两个目标数组里的数进行比较，每次挑小的那个放入tmp中即可），再组合成2 4 5 6、3 1，再组合就成了1 2 3 4 5 6，这就是归并排序，即分治后归并。</p>
-<pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;
-using namespace std;
-
-const int N&#x3D;1e6+5;
-int n;
-int nums[N],tmp[N];
-
-void merge_sort(int nums[],int l,int r)
-&#123;
-    if(l&gt;&#x3D;r)return;
-    int mid&#x3D;(l+r)&#x2F;2;
-    merge_sort(nums,l,mid);
-    merge_sort(nums,mid+1,r);
-    int k&#x3D;0,i&#x3D;l,j&#x3D;mid+1;
-    while(i&lt;&#x3D;mid&amp;&amp;j&lt;&#x3D;r)
-    &#123;
-        if(nums[i]&lt;&#x3D;nums[j])tmp[k++]&#x3D;nums[i++];
-        else tmp[k++]&#x3D;nums[j++];
+<h2 id="力扣——剑指offer"><a href="#力扣——剑指offer" class="headerlink" title="力扣——剑指offer"></a>力扣——剑指offer</h2><h4 id="剑指-Offer-47-礼物的最大价值"><a href="#剑指-Offer-47-礼物的最大价值" class="headerlink" title="剑指 Offer 47. 礼物的最大价值"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/">剑指 Offer 47. 礼物的最大价值</a></h4><p>在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于 0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向右或者向下移动一格、直到到达棋盘的右下角。给定一个棋盘及其上面的礼物的价值，请计算你最多能拿到多少价值的礼物？</p>
+<p>示例 1:</p>
+<p>输入:<br>[<br>  [1,3,1],<br>  [1,5,1],<br>  [4,2,1]<br>]<br>输出: 12<br>解释: 路径 1→3→5→2→1 可以拿到最多价值的礼物</p>
+<p>这里用的是动态规划的思想，我们可以想一想，如何一步走完不回头的情况下拿到最大价值的礼物，那我们就应该把所有路径都试过一遍然后取最大的那一个，但这样数据量大了肯定会超时，但我们可以优化一下它，比如在这里，我们只能往下或往右走，第一列一直往下和第一行一直往右的价值是确定了的，如果一直往右，第一行的价值就是1、1+3、1+3+1，第一列的价值就是1、1+1、1+1+4，每个位置的价值总和等于上一个位置的价值总和和自身价值的和。但如果在第二行第二列，此时出现了两种情况，我们可以从0 0开始先右走再下走走到1 1，也可以先下走再右走走到1 1，这两条路上的价值总和是不同的，那么，我们只要选择价值大的一条路即可，比如这里，先右走的价值总和为4，先下走的价值总和为2，显然我们选择的是先右再下，加上1 1位置自身的价值，1 1位置上可以达到的最大价值为1+3+5=9，然后下一个位置可以如法炮制，比如1 2，我们可以先右走到头再下，或者按照我们刚刚的路径再往右走，我们不用考虑先下走然后右走到头这个路径了，因为刚刚已经在1 1位置上被我们排除掉了，然后我们再比较最大值来决定怎么到达1 2位置，其它位置也都是如此，只要比较上面和左边的元素，选较大的那个加在自己身上即可，最后2 2位置（终点）的值就会是总和最大的了。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+public:
+    int maxValue(vector&lt;vector&lt;int&gt;&gt;&amp; grid) &#123;
+        int n&#x3D;grid.size(),m&#x3D;grid[0].size();
+        vector&lt;vector&lt;int&gt;&gt;dp(n,vector&lt;int&gt;(m));
+        dp[0][0]&#x3D;grid[0][0];
+        for(int i&#x3D;1;i&lt;m;i++)dp[0][i]+&#x3D;dp[0][i-1]+grid[0][i];
+        for(int i&#x3D;1;i&lt;n;i++)dp[i][0]+&#x3D;dp[i-1][0]+grid[i][0];
+        for(int i&#x3D;1;i&lt;n;i++)
+        &#123;
+            for(int j&#x3D;1;j&lt;m;j++)
+            &#123;
+                dp[i][j]&#x3D;max(dp[i-1][j],dp[i][j-1])+grid[i][j];
+            &#125;
+        &#125;
+        return dp[n-1][m-1];
     &#125;
-    while(i&lt;&#x3D;mid)tmp[k++]&#x3D;nums[i++];
-    while(j&lt;&#x3D;r)tmp[k++]&#x3D;nums[j++];
-    
-    for(i&#x3D;l,j&#x3D;0;i&lt;&#x3D;r;i++,j++)
-        nums[i]&#x3D;tmp[j];
-&#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-int main()
-&#123;
-    scanf(&quot;%d&quot;,&amp;n);
-    for(int i&#x3D;0;i&lt;n;i++)scanf(&quot;%d&quot;,&amp;nums[i]);
-    merge_sort(nums,0,n-1);
-    for(int i&#x3D;0;i&lt;n;i++)printf(&quot;%d &quot;,nums[i]);
-    return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+
+
+
+<h4 id="剑指-Offer-48-最长不含重复字符的子字符串"><a href="#剑指-Offer-48-最长不含重复字符的子字符串" class="headerlink" title="剑指 Offer 48. 最长不含重复字符的子字符串"></a><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/">剑指 Offer 48. 最长不含重复字符的子字符串</a></h4><p>请从字符串中找出一个最长的不包含重复字符的子字符串，计算该最长子字符串的长度。</p>
+<p>示例 1:</p>
+<p>输入: “pwwkew”<br>输出: 3<br>解释: 因为无重复字符的最长子串是 “wke”，所以其长度为 3。<br>     请注意，你的答案必须是 子串 的长度，”pwke” 是一个子序列，不是子串。</p>
+<p>动态规划，我们准备一个长度和字符串长度一样的数组dp，dp存的是各个位置上的最大不包含重复字符的长度，第一个位置必然不会重复，我们先初始设为1，然后从i=1开始遍历字符串，每次用双指针遍历的方法向前遍历，准备一个指针j=i-1，只要s[j]!=s[i]，j就一直–，知道s[j]==s[i]或者j&lt;0为止，然后比较一下dp[i-1]和i-j的大小，如果i-j大，说明i到j这一段路中间是有重复字符出现的，比如这里的样例，如果i在e的位置上，j会因为一直没法和i相等而一直–，最后j会变成-1，此时i-j为5，但我们知道中间有两个ww重复了，是不满足条件的，所有我们不能取i-j给dp[i]，而是要取dp[i-1]+1给dp[i]，因为重复ww的问题在第二个w时就已经解决了，我们dp存的是不重复的最大长度，如果i-j大于dp[i-1]，说明i到j一定有重复的字符，而dp[i-1]+1是因为算上s[i]位置上的字符，最大长度要+1，遍历字符串的时候可以准备一个遍历ans维护最大长度，每次把ans和dp[i]做对比，取较大的给ans，最后返回ans即可。</p>
+<pre class="line-numbers language-none"><code class="language-none">class Solution &#123;
+public:
+    int lengthOfLongestSubstring(string s) &#123;
+        int n&#x3D;s.size();
+        if(n&lt;2)return n;
+        vector&lt;int&gt;dp(n);
+        dp[0]&#x3D;1;
+        int ans&#x3D;1;
+        for(int i&#x3D;1;i&lt;n;i++)
+        &#123;
+            int j&#x3D;i-1;
+            while(j&gt;&#x3D;0&amp;&amp;s[j]!&#x3D;s[i])j--;
+            dp[i]&#x3D;dp[i-1]&lt;i-j?dp[i-1]+1:i-j;
+            ans&#x3D;max(ans,dp[i]);
+        &#125;
+        return ans;
+    &#125;
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -546,7 +501,7 @@ int main()
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/10/30/2021-10-30-mei-ri-shua-ti-da-qia/">http://example.com/2021/10/30/2021-10-30-mei-ri-shua-ti-da-qia/</a>
+                    <a href="http://example.com/2021/12/04/2021-12-04-mei-ri-shua-ti-da-qia/">http://example.com/2021/12/04/2021-12-04-mei-ri-shua-ti-da-qia/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -586,10 +541,6 @@ int main()
                             
                                 <a href="/tags/%E6%AF%8F%E6%97%A5%E6%89%93%E5%8D%A1/">
                                     <span class="chip bg-color">每日打卡</span>
-                                </a>
-                            
-                                <a href="/tags/y%E6%80%BB%E7%AE%97%E6%B3%95%E8%AF%BE/">
-                                    <span class="chip bg-color">y总算法课</span>
                                 </a>
                             
                         </div>
@@ -1027,28 +978,29 @@ int main()
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2021/10/31/zhou-zong-jie-2021-10-25-10-31/">
+                <a href="/2021/12/04/2021-12-04-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/10.jpg" class="responsive-img" alt="周总结：2021-10-25——10-31">
+                        <img src="/images/45.jpg" class="responsive-img" alt="2021-12-05每日刷题打卡">
                         
-                        <span class="card-title">周总结：2021-10-25——10-31</span>
+                        <span class="card-title">2021-12-05每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            周总结：2021-10-25——10-31
+                            2021-12-04每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-31
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1061,6 +1013,7 @@ int main()
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1079,23 +1032,23 @@ int main()
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/10/29/2021-10-29-mei-ri-shua-ti-da-qia/">
+                <a href="/2021/12/03/2021-12-03-mei-ri-shua-ti-da-qia/">
                     <div class="card-image">
                         
-                        <img src="/images/08.jpg" class="responsive-img" alt="2021-10-29每日刷题打卡">
+                        <img src="/images/44.jpg" class="responsive-img" alt="2021-12-03每日刷题打卡">
                         
-                        <span class="card-title">2021-10-29每日刷题打卡</span>
+                        <span class="card-title">2021-12-03每日刷题打卡</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            2021-10-29每日刷题打卡
+                            2021-12-03每日刷题打卡
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-03
                             </span>
                         <span class="publish-author">
                             
